@@ -1,18 +1,19 @@
 backend:
   name: github
-  repo: cfpb/design-system
+  repo: cfpb-sandbox/design-system
   branch: master
   squash_merges: true
+  auth_scope: public_repo
   commit_messages:
     create: Create "{{slug}}" page
     update: Update "{{slug}}" page
     delete: Delete "{{slug}}" page
 
-logo_url: https://cfpb.github.io/design-system/assets/img/cfpb-netlify-logo.png
+logo_url: https://cfpb-sandbox.github.io/design-system/assets/img/cfpb-netlify-logo.png
 publish_mode: editorial_workflow
 media_folder: docs/images/uploads
 public_folder: /design-system/images/uploads
-pull_request_url: https://github.com/cfpb/design-system/pulls
+pull_request_url: https://github.com/cfpb-sandbox/design-system/pulls
 
 collections:
   - name: 'getting-started'
