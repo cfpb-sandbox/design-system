@@ -30,12 +30,12 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "@cfpb/netlify-cms": "1.19.0",
     "escape-html": "^1.0.3",
     "ftdomdelegate": "^3.0.0",
     "govuk-frontend": "3.5.0",
     "html-entities": "^1.2.1",
     "marked": "0.8.0",
+    "netlify-cms": "^2.10.33",
     "normalize-css": "^2.3.1",
     "normalize-legacy-addon": "^0.1.0",
     "react": "16.12.0",
