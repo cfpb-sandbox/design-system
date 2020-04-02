@@ -29,6 +29,9 @@ variations:
     variation_description: >-
       The default section below demonstrates how a text input would normally
       appear in code.
+
+
+      Sup?
     variation_name: Basic text input
     variation_specs: >-
       Element | Variable name | Variable | Value
@@ -130,8 +133,7 @@ variations:
     variation_description: These are used for simple forms where a full filter isn’t necessary.
     variation_jinja_code_snippet: ''
     variation_name: Text input with a button
-    variation_specs: |+
-
+    variation_specs: ''
   - variation_code_snippet: |-
       <div class="m-btn-inside-input">
           <input type="text"
