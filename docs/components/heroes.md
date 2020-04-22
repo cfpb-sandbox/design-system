@@ -4,7 +4,11 @@ layout: variation
 section: components
 secondary_section: Layout options
 status: Released
-description: 'Heroes are used to introduce landing and sublanding pages. '
+description: >-
+  Heroes are used to introduce landing and sublanding pages. They help orient a
+  user to a new section or topic. To introduce a specific piece of content, like
+  a blog, press release, or other lengthy or detailed content, use the [text
+  introduction]().
 variation_groups:
   - variations:
       - variation_code_snippet: |-
@@ -124,77 +128,13 @@ variation_groups:
           sizes, add the __bleeding modifier to the hero and add an additional
           m-hero_bleeding-image as a sibling to m-hero_image.
 
-      - variation_code_snippet: |-
-          <section class="m-hero m-hero__bleeding" id="hero3">
-              <div class="m-hero_wrapper wrapper">
-                  <div class="m-hero_text">
-                      <h1 class="m-hero_heading">Max of 41 chars for a one-line heading</h1>
-                      <p class="m-hero_subhead">
-                          This text has a recommended count of 165-186 characters
-                          (three lines at 1230px) following a one-line heading
-                          and 108-124 characters (two lines at 1230px)
-                          following a two-line heading.
-                      </p>
-                  </div>
-                  <div class="m-hero_image-wrapper">
-                      <div class="m-hero_image"></div>
-                  </div>
-              </div>
-              <style>
-                  #hero3 .m-hero_image {
-                      background-image:
-                          url('https://dummyimage.com/570x140/addc91/101820');
-                      background-image: -webkit-image-set(
-                          url('https://dummyimage.com/570x140/addc91/101820') 1x,
-                          url('https://dummyimage.com/1140x280/addc91/101820') 2x
-                      );
-                      background-image: image-set(
-                          url('https://dummyimage.com/570x140/addc91/101820') 1x,
-                          url('https://dummyimage.com/1140x280/addc91/101820') 2x
-                      );
-                      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                          src='https://dummyimage.com/570x140/addc91/101820',
-                          sizingMethod='scale');
-                      padding-bottom: 25.1020408%;
-                  }
-
-                  @media screen and (min-width: 37.5625em) {
-                      #hero3 .m-hero_image {
-                          background-image:
-                              url('https://dummyimage.com/470x640/addc91/101820');
-                          background-image: -webkit-image-set(
-                              url('https://dummyimage.com/470x640/addc91/101820') 1x,
-                              url('https://dummyimage.com/940x1280/addc91/101820') 2x
-                          );
-                          background-image: image-set(
-                              url('https://dummyimage.com/470x640/addc91/101820') 1x,
-                              url('https://dummyimage.com/940x1280/addc91/101820') 2x
-                          );
-                          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                              src='https://dummyimage.com/470x640/addc91/101820',
-                              sizingMethod='scale');
-                      }
-                  }
-              </style>
-          </section>
+      - variation_name: Example
         variation_description: >-
-          When using an illustration that bleeds top to bottom at larger screen
-          sizes, add the `__bleeding` modifier to the hero and add an additional
-          `m-hero_bleeding-image` as a sibling to `m-hero_image`.
-        variation_name: Hero with bleeding illustration
+          ![Image of standard hero
+          graphic](/design-system/images/uploads/hero_use-case.png "Image of
+          standard hero graphic")
     variation_group_name: Standard hero
     variation_group_description: >-
-      ![Image of standard hero
-      graphic](/design-system/images/uploads/hero_use-case.png "Image of
-      standard hero graphic")
-
-
-      Heroes are used to introduce landing and sublanding pages, and help orient
-      a user to a new section or topic. To introduce a specific piece of
-      content, like a blog, press release, or other lengthy or detailed content,
-      use the [text introduction]().
-
-
       A hero consists of a headline, a small amount of additional sub-heading
       text and an image. Its background color or image is flush with the sides
       of the screen, and the content is vertically centered.
@@ -360,22 +300,18 @@ usage: >+
   #### Purpose
 
 
-  Hero copy should be written from the user’s perspective. It’s less about what
-  we can do for them or what we can offer them, and more about what the user can
-  do with the resources we provide.
+  Write hero copy from the user’s perspective.  
 
 
-  Hero content should help a user answer these two questions:
+  * Orient the user: "Is this page what I was looking for?" 
+
+  * Engage the user: "Do I want to keep reading?" 
 
 
-  Is this page what I was looking for? (orient the user)
+  Try not to write about what we do or offer. Make user needs the priority. 
 
-  Do I want to keep reading? (engage the user)
 
-  Since the goal of the hero is to get the user to continue reading the page,
-  don’t include links or calls to action within the hero. If there is content
-  that needs to link elsewhere for explanation, place it underneath the hero
-  within the main content area.
+  Don’t include links or calls to action within the hero.  
 
 
   #### Writing hero content
@@ -384,14 +320,16 @@ usage: >+
   ##### Heading
 
 
-  Headings should communicate what the user can learn from the page or the
-  benefit the page provides. Headings should be a single phrase, preferably one
-  line at the largest breakpoint. Take care to avoid orphaned text.
+  Communicate what the user can learn from the page or the benefit the page
+  provides. Actionable, descriptive, orienting statements work best.
+
+
+  Headings should be a single phrase, preferably one line at the largest
+  breakpoint. Take care to avoid orphaned text.
 
 
   Headings should not include a period at the end. Question marks can be used
-  when a question is asked, but avoid phrasing heroes as questions. Actionable,
-  descriptive, orienting statements work best.
+  when a question is asked, but avoid phrasing heroes as questions. 
 
 
   * One-line (at largest breakpoint): 41 characters maximum
@@ -399,7 +337,7 @@ usage: >+
   * Two-line (at largest breakpoint): 82 characters maximum
 
 
-  ##### Subheading
+  ##### What the hell is subheading content
 
 
   Subheading content should be brief, enticing, and build upon the heading to
@@ -416,24 +354,17 @@ usage: >+
   #### Behavior
 
 
-  Below the 601 px breakpoint, the text and image stack to span the full width
-  of the viewport.
+  | Above 600 px | Below 601 px | 
 
+  | -- | ----- |
 
-  **601 px and above**
+  | Text and image are side-by-side  | Text and image stack vertically |
 
-
-  ![Mockup of hero graphic at desktop
+  | ![Mockup of hero graphic at desktop
   size](/design-system/images/uploads/hero_behavior_large.png "Mockup of hero
-  graphic at desktop size")
-
-
-  **600 px and below**
-
-
-  ![Mockup of hero graphic at small
+  graphic at desktop size") | ![Mockup of hero graphic at small
   size](/design-system/images/uploads/hero_behavior_small.png "Mockup of hero
-  graphic at small size") 
+  graphic at small size") |
 
 
 
