@@ -269,23 +269,29 @@ collections:
         label: 'Description'
         hint: 'If this page does not contain variations, you may leave the remaining fields blank, and the above field can be used for all page content.'
         widget: 'markdown'
+        required: false
       - name: 'variation_groups'
         label: 'Component variation groups'
         widget: 'list'
+        required: false
         fields:
           - name: 'variation_group_name'
             label: 'Component variation group name'
             widget: 'string'
+            required: false
           - name: 'variation_group_description'
             label: 'Component variation group description'
             widget: 'markdown'
+            required: false
           - name: 'variations'
             label: 'Variations'
             widget: 'list'
+            required: false
             fields:
               - name: 'variation_name'
                 label: 'Variation name'
                 widget: 'string'
+                required: false
               - name: 'variation_description'
                 label: 'Variation description'
                 widget: 'markdown'
@@ -314,6 +320,7 @@ collections:
       - name: 'restrictions'
         label: 'Restrictions'
         widget: 'list'
+        required: false
         fields:
           - name: 'restrictions_do'
             label: 'Do'
