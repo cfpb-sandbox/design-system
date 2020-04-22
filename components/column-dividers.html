@@ -1454,6 +1454,12 @@
     </div>
 
     
+    <ul class="m-list m-list__horizontal u-mb30">
+        
+        
+        
+    </ul>
+    
 
     
         <section id="description" class="u-mb30">
@@ -1469,6 +1475,303 @@
         </section>
     
 
+    
+    
+    <section class="o-variation_group" id="">
+        
+
+        
+
+        
+        <div class="m-variation">
+
+            <div class="m-variation_name">
+                <h3>Content line</h3>
+            </div>
+
+            <div class="m-variation_description">
+                <p>A 1 pixel edge to edge bar that can divide content.</p>
+
+            </div>
+
+            <!-- Live code example -->
+            
+            <div class="a-live_code">
+                <div class="content_line"></div>
+            </div>
+            
+
+            <div class="a-toggle_code">
+                <button href="#content-line-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#content-line-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            
+            
+            
+            
+            
+            
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="content-line-code-1">
+                <ul class="govuk-tabs__list">
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#content-line-html-code-snippet-1">
+                            HTML code snippet
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+
+                <!-- HTML snippet -->
+                
+                <section class="govuk-tabs__panel" id="content-line-html-code-snippet-1">
+                    <div class="variation-code-snippet">
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html">&lt;div class="content_line"&gt;&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- Jinja snippet -->
+                
+
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
+
+            </div>
+<!-- .govuk-tabs -->
+            
+
+        </div>
+        
+        <div class="m-variation">
+
+            <div class="m-variation_name">
+                <h3>Content layout column dividers</h3>
+            </div>
+
+            <div class="m-variation_description">
+                <p>Adds dividers between specified <code class="highlighter-rouge">.content-l_col-X-X</code> classes.</p>
+
+<p>Layout dividers work in conjunction with <code class="highlighter-rouge">.content-l_col-X-X</code> elements and have specific needs depending on which column element variant they are attached to. For example, <code class="highlighter-rouge">.content-l_col-1-2</code> has different divider needs than <code class="highlighter-rouge">.content-l_col-1-3</code> because they may break to single columns at different breakpoints.</p>
+
+<p>Dividers use absolute positioning relative to the <code class="highlighter-rouge">.content-l</code> element and depend on <code class="highlighter-rouge">.content-l</code> using <code class="highlighter-rouge">position: relative;</code>. This allows vertical dividers to span the height of the tallest column. Just be aware that if you have more than one row of columns, and each row has columns of different widths, the borders will cause unwanted overlapping since they will span the height of the entire <code class="highlighter-rouge">.content-l</code> element.</p>
+
+            </div>
+
+            <!-- Live code example -->
+            
+            <div class="a-live_code">
+                <div class="content-l content-l__large-gutters">
+    <div class="content-l_col content-l_col-1-2">
+        <img src="https://dummyimage.com/600x320/addc91/101820" alt="Placeholder image">
+        <br>
+        Half-width column (spans 6/12 columns)
+    </div>
+    <div class="content-l_col content-l_col-1-2 content-l_col__before-divider">
+        <img src="https://dummyimage.com/600x320/addc91/101820" alt="Placeholder image">
+        <br>
+        Half-width column (spans 6/12 columns)
+    </div>
+</div>
+<br>
+<!-- Starting a new .content-l so that the dividers from
+    .content-l_col.content-l_col-1-2.content-l_col__before-divider
+    won't overlap the .content-l_col-1-3 columns. -->
+<div class="content-l content-l__large-gutters">
+    <div class="content-l_col content-l_col-1-3">
+        Third-width column (spans 4/12 columns)
+    </div>
+    <div class="content-l_col content-l_col-1-3 content-l_col__before-divider">
+        Third-width column (spans 4/12 columns)
+    </div>
+    <div class="content-l_col content-l_col-1-3 content-l_col__before-divider">
+        Third-width column (spans 4/12 columns)
+    </div>
+</div>
+            </div>
+            
+
+            <div class="a-toggle_code">
+                <button href="#content-layout-column-dividers-code-2" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#content-layout-column-dividers-code-2" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            
+            
+            
+            
+            
+            
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="content-layout-column-dividers-code-2">
+                <ul class="govuk-tabs__list">
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#content-layout-column-dividers-html-code-snippet-2">
+                            HTML code snippet
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+
+                <!-- HTML snippet -->
+                
+                <section class="govuk-tabs__panel" id="content-layout-column-dividers-html-code-snippet-2">
+                    <div class="variation-code-snippet">
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html">&lt;div class="content-l content-l__large-gutters"&gt;
+    &lt;div class="content-l_col content-l_col-1-2"&gt;
+        &lt;img src="https://dummyimage.com/600x320/addc91/101820" alt="Placeholder image"&gt;
+        &lt;br&gt;
+        Half-width column (spans 6/12 columns)
+    &lt;/div&gt;
+    &lt;div class="content-l_col content-l_col-1-2 content-l_col__before-divider"&gt;
+        &lt;img src="https://dummyimage.com/600x320/addc91/101820" alt="Placeholder image"&gt;
+        &lt;br&gt;
+        Half-width column (spans 6/12 columns)
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;!-- Starting a new .content-l so that the dividers from
+    .content-l_col.content-l_col-1-2.content-l_col__before-divider
+    won't overlap the .content-l_col-1-3 columns. --&gt;
+&lt;div class="content-l content-l__large-gutters"&gt;
+    &lt;div class="content-l_col content-l_col-1-3"&gt;
+        Third-width column (spans 4/12 columns)
+    &lt;/div&gt;
+    &lt;div class="content-l_col content-l_col-1-3 content-l_col__before-divider"&gt;
+        Third-width column (spans 4/12 columns)
+    &lt;/div&gt;
+    &lt;div class="content-l_col content-l_col-1-3 content-l_col__before-divider"&gt;
+        Third-width column (spans 4/12 columns)
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- Jinja snippet -->
+                
+
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
+
+            </div>
+<!-- .govuk-tabs -->
+            
+
+        </div>
+        
+        <div class="m-variation">
+
+            <div class="m-variation_name">
+                <h3>Column divider modifiers</h3>
+            </div>
+
+            <div class="m-variation_description">
+                <p><code class="highlighter-rouge">cf-grid</code> columns use left and right <code class="highlighter-rouge">border</code> for fixed <code class="highlighter-rouge">margin</code> which means it’s not possible to set visual left and right borders directly on them. Instead we can use the <code class="highlighter-rouge">:before</code> pseudo element and position it absolutely. The added benefit of doing it this way is that the <code class="highlighter-rouge">border</code> spans the entire height of the next parent using <code class="highlighter-rouge">position: relative;</code>. This means that the <code class="highlighter-rouge">border</code> will always match the height of the tallest column in the row.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.my-column-1-2 {
+
+    // Creates a column that spans 6 out of 12 columns.
+    .grid_column(6, 12);
+
+    // Add a top divider only at screen 599px and smaller.
+    .respond-to-max(599px {
+        .grid_column__top-divider();
+    });
+
+    // Add a left divider only at screen 600px and larger.
+    .respond-to-min(600px, {
+        .grid_column__left-divider();
+    });
+
+}
+</code></pre></div></div>
+
+            </div>
+
+            <!-- Live code example -->
+            
+            <div class="a-live_code">
+                
+            </div>
+            
+
+            <div class="a-toggle_code">
+                <button href="#column-divider-modifiers-code-3" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#column-divider-modifiers-code-3" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+            </div>
+
+            
+            
+            
+            
+            
+            
+
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="column-divider-modifiers-code-3">
+                <ul class="govuk-tabs__list">
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#column-divider-modifiers-html-code-snippet-3">
+                            HTML code snippet
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+
+                <!-- HTML snippet -->
+                
+                <section class="govuk-tabs__panel" id="column-divider-modifiers-html-code-snippet-3">
+                    <div class="variation-code-snippet">
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html"></code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- Jinja snippet -->
+                
+
+                <!-- Implementation details -->
+                
+
+                <!-- Specs -->
+                
+
+            </div>
+<!-- .govuk-tabs -->
+            
+
+        </div>
+        
+    </section>
+    
     
 
     
@@ -1510,8 +1813,8 @@
         <div class="block block__sub">
             <small>
                 <strong>Page last edited:</strong>
-                <time datetime="2019-09-13 19:50:25 +0000">
-                     7:50:25 PM Sep 13, 2019
+                <time datetime="2020-04-22 16:55:40 +0000">
+                     4:55:40 PM Apr 22, 2020
                 </time>
             </small>
         </div>

@@ -26,7 +26,7 @@
 
     &_title {
         border-bottom: 1px solid @gray-40;
-        margin-bottom: 1.3rem;
+        margin-bottom: 2rem;
         padding-bottom: 1rem;
     }
 
@@ -38,6 +38,11 @@
 .m-variation {
     &_name {
         margin-top: 2rem;
+    }
+    &:first-child {
+        .m-variation_name {
+            margin-top: 0;
+        }
     }
 }
 

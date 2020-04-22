@@ -5834,7 +5834,7 @@ pre code {
    ========================================================================== */
 @media (min-width: 40.0625em) {
   .govuk-tabs {
-    margin: 0 -2rem;
+    margin: 0 -2rem 2rem;
   }
 }
 .govuk-tabs__list {
@@ -6035,7 +6035,7 @@ pre code {
 }
 .o-variation_group_title {
   border-bottom: 1px solid #b4b5b6;
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
 .o-variation_group_description {
@@ -6043,6 +6043,9 @@ pre code {
 }
 .m-variation_name {
   margin-top: 2rem;
+}
+.m-variation:first-child .m-variation_name {
+  margin-top: 0;
 }
 .variation-code-specs table {
   border: none;
