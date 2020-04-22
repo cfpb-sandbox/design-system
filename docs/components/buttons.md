@@ -8,27 +8,32 @@ description: >-
   Buttons signal actions. They should be used sparingly; each additional button
   on a page reduces the visual prominence of a call to action. In contrast,
   [links](https://test-things.github.io/design-system/components/link) should
-  lead users to another page or further information.
+  lead users to another page or further informationz.
 variation_groups:
-  - variation_group_name: 'Standard buttons'
-    variation_group_description: 'Optional introductory paragraph'
+  - variation_group_name: Standard buttons
+    variation_group_description: Optional introductory paragraph
     variations:
-      - variation_code_snippet: |-
+      - variation_code_snippet: >-
           <button class="a-btn" title="Default state">Default state</button>
 
-          <button class="a-btn hover" title="Hovered state">Hovered state</button>
 
-          <button class="a-btn focus" title="Focused state">Focused state</button>
+          <button class="a-btn hover" title="Hovered state">Hovered
+          state</button>
 
-          <button class="a-btn active" title="Active state">Active state</button>
+
+          <button class="a-btn focus" title="Focused state">Focused
+          state</button>
+
+
+          <button class="a-btn active" title="Active state">Active
+          state</button>
         variation_description: >-
           Use primary buttons for actions that go to the next step.
 
 
           The Primary button is an atom in our atomic design standards. You can
-          apply the `a-btn` class to a link, button and submit input field to receive
-          the atomic button styles.
-
+          apply the `a-btn` class to a link, button and submit input field to
+          receive the atomic button styles.
         variation_jinja_code_snippet: |-
           {% macro render(value) -%}
 
@@ -39,22 +44,29 @@ variation_groups:
           </div>
 
           {%- endmacro %}
-        variation_implementation: |-
-          For accessibility reasons, use the semantic `<button>` instead of a link
+        variation_implementation: >-
+          For accessibility reasons, use the semantic `<button>` instead of a
+          link
+
           when possible.
-        variation_specs: |-
-          Some specs could go here.
+        variation_specs: Some specs could go here.
         variation_name: Primary buttons
-      - variation_code_snippet: |-
-          <button class="a-btn a-btn__secondary" title="Default state">Default state</button>
+      - variation_code_snippet: >-
+          <button class="a-btn a-btn__secondary" title="Default state">Default
+          state</button>
 
-          <button class="a-btn a-btn__secondary hover" title="Hovered state">Hovered state</button>
 
-          <button class="a-btn a-btn__secondary focus" title="Focused state">Focused state</button>
+          <button class="a-btn a-btn__secondary hover" title="Hovered
+          state">Hovered state</button>
 
-          <button class="a-btn a-btn__secondary active" title="Active state">Active state</button>
-        variation_description: >-
-          Use secondary buttons for actions that happen on the current page.
+
+          <button class="a-btn a-btn__secondary focus" title="Focused
+          state">Focused state</button>
+
+
+          <button class="a-btn a-btn__secondary active" title="Active
+          state">Active state</button>
+        variation_description: Use secondary buttons for actions that happen on the current page.
         variation_jinja_code_snippet: |-
           {% macro render(value) -%}
 
@@ -66,12 +78,17 @@ variation_groups:
 
           {%- endmacro %}
         variation_name: Secondary buttons
-      - variation_code_snippet: |-
-          <button class="a-btn a-btn__disabled" title="Default state">Default state</button>
+      - variation_code_snippet: >-
+          <button class="a-btn a-btn__disabled" title="Default state">Default
+          state</button>
 
-          <button class="a-btn a-btn__disabled hover" title="Hovered state">Hovered state</button>
 
-          <button class="a-btn a-btn__disabled focus" title="Focused state">Focused state</button>
+          <button class="a-btn a-btn__disabled hover" title="Hovered
+          state">Hovered state</button>
+
+
+          <button class="a-btn a-btn__disabled focus" title="Focused
+          state">Focused state</button>
         variation_jinja_code_snippet: |-
           {% macro render(value) -%}
 
@@ -83,12 +100,17 @@ variation_groups:
 
           {%- endmacro %}
         variation_name: Disabled buttons
-      - variation_code_snippet: |-
-          <button class="a-btn a-btn__warning" title="Default state">Default state</button>
+      - variation_code_snippet: >-
+          <button class="a-btn a-btn__warning" title="Default state">Default
+          state</button>
 
-          <button class="a-btn a-btn__warning hover" title="Hovered state">Hovered state</button>
 
-          <button class="a-btn a-btn__warning focus" title="Focused state">Focused state</button>
+          <button class="a-btn a-btn__warning hover" title="Hovered
+          state">Hovered state</button>
+
+
+          <button class="a-btn a-btn__warning focus" title="Focused
+          state">Focused state</button>
         variation_jinja_code_snippet: |-
           {% macro render(value) -%}
 
@@ -100,19 +122,25 @@ variation_groups:
 
           {%- endmacro %}
         variation_name: Destructive buttons
-  - variation_group_name: 'Sizes'
-    variation_group_description: 'Optional introductory paragraph'
+  - variation_group_name: Sizes
+    variation_group_description: Optional introductory paragraph
     variations:
-      - variation_code_snippet: |-
-          <button class="a-btn a-btn__super" title="Default state">Default state</button>
+      - variation_code_snippet: >-
+          <button class="a-btn a-btn__super" title="Default state">Default
+          state</button>
 
-          <button class="a-btn a-btn__super hover" title="Hovered state">Hovered state</button>
 
-          <button class="a-btn a-btn__super focus" title="Focused state">Focused state</button>
+          <button class="a-btn a-btn__super hover" title="Hovered state">Hovered
+          state</button>
 
-          <button class="a-btn a-btn__super active" title="Active state">Active state</button>
-        variation_description: >-
-          Use super buttons to really get users' attention.
+
+          <button class="a-btn a-btn__super focus" title="Focused state">Focused
+          state</button>
+
+
+          <button class="a-btn a-btn__super active" title="Active state">Active
+          state</button>
+        variation_description: Use super buttons to really get users' attention.
         variation_jinja_code_snippet: |-
           {% macro render(value) -%}
 
@@ -124,16 +152,22 @@ variation_groups:
 
           {%- endmacro %}
         variation_name: Super buttons
-      - variation_code_snippet: |-
-          <button class="a-btn a-btn__full-on-xs" title="Default state">Default state</button>
+      - variation_code_snippet: >-
+          <button class="a-btn a-btn__full-on-xs" title="Default state">Default
+          state</button>
 
-          <button class="a-btn a-btn__full-on-xs hover" title="Hovered state">Hovered state</button>
 
-          <button class="a-btn a-btn__full-on-xs focus" title="Focused state">Focused state</button>
+          <button class="a-btn a-btn__full-on-xs hover" title="Hovered
+          state">Hovered state</button>
 
-          <button class="a-btn a-btn__full-on-xs active" title="Active state">Active state</button>
-        variation_description: >-
-          Reduce screen size to see these in action.
+
+          <button class="a-btn a-btn__full-on-xs focus" title="Focused
+          state">Focused state</button>
+
+
+          <button class="a-btn a-btn__full-on-xs active" title="Active
+          state">Active state</button>
+        variation_description: Reduce screen size to see these in action.
         variation_jinja_code_snippet: |-
           {% macro render(value) -%}
 
@@ -218,8 +252,8 @@ restrictions:
           </span>
       </button>
 accessibility: ''
-research: ''
 related_items: '- related items'
-help_us: "More information can be found at:\n* http://cfpb.github.io/design-manual/page-components/buttons.html\t\n* https://cfpb.github.io/capital-framework/components/cf-buttons/"
 last_updated: 2020-01-28T15:55:47.394Z
+research: ''
+help_us: "More information can be found at:\n* http://cfpb.github.io/design-manual/page-components/buttons.html\t\n* https://cfpb.github.io/capital-framework/components/cf-buttons/"
 ---
