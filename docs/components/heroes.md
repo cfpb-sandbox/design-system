@@ -171,11 +171,7 @@ variation_groups:
           ![Image of smaller photographic hero graphic with
           dimensions](/design-system/images/uploads/hero_style_photo_small.png
           "Image of smaller photographic hero graphic with dimensions")
-        variation_description: >-
-          The text overlays the photograph at larger screen sizes. It’s best to
-          avoid a non-button call to action in these, as it’s unlikely that the
-          Pacific Blue will have accessible contrast with a non-white (or light
-          gray) background.
+        variation_description: 'The text overlays the photograph at larger screen sizes. '
         variation_code_snippet: |-
           <section class="m-hero m-hero__overlay" id="hero4">
               <div class="m-hero_wrapper wrapper">
