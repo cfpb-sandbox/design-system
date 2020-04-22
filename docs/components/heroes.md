@@ -112,10 +112,40 @@ variation_groups:
               </style>
           </section>
         variation_description: >-
-          A hero consists of a headline, a small amount of additional sub-heading
-          text and an image. Its background color or image is flush with the sides
-          of the screen, and the content is vertically centered.
+          A hero consists of a headline, a small amount of additional
+          sub-heading text and an image. Its background color or image is flush
+          with the sides of the screen, and the content is vertically centered.
         variation_name: Standard hero with illustration
+        variation_specs: >-
+          #### Hero with photograph
+
+          * Two images must be created, one for large and one for small screens
+
+          * Large and small screen images should contain the same elements but
+          can differ compositionally
+
+          * When selecting a photo include a 30px horizontal margin of clear
+          space between text and image area
+
+          * Type contrast ratios cannot be mathematically determined for photos
+          so special care should be paid when selecting these images
+
+          * To conserve vertical space, small screen image should be as short as
+          possible
+
+          * Photo dimensions for large screens (exact): 1230px x 285px
+
+          * Photo dimensions for small screens: 600px (exact) x 338px (maximum)
+
+
+          ![Image of larger photographic hero graphic with
+          dimensions](/design-system/images/uploads/hero_style_photo_large.png
+          "Image of larger photographic hero graphic with dimensions")
+
+
+          ![Image of smaller photographic hero graphic with
+          dimensions](/design-system/images/uploads/hero_style_photo_small.png
+          "Image of smaller photographic hero graphic with dimensions")
       - variation_code_snippet: |-
           <section class="m-hero m-hero__knockout" id="hero2">
               <div class="m-hero_wrapper wrapper">
@@ -175,8 +205,8 @@ variation_groups:
               </style>
           </section>
         variation_description: >-
-          When using a dark background add the `__knockout` modifier to the hero to
-          switch the text to white.
+          When using a dark background add the `__knockout` modifier to the hero
+          to switch the text to white.
         variation_name: Hero with knockout text
       - variation_code_snippet: |-
           <section class="m-hero m-hero__bleeding" id="hero3">
@@ -295,7 +325,8 @@ variation_groups:
           Pacific Blue will have accessible contrast with a non-white (or light
           gray) background.
         variation_name: Hero with photograph
-usage: >-
+    variation_group_name: Default
+usage: >+
   #### Content guidelines
 
 
@@ -439,37 +470,7 @@ usage: >-
   dimensions](/design-system/images/uploads/hero_style_bleed_small.png "Image of
   smaller bleeding hero graphics with dimensions")
 
-
-  #### Hero with photograph
-
-  * Two images must be created, one for large and one for small screens
-
-  * Large and small screen images should contain the same elements but can
-  differ compositionally
-
-  * When selecting a photo include a 30px horizontal margin of clear space
-  between text and image area
-
-  * Type contrast ratios cannot be mathematically determined for photos so
-  special care should be paid when selecting these images
-
-  * To conserve vertical space, small screen image should be as short as
-  possible
-
-  * Photo dimensions for large screens (exact): 1230px x 285px
-
-  * Photo dimensions for small screens: 600px (exact) x 338px (maximum)
-
-
-  ![Image of larger photographic hero graphic with
-  dimensions](/design-system/images/uploads/hero_style_photo_large.png "Image of
-  larger photographic hero graphic with dimensions")
-
-
-  ![Image of smaller photographic hero graphic with
-  dimensions](/design-system/images/uploads/hero_style_photo_small.png "Image of
-  smaller photographic hero graphic with dimensions")
 accessibility: ''
-research: ''
 last_updated: 2020-01-28T15:55:47.394Z
+research: ''
 ---
