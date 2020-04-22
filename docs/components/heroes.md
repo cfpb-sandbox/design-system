@@ -5,56 +5,10 @@ section: components
 secondary_section: Layout options
 status: Released
 description: >-
-  Heroes function as a primary focal point on a page, often used to introduce a
-  collection of pages by combining a brief description of the goals of that
-  section along with a visually impactful graphic.
-
-
-  Heroes are the most prominent component on a page, in terms of their position
-  and visual footprint. Heroes should only be used on top level pages, including
-  landing and sublanding pages.
-
-
-  ![Image of standard hero
-  graphic](/design-system/images/uploads/hero_use-case.png "Image of standard
-  hero graphic")
-
-
-  #### Where to use
-
-
-  * [Landing page](https://cfpb.github.io/design-system/templates/landing-pages)
-
-  * [Sublanding
-  page](https://cfpb.github.io/design-system/templates/sublanding-pages)
-
-
-  #### When to use
-
-
-  * When orienting a user to a new section or topic
-
-  * When the page serves as a navigational tool with general information about a
-  subject and links to lower-level pages that contain more specific information
-
-
-  #### When other options are better
-
-
-  * When introducing a specific piece of content, like a blog, press release, or
-  other lengthy or detailed content, use the text introduction
-
-
-  More information about Heroes can be found at:
-
-
-  <https://cfpb.github.io/design-manual/global-elements/heroes.html>
-
-
-  and
-
-
-  <https://cfpb.github.io/capital-framework/components/cf-layout/#heroes>
+  Heroes are used to introduce landing and sublanding pages. They help orient a
+  user to a new section or topic. To introduce a specific piece of content, like
+  a blog, press release, or other lengthy or detailed content, use the [text
+  introduction]().
 variation_groups:
   - variations:
       - variation_code_snippet: |-
@@ -111,11 +65,82 @@ variation_groups:
                   }
               </style>
           </section>
+        variation_description: ''
+        variation_name: ''
+        variation_specs: >-
+          #### Standard hero with illustration
+
+          * All illustrations should be saved at 200% to accommodate retina
+          displays
+
+          * When saving illustrations, use a transparent background
+
+          * Single image for both large and small screens
+
+          * Illustration dimensions: 470px (exact) x 195px (maximum) (2x: 940px
+          x 390px)
+
+
+
+
+          ![Image of large non-bleed hero graphic with
+          dimensions](/design-system/images/uploads/hero_style_non-bleed_large.png
+          "Image of large non-bleed hero graphic with dimensions")
+
+
+          ![Image of smaller non-bleed hero graphics with
+          dimensions](/design-system/images/uploads/hero_style_non-bleed_small.png
+          "Image of smaller non-bleed hero graphics with dimensions")
+
+
+          #### Hero with bleeding illustration
+
+          * Two images must be created, one for large and one for small screens
+
+          * Large and small screen images should contain the same elements but
+          can differ compositionally
+
+          * On large screens, illustration bleeds top and bottom
+
+          * Large screen image dimensions are based on maximum possible hero
+          height at 601px width
+
+          * To conserve vertical space, small screen image should be as short as
+          possible
+
+          * Illustration dimensions for large screens (exact): 470px x 638px
+          (2x: 940px x 1276px)
+
+          * Illustration dimensions for small screens: 570px (exact) x 320px
+          (maximum) (2x: 1140px x 640px) 
+
+
+          ![Image of larger bleeding hero graphic with
+          dimensions](/design-system/images/uploads/hero_style_bleed_large.png
+          "Image of larger bleeding hero graphic with dimensions")
+
+
+          ![Image of smaller bleeding hero graphics with
+          dimensions](/design-system/images/uploads/hero_style_bleed_small.png
+          "Image of smaller bleeding hero graphics with dimensions")
+        variation_implementation: >+
+          When using an illustration that bleeds top to bottom at larger screen
+          sizes, add the __bleeding modifier to the hero and add an additional
+          m-hero_bleeding-image as a sibling to m-hero_image.
+
+      - variation_name: Example
         variation_description: >-
-          A hero consists of a headline, a small amount of additional
-          sub-heading text and an image. Its background color or image is flush
-          with the sides of the screen, and the content is vertically centered.
-        variation_name: Standard hero with illustration
+          ![Image of standard hero
+          graphic](/design-system/images/uploads/hero_use-case.png "Image of
+          standard hero graphic")
+    variation_group_name: Standard hero
+    variation_group_description: >-
+      A hero consists of a headline, a small amount of additional sub-heading
+      text and an image. Its background color or image is flush with the sides
+      of the screen, and the content is vertically centered.
+  - variation_group_name: Variations
+    variations:
+      - variation_name: Hero with photograph
         variation_specs: >-
           #### Hero with photograph
 
@@ -146,7 +171,62 @@ variation_groups:
           ![Image of smaller photographic hero graphic with
           dimensions](/design-system/images/uploads/hero_style_photo_small.png
           "Image of smaller photographic hero graphic with dimensions")
-      - variation_code_snippet: |-
+        variation_description: 'The text overlays the photograph at larger screen sizes. '
+        variation_code_snippet: |-
+          <section class="m-hero m-hero__overlay" id="hero4">
+              <div class="m-hero_wrapper wrapper">
+                  <div class="m-hero_text">
+                      <h1 class="m-hero_heading">Max of 41 chars for a one-line heading</h1>
+                      <p class="m-hero_subhead">
+                          This text has a recommended count of 165-186 characters
+                          (three lines at 1230px) following a one-line heading
+                          and 108-124 characters (two lines at 1230px)
+                          following a two-line heading.
+                      </p>
+                  </div>
+                  <div class="m-hero_image-wrapper">
+                      <div class="m-hero_image"></div>
+                  </div>
+              </div>
+              <style>
+                  #hero4 .m-hero_image {
+                      background-image:
+                          url('https://dummyimage.com/600x250/addc91/101820');
+                      background-image: -webkit-image-set(
+                          url('https://dummyimage.com/600x250/addc91/101820') 1x,
+                          url('https://dummyimage.com/1200x500/addc91/101820') 2x
+                      );
+                      background-image: image-set(
+                          url('https://dummyimage.com/600x250/addc91/101820') 1x,
+                          url('https://dummyimage.com/1200x500/addc91/101820') 2x
+                      );
+                      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+                          src='https://dummyimage.com/600x250/addc91/101820',
+                          sizingMethod='scale');
+                      padding-bottom: 41.6666667%;
+                  }
+
+                  @media screen and (min-width: 37.5625em) {
+                      #hero4 .m-hero_wrapper{
+                          background-image:
+                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg');
+                          background-image: -webkit-image-set(
+                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg') 1x,
+                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg') 2x
+                          );
+                          background-image: image-set(
+                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg') 1x,
+                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg') 2x
+                          );
+                          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+                              src='http://files.consumerfinance.gov/f/images/PC_hero.original.jpg',
+                              sizingMethod='scale');
+                      }
+                  }
+              </style>
+          </section>
+      - variation_name: Hero with knockout text
+        variation_code_snippet: |-
           <section class="m-hero m-hero__knockout" id="hero2">
               <div class="m-hero_wrapper wrapper">
                   <div class="m-hero_text">
@@ -204,128 +284,6 @@ variation_groups:
                   }
               </style>
           </section>
-        variation_description: >-
-          When using a dark background add the `__knockout` modifier to the hero
-          to switch the text to white.
-        variation_name: Hero with knockout text
-      - variation_code_snippet: |-
-          <section class="m-hero m-hero__bleeding" id="hero3">
-              <div class="m-hero_wrapper wrapper">
-                  <div class="m-hero_text">
-                      <h1 class="m-hero_heading">Max of 41 chars for a one-line heading</h1>
-                      <p class="m-hero_subhead">
-                          This text has a recommended count of 165-186 characters
-                          (three lines at 1230px) following a one-line heading
-                          and 108-124 characters (two lines at 1230px)
-                          following a two-line heading.
-                      </p>
-                  </div>
-                  <div class="m-hero_image-wrapper">
-                      <div class="m-hero_image"></div>
-                  </div>
-              </div>
-              <style>
-                  #hero3 .m-hero_image {
-                      background-image:
-                          url('https://dummyimage.com/570x140/addc91/101820');
-                      background-image: -webkit-image-set(
-                          url('https://dummyimage.com/570x140/addc91/101820') 1x,
-                          url('https://dummyimage.com/1140x280/addc91/101820') 2x
-                      );
-                      background-image: image-set(
-                          url('https://dummyimage.com/570x140/addc91/101820') 1x,
-                          url('https://dummyimage.com/1140x280/addc91/101820') 2x
-                      );
-                      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                          src='https://dummyimage.com/570x140/addc91/101820',
-                          sizingMethod='scale');
-                      padding-bottom: 25.1020408%;
-                  }
-
-                  @media screen and (min-width: 37.5625em) {
-                      #hero3 .m-hero_image {
-                          background-image:
-                              url('https://dummyimage.com/470x640/addc91/101820');
-                          background-image: -webkit-image-set(
-                              url('https://dummyimage.com/470x640/addc91/101820') 1x,
-                              url('https://dummyimage.com/940x1280/addc91/101820') 2x
-                          );
-                          background-image: image-set(
-                              url('https://dummyimage.com/470x640/addc91/101820') 1x,
-                              url('https://dummyimage.com/940x1280/addc91/101820') 2x
-                          );
-                          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                              src='https://dummyimage.com/470x640/addc91/101820',
-                              sizingMethod='scale');
-                      }
-                  }
-              </style>
-          </section>
-        variation_description: >-
-          When using an illustration that bleeds top to bottom at larger screen
-          sizes, add the `__bleeding` modifier to the hero and add an additional
-          `m-hero_bleeding-image` as a sibling to `m-hero_image`.
-        variation_name: Hero with bleeding illustration
-      - variation_code_snippet: |-
-          <section class="m-hero m-hero__overlay" id="hero4">
-              <div class="m-hero_wrapper wrapper">
-                  <div class="m-hero_text">
-                      <h1 class="m-hero_heading">Max of 41 chars for a one-line heading</h1>
-                      <p class="m-hero_subhead">
-                          This text has a recommended count of 165-186 characters
-                          (three lines at 1230px) following a one-line heading
-                          and 108-124 characters (two lines at 1230px)
-                          following a two-line heading.
-                      </p>
-                  </div>
-                  <div class="m-hero_image-wrapper">
-                      <div class="m-hero_image"></div>
-                  </div>
-              </div>
-              <style>
-                  #hero4 .m-hero_image {
-                      background-image:
-                          url('https://dummyimage.com/600x250/addc91/101820');
-                      background-image: -webkit-image-set(
-                          url('https://dummyimage.com/600x250/addc91/101820') 1x,
-                          url('https://dummyimage.com/1200x500/addc91/101820') 2x
-                      );
-                      background-image: image-set(
-                          url('https://dummyimage.com/600x250/addc91/101820') 1x,
-                          url('https://dummyimage.com/1200x500/addc91/101820') 2x
-                      );
-                      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                          src='https://dummyimage.com/600x250/addc91/101820',
-                          sizingMethod='scale');
-                      padding-bottom: 41.6666667%;
-                  }
-
-                  @media screen and (min-width: 37.5625em) {
-                      #hero4 .m-hero_wrapper{
-                          background-image:
-                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg');
-                          background-image: -webkit-image-set(
-                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg') 1x,
-                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg') 2x
-                          );
-                          background-image: image-set(
-                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg') 1x,
-                              url('http://files.consumerfinance.gov/f/images/PC_hero.original.jpg') 2x
-                          );
-                          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                              src='http://files.consumerfinance.gov/f/images/PC_hero.original.jpg',
-                              sizingMethod='scale');
-                      }
-                  }
-              </style>
-          </section>
-        variation_description: >-
-          The text overlays the photograph at larger screen sizes. It’s best to
-          avoid a non-button call to action in these, as it’s unlikely that the
-          Pacific Blue will have accessible contrast with a non-white (or light
-          gray) background.
-        variation_name: Hero with photograph
-    variation_group_name: Default
 usage: >+
   #### Content guidelines
 
@@ -338,22 +296,18 @@ usage: >+
   #### Purpose
 
 
-  Hero copy should be written from the user’s perspective. It’s less about what
-  we can do for them or what we can offer them, and more about what the user can
-  do with the resources we provide.
+  Write hero copy from the user’s perspective.  
 
 
-  Hero content should help a user answer these two questions:
+  * Orient the user: "Is this page what I was looking for?" 
+
+  * Engage the user: "Do I want to keep reading?" 
 
 
-  Is this page what I was looking for? (orient the user)
+  Try not to write about what we do or offer. Make user needs the priority. 
 
-  Do I want to keep reading? (engage the user)
 
-  Since the goal of the hero is to get the user to continue reading the page,
-  don’t include links or calls to action within the hero. If there is content
-  that needs to link elsewhere for explanation, place it underneath the hero
-  within the main content area.
+  Don’t include links or calls to action within the hero.  
 
 
   #### Writing hero content
@@ -362,14 +316,16 @@ usage: >+
   ##### Heading
 
 
-  Headings should communicate what the user can learn from the page or the
-  benefit the page provides. Headings should be a single phrase, preferably one
-  line at the largest breakpoint. Take care to avoid orphaned text.
+  Communicate what the user can learn from the page or the benefit the page
+  provides. Actionable, descriptive, orienting statements work best.
+
+
+  Headings should be a single phrase, preferably one line at the largest
+  breakpoint. Take care to avoid orphaned text.
 
 
   Headings should not include a period at the end. Question marks can be used
-  when a question is asked, but avoid phrasing heroes as questions. Actionable,
-  descriptive, orienting statements work best.
+  when a question is asked, but avoid phrasing heroes as questions. 
 
 
   * One-line (at largest breakpoint): 41 characters maximum
@@ -377,7 +333,7 @@ usage: >+
   * Two-line (at largest breakpoint): 82 characters maximum
 
 
-  ##### Subheading
+  ##### What the hell is subheading content
 
 
   Subheading content should be brief, enticing, and build upon the heading to
@@ -394,81 +350,19 @@ usage: >+
   #### Behavior
 
 
-  Below the 601 px breakpoint, the text and image stack to span the full width
-  of the viewport.
+  | Above 600 px | Below 601 px | 
 
+  | -- | ----- |
 
-  **601 px and above**
+  | Text and image are side-by-side  | Text and image stack vertically |
 
-
-  ![Mockup of hero graphic at desktop
+  | ![Mockup of hero graphic at desktop
   size](/design-system/images/uploads/hero_behavior_large.png "Mockup of hero
-  graphic at desktop size")
-
-
-  **600 px and below**
-
-
-  ![Mockup of hero graphic at small
+  graphic at desktop size") | ![Mockup of hero graphic at small
   size](/design-system/images/uploads/hero_behavior_small.png "Mockup of hero
-  graphic at small size")
+  graphic at small size") |
 
 
-  #### Style
-
-  #### Standard hero with illustration
-
-  * All illustrations should be saved at 200% to accommodate retina displays
-
-  * When saving illustrations, use a transparent background
-
-  * Single image for both large and small screens
-
-  * Illustration dimensions: 470px (exact) x 195px (maximum) (2x: 940px x 390px)
-
-
-
-
-  ![Image of large non-bleed hero graphic with
-  dimensions](/design-system/images/uploads/hero_style_non-bleed_large.png
-  "Image of large non-bleed hero graphic with dimensions")
-
-
-  ![Image of smaller non-bleed hero graphics with
-  dimensions](/design-system/images/uploads/hero_style_non-bleed_small.png
-  "Image of smaller non-bleed hero graphics with dimensions")
-
-
-  #### Hero with bleeding illustration
-
-  * Two images must be created, one for large and one for small screens
-
-  * Large and small screen images should contain the same elements but can
-  differ compositionally
-
-  * On large screens, illustration bleeds top and bottom
-
-  * Large screen image dimensions are based on maximum possible hero height at
-  601px width
-
-  * To conserve vertical space, small screen image should be as short as
-  possible
-
-  * Illustration dimensions for large screens (exact): 470px x 638px (2x: 940px
-  x 1276px)
-
-  * Illustration dimensions for small screens: 570px (exact) x 320px (maximum)
-  (2x: 1140px x 640px)
-
-
-  ![Image of larger bleeding hero graphic with
-  dimensions](/design-system/images/uploads/hero_style_bleed_large.png "Image of
-  larger bleeding hero graphic with dimensions")
-
-
-  ![Image of smaller bleeding hero graphics with
-  dimensions](/design-system/images/uploads/hero_style_bleed_small.png "Image of
-  smaller bleeding hero graphics with dimensions")
 
 accessibility: ''
 last_updated: 2020-01-28T15:55:47.394Z
