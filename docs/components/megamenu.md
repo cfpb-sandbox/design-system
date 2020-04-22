@@ -67,7 +67,7 @@ description: >-
   Research, Policy & Compliance, and About Us. **The visual layout, spacing, and
   some portion of the content guidelines will change in the near future, as we
   monitor analytics information.**
-variations: []
+variation_groups: []
 usage: >-
   This section contains general guidelines that govern mega menu usage,
   specifically addressing recommended link limits, character counts and

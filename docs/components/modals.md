@@ -8,20 +8,15 @@ description: >-
   Modal windows (also known as dialog boxes or lightboxes) are “pop-up” elements
   that appear in front of a web page, blocking the main page below. Similar to
   popup windows or system alerts, modals are unique because they prevent
-  interaction with the page underneath. {: class=”lead-in”}
+  interaction with the page underneath.
+variation_groups:
+  - variations:
+      - variation_code_snippet: ''
+        variation_description: |-
+          ![Example of modal](/design-system/images/uploads/formexpiring.png)
 
-
-  Information for modals can be found at:
-
-
-  http://cfpb.github.io/design-manual/page-components/modals.html
-variations:
-  - variation_code_snippet: ''
-    variation_description: |-
-      ![Example of modal](/design-system/images/uploads/formexpiring.png)
-
-      ![Example of modal](/design-system/images/uploads/savesearch.png)
-    variation_name: Default modal
+          ![Example of modal](/design-system/images/uploads/savesearch.png)
+        variation_name: Default modal
 usage: >-
   #### Use cases
 

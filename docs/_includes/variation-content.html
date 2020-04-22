@@ -9,9 +9,11 @@
     {% if page.variation_groups and page.variation_groups.size > 0 %}
     <ul class="m-list m-list__horizontal u-mb30">
         {% for variation_group in page.variation_groups %}
+        {% if variation_group.variation_group_name %}
         <li class="m-list_item">
             <a class="m-list_link" href="#{{ variation_group.variation_group_name | slugify }}">{{ variation_group.variation_group_name }}</a>
         </li>
+        {% endif %}
         {% endfor %}
     </ul>
     {% endif %}
@@ -25,7 +27,9 @@
     {% if page.variation_groups and page.variation_groups.size > 0 %}
     {% for variation_group in page.variation_groups %}
     <section class="o-variation_group" id="{{ variation_group.variation_group_name | slugify }}">
+        {% if variation_group.variation_group_name %}
         <h2 class="o-variation_group_title">{{ variation_group.variation_group_name }}</h2>
+        {% endif %}
 
         {% if variation_group.variation_group_description %}
         <div class="o-variation_group_description">
