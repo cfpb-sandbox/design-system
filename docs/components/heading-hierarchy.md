@@ -88,10 +88,6 @@ variation_groups:
           </header>
       - variation_name: Eyebrow headings
         variation_description: >-
-          ![Example of an eyebrow
-          heading](/design-system/images/uploads/screen-shot-2020-04-23-at-1.15.52-pm.png)
-
-
           Use the eyebrow heading to label page headings that are part of a
           larger group of related pages, or when additional context can help
           orient the user to the page's purpose.
@@ -100,11 +96,22 @@ variation_groups:
           The eyebrow heading is secondary to and serves to support the main
           page heading. So it should be concise and shorter than the main page
           heading.
-        variation_code_snippet: >-
-          <!-- The eyebrow heading text is styled the same as H5 heading text,
-          but built using div tags instead of h5.
+        variation_code_snippet: >
+          <!--The code snippet below is only used for display purposes. The
+          eyebrow heading should be built using div tags:   
+
+
+          <div class ="eyebrow">
+
+
+          The text will be styled the same as H5 heading text.
 
           -->
+
+
+          <p class="h5">Eyebrow heading</div>
+
+          <h1>Heading 1</h1>
       - variation_name: Slug heading
         variation_description: Use headers to lead content.
         variation_code_snippet: |-
