@@ -120,29 +120,7 @@ variation_groups:
                   Blog summary
               </h2>
           </header>
-usage: >-
-  #### Use cases
-
-
-  Consistent scaling, weights, and capitalization are used to create distinction
-  between heading levels.
-
-
-  #### Content guidelines
-
-
-  * Headings should be sentence case.
-
-  * Do not include punctuation in headings.
-
-  * Keep headings to one line on desktop when possible.
-
-
-  #### Behavior
-
-
-  At screen widths of 600px and below, the Display heading and Headings 1-4 drop
-  in size. Headings 5-6 remain consistent at all screen widths.
+usage: "#### Content guidelines\n\n* Headings should be sentence case.\n* Do not include punctuation in headings.\n* Keep headings to one line on desktop when possible.\n\n#### Behavior\n\nAt screen widths of 600px and below, the Display heading and Headings 1-4 drop in size. Headings 5-6 remain consistent at all screen widths.\n\n#### Style\n\n##### Spacing\nWhen a heading is followed by paragraph text, include 30px of space below Display and 15px below Headings 1–6. \r\n\nWhen body copy is followed by a heading, include 45px of space above Heading 2 and 30px above Headings 3–6.\r\n\nFor stacked headings, include 30 px of space after the primary heading.\r\n\nFor multiple paragraphs within the same section set the space between paragraphs to 15px."
 accessibility: >-
   Since categories can be repetitive, we suggest placing a label with
   `.u-visually-hidden` prior to the headings with icons to add more context for
