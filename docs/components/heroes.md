@@ -65,8 +65,8 @@ variation_groups:
                   }
               </style>
           </section>
-        variation_description: ''
-        variation_name: ''
+        variation_description: Use case for illustrations here
+        variation_name: Hero with illustration
         variation_specs: >-
           #### Standard hero with illustration
 
@@ -79,8 +79,6 @@ variation_groups:
 
           * Illustration dimensions: 470px (exact) x 195px (maximum) (2x: 940px
           x 390px)
-
-
 
 
           ![Image of large non-bleed hero graphic with
@@ -128,50 +126,8 @@ variation_groups:
           sizes, add the __bleeding modifier to the hero and add an additional
           m-hero_bleeding-image as a sibling to m-hero_image.
 
-      - variation_name: Example
-        variation_description: >-
-          ![Image of standard hero
-          graphic](/design-system/images/uploads/hero_use-case.png "Image of
-          standard hero graphic")
-    variation_group_name: Standard hero
-    variation_group_description: >-
-      A hero consists of a headline, a small amount of additional sub-heading
-      text and an image. Its background color or image is flush with the sides
-      of the screen, and the content is vertically centered.
-  - variation_group_name: Variations
-    variations:
       - variation_name: Hero with photograph
-        variation_specs: >-
-          #### Hero with photograph
-
-          * Two images must be created, one for large and one for small screens
-
-          * Large and small screen images should contain the same elements but
-          can differ compositionally
-
-          * When selecting a photo include a 30px horizontal margin of clear
-          space between text and image area
-
-          * Type contrast ratios cannot be mathematically determined for photos
-          so special care should be paid when selecting these images
-
-          * To conserve vertical space, small screen image should be as short as
-          possible
-
-          * Photo dimensions for large screens (exact): 1230px x 285px
-
-          * Photo dimensions for small screens: 600px (exact) x 338px (maximum)
-
-
-          ![Image of larger photographic hero graphic with
-          dimensions](/design-system/images/uploads/hero_style_photo_large.png
-          "Image of larger photographic hero graphic with dimensions")
-
-
-          ![Image of smaller photographic hero graphic with
-          dimensions](/design-system/images/uploads/hero_style_photo_small.png
-          "Image of smaller photographic hero graphic with dimensions")
-        variation_description: 'The text overlays the photograph at larger screen sizes. '
+        variation_description: 'Use case for photographs here. '
         variation_code_snippet: |-
           <section class="m-hero m-hero__overlay" id="hero4">
               <div class="m-hero_wrapper wrapper">
@@ -225,6 +181,43 @@ variation_groups:
                   }
               </style>
           </section>
+        variation_specs: >-
+          #### Hero with photograph
+
+          * Two images must be created, one for large and one for small screens
+
+          * Large and small screen images should contain the same elements but
+          can differ compositionally
+
+          * When selecting a photo include a 30px horizontal margin of clear
+          space between text and image area
+
+          * Type contrast ratios cannot be mathematically determined for photos
+          so special care should be paid when selecting these images
+
+          * To conserve vertical space, small screen image should be as short as
+          possible
+
+          * Photo dimensions for large screens (exact): 1230px x 285px
+
+          * Photo dimensions for small screens: 600px (exact) x 338px (maximum)
+
+
+          ![Image of larger photographic hero graphic with
+          dimensions](/design-system/images/uploads/hero_style_photo_large.png
+          "Image of larger photographic hero graphic with dimensions")
+
+
+          ![Image of smaller photographic hero graphic with
+          dimensions](/design-system/images/uploads/hero_style_photo_small.png
+          "Image of smaller photographic hero graphic with dimensions")
+    variation_group_name: Standard hero
+    variation_group_description: >-
+      A hero consists of a headline, a small amount of additional sub-heading
+      text and an image. Its background color or image is flush with the sides
+      of the screen, and the content is vertically centered.
+  - variation_group_name: Variations
+    variations:
       - variation_name: Hero with knockout text
         variation_code_snippet: |-
           <section class="m-hero m-hero__knockout" id="hero2">
