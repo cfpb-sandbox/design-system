@@ -5,17 +5,16 @@ section: components
 secondary_section: Layout options
 status: Released
 description: >-
-  Heroes are used to introduce landing and sublanding pages. They help orient a
-  user to a new section or topic. To introduce a specific piece of content, like
-  a blog, press release, or other lengthy or detailed content, use the [text
-  introduction]().
+  Heroes are used to introduce landing and sublanding pages. To introduce
+  lower-level pages that describe specific pieces of content, like blogs or
+  press releases, use the [text introduction]().
 variation_groups:
   - variations:
       - variation_code_snippet: |-
           <section class="m-hero" id="hero1">
               <div class="m-hero_wrapper wrapper">
                   <div class="m-hero_text">
-                      <h1 class="m-hero_heading">Standard hero with illustration</h1>
+                      <h1 class="m-hero_heading">41 chars max for a one-line heading</h1>
                       <p class="m-hero_subhead">
                           This text has a recommended count of 165-186 characters
                           (three lines at 1230px) following a one-line heading
@@ -65,7 +64,12 @@ variation_groups:
                   }
               </style>
           </section>
-        variation_description: Use case for illustrations here
+        variation_description: >-
+          Use case for illustrations here.
+
+          [Live example](https://www.consumerfinance.gov/owning-a-home/) For
+          full-bleed illustrations, click "Show Source" and look at the
+          Implementation and Specs tabs.
         variation_name: Hero with illustration
         variation_specs: >-
           #### Standard hero with illustration
@@ -127,12 +131,16 @@ variation_groups:
           m-hero_bleeding-image as a sibling to m-hero_image.
 
       - variation_name: Hero with photograph
-        variation_description: 'Use case for photographs here. '
+        variation_description: >-
+          Use case for photographs here. 
+
+          [Live
+          example](https://www.consumerfinance.gov/consumer-tools/mortgages/)
         variation_code_snippet: |-
           <section class="m-hero m-hero__overlay" id="hero4">
               <div class="m-hero_wrapper wrapper">
                   <div class="m-hero_text">
-                      <h1 class="m-hero_heading">Max of 41 chars for a one-line heading</h1>
+                      <h1 class="m-hero_heading">41 chars max for a one-line heading</h1>
                       <p class="m-hero_subhead">
                           This text has a recommended count of 165-186 characters
                           (three lines at 1230px) following a one-line heading
@@ -211,11 +219,11 @@ variation_groups:
           ![Image of smaller photographic hero graphic with
           dimensions](/design-system/images/uploads/hero_style_photo_small.png
           "Image of smaller photographic hero graphic with dimensions")
-    variation_group_name: Standard hero
+    variation_group_name: Standard heroes
     variation_group_description: >-
-      A hero consists of a headline, a small amount of additional sub-heading
-      text and an image. Its background color or image is flush with the sides
-      of the screen, and the content is vertically centered.
+      Heroes consist of a headline, concise description, and image, either
+      illustration or photograph. The background color or image is flush with
+      the sides of the screen.
   - variation_group_name: Variations
     variations:
       - variation_name: Hero with knockout text
@@ -277,19 +285,13 @@ variation_groups:
                   }
               </style>
           </section>
+    variation_group_description: ''
 usage: >+
   #### Content guidelines
 
 
-  Hero content should serve to orient the user and communicate the primary goal
-  of the page. Copy should be succinct and engaging, reflecting the voice and
-  tone of the CFPB.
-
-
-  #### Purpose
-
-
-  Write hero copy from the user’s perspective.  
+  Hero content should orient the user and communicate the primary goal of the
+  page. Write hero copy from the user’s perspective.  
 
 
   * Orient the user: "Is this page what I was looking for?" 
@@ -297,13 +299,15 @@ usage: >+
   * Engage the user: "Do I want to keep reading?" 
 
 
-  Try not to write about what we do or offer. Make user needs the priority. 
+  Avoid writing about what the Bureau does or offers. Make user needs the
+  priority. 
 
 
-  Don’t include links or calls to action within the hero.  
+  Copy should be succinct and engaging, reflecting the voice and tone of the
+  CFPB.
 
 
-  #### Writing hero content
+  Don’t include links or calls to action within the hero. 
 
 
   ##### Heading
@@ -326,11 +330,11 @@ usage: >+
   * Two-line (at largest breakpoint): 82 characters maximum
 
 
-  ##### What the hell is subheading content
+  ##### Subheading content
 
 
-  Subheading content should be brief, enticing, and build upon the heading to
-  describe the value of the page. Take care to avoid orphaned text.
+  Copy underneath the heading should be brief, enticing, and build upon the
+  heading to describe the value of the page. Take care to avoid orphaned text.
 
 
   * After one-line heading: Between 165 and 186 characters (three lines at
