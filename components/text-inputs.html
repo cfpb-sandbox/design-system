@@ -1457,6 +1457,16 @@
     <ul class="m-list m-list__horizontal u-mb30">
         
         
+        <li class="m-list_item">
+            <a class="m-list_link" href="#standard-text-input">Standard text input</a>
+        </li>
+        
+        
+        
+        <li class="m-list_item">
+            <a class="m-list_link" href="#variations">Variations</a>
+        </li>
+        
         
     </ul>
     
@@ -1476,7 +1486,9 @@
 
     
     
-    <section class="o-variation_group" id="">
+    <section class="o-variation_group" id="standard-text-input">
+        
+        <h2 class="o-variation_group_title">Standard text input</h2>
         
 
         
@@ -1485,11 +1497,11 @@
         <div class="m-variation">
 
             <div class="m-variation_name">
-                <h3>Basic text input</h3>
+                <h3></h3>
             </div>
 
             <div class="m-variation_description">
-                <p>The default section below demonstrates how a text input would normally appear in code.</p>
+                
 
             </div>
 
@@ -1497,15 +1509,31 @@
             
             <div class="a-live_code">
                 <label class="a-label a-label__heading" for="textinput-example-default">
-    Label
+Default
 </label>
 <input class="a-text-input" type="text" id="textinput-example-default" placeholder="Enter text…" value="Placeholder text">
+
+<label class="a-label a-label__heading" for="textinput-example-hover">
+Hover
+</label>
+<input class="a-text-input hover" type="text" id="textinput-example-hover" placeholder="Enter text…" value="Placeholder text">
+
+<label class="a-label a-label__heading" for="textinput-example-focus">
+Focus
+</label>
+<input class="a-text-input focus" type="text" id="textinput-example-focus" placeholder="Enter text…" value="Lorem ipsum">
+
+<label class="a-label a-label__heading" for="textinput-example-disabled">
+Disabled
+</label>
+<input class="a-text-input" type="text" id="textinput-example-disabled" placeholder="Enter text…" value="Lorem ipsum" disabled>
+
             </div>
             
 
             <div class="a-toggle_code">
-                <button href="#basic-text-input-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#basic-text-input-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1515,11 +1543,11 @@
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="basic-text-input-code-1">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="-code-1">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#basic-text-input-html-code-snippet-1">
+                        <a class="govuk-tabs__tab" href="#-html-code-snippet-1">
                             HTML code snippet
                         </a>
                     </li>
@@ -1531,18 +1559,47 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="basic-text-input-html-code-snippet-1">
+                <section class="govuk-tabs__panel" id="-html-code-snippet-1">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
                             <pre><code class="language-html">&lt;label class="a-label a-label__heading" for="textinput-example-default"&gt;
-    Label
+Default
 &lt;/label&gt;
 &lt;input class="a-text-input"
       type="text"
       id="textinput-example-default"
       placeholder="Enter text…"
-      value="Placeholder text"&gt;</code></pre>
+      value="Placeholder text"&gt;
+
+&lt;label class="a-label a-label__heading" for="textinput-example-hover"&gt;
+Hover
+&lt;/label&gt;
+&lt;input class="a-text-input hover"
+       type="text"
+       id="textinput-example-hover"
+       placeholder="Enter text…"
+       value="Placeholder text"&gt;
+
+&lt;label class="a-label a-label__heading" for="textinput-example-focus"&gt;
+Focus
+&lt;/label&gt;
+&lt;input class="a-text-input focus"
+       type="text"
+       id="textinput-example-focus"
+       placeholder="Enter text…"
+       value="Lorem ipsum"&gt;
+
+&lt;label class="a-label a-label__heading" for="textinput-example-disabled"&gt;
+Disabled
+&lt;/label&gt;
+&lt;input class="a-text-input"
+       type="text"
+       id="textinput-example-disabled"
+       placeholder="Enter text…"
+       value="Lorem ipsum"
+       disabled&gt;
+</code></pre>
                         </div>
                     </div>
                 </section>
@@ -1562,6 +1619,16 @@
             
 
         </div>
+        
+    </section>
+    
+    <section class="o-variation_group" id="variations">
+        
+        <h2 class="o-variation_group_title">Variations</h2>
+        
+
+        
+
         
         <div class="m-variation">
 
@@ -1585,8 +1652,8 @@
             
 
             <div class="a-toggle_code">
-                <button href="#textarea-input-code-2" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#textarea-input-code-2" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#textarea-input-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#textarea-input-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1596,11 +1663,11 @@
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="textarea-input-code-2">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="textarea-input-code-1">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#textarea-input-html-code-snippet-2">
+                        <a class="govuk-tabs__tab" href="#textarea-input-html-code-snippet-1">
                             HTML code snippet
                         </a>
                     </li>
@@ -1612,7 +1679,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="textarea-input-html-code-snippet-2">
+                <section class="govuk-tabs__panel" id="textarea-input-html-code-snippet-1">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1666,8 +1733,8 @@
             
 
             <div class="a-toggle_code">
-                <button href="#full-width-text-input-code-3" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#full-width-text-input-code-3" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#full-width-text-input-code-2" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#full-width-text-input-code-2" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1677,11 +1744,11 @@
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="full-width-text-input-code-3">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="full-width-text-input-code-2">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#full-width-text-input-html-code-snippet-3">
+                        <a class="govuk-tabs__tab" href="#full-width-text-input-html-code-snippet-2">
                             HTML code snippet
                         </a>
                     </li>
@@ -1693,7 +1760,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="full-width-text-input-html-code-snippet-3">
+                <section class="govuk-tabs__panel" id="full-width-text-input-html-code-snippet-2">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1750,8 +1817,8 @@
             
 
             <div class="a-toggle_code">
-                <button href="#full-width-textarea-input-code-4" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#full-width-textarea-input-code-4" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#full-width-textarea-input-code-3" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#full-width-textarea-input-code-3" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1761,18 +1828,18 @@
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="full-width-textarea-input-code-4">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="full-width-textarea-input-code-3">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#full-width-textarea-input-html-code-snippet-4">
+                        <a class="govuk-tabs__tab" href="#full-width-textarea-input-html-code-snippet-3">
                             HTML code snippet
                         </a>
                     </li>
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#full-width-textarea-input-jinja-code-snippet-4">
+                        <a class="govuk-tabs__tab" href="#full-width-textarea-input-jinja-code-snippet-3">
                             Jinja code snippet
                         </a>
                     </li>
@@ -1783,7 +1850,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="full-width-textarea-input-html-code-snippet-4">
+                <section class="govuk-tabs__panel" id="full-width-textarea-input-html-code-snippet-3">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1801,7 +1868,7 @@
 
                 <!-- Jinja snippet -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="full-width-textarea-input-jinja-code-snippet-4">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="full-width-textarea-input-jinja-code-snippet-3">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -1849,8 +1916,8 @@
             
 
             <div class="a-toggle_code">
-                <button href="#text-input-with-a-button-code-5" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#text-input-with-a-button-code-5" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#text-input-with-a-button-code-4" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#text-input-with-a-button-code-4" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1860,18 +1927,18 @@
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="text-input-with-a-button-code-5">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="text-input-with-a-button-code-4">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#text-input-with-a-button-html-code-snippet-5">
+                        <a class="govuk-tabs__tab" href="#text-input-with-a-button-html-code-snippet-4">
                             HTML code snippet
                         </a>
                     </li>
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#text-input-with-a-button-jinja-code-snippet-5">
+                        <a class="govuk-tabs__tab" href="#text-input-with-a-button-jinja-code-snippet-4">
                             Jinja code snippet
                         </a>
                     </li>
@@ -1882,7 +1949,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="text-input-with-a-button-html-code-snippet-5">
+                <section class="govuk-tabs__panel" id="text-input-with-a-button-html-code-snippet-4">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1901,7 +1968,7 @@
 
                 <!-- Jinja snippet -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="text-input-with-a-button-jinja-code-snippet-5">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="text-input-with-a-button-jinja-code-snippet-4">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -1948,8 +2015,8 @@
             
 
             <div class="a-toggle_code">
-                <button href="#button-inside-a-text-input-code-6" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#button-inside-a-text-input-code-6" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#button-inside-a-text-input-code-5" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#button-inside-a-text-input-code-5" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1959,18 +2026,18 @@
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="button-inside-a-text-input-code-6">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="button-inside-a-text-input-code-5">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#button-inside-a-text-input-html-code-snippet-6">
+                        <a class="govuk-tabs__tab" href="#button-inside-a-text-input-html-code-snippet-5">
                             HTML code snippet
                         </a>
                     </li>
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#button-inside-a-text-input-jinja-code-snippet-6">
+                        <a class="govuk-tabs__tab" href="#button-inside-a-text-input-jinja-code-snippet-5">
                             Jinja code snippet
                         </a>
                     </li>
@@ -1981,7 +2048,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="button-inside-a-text-input-html-code-snippet-6">
+                <section class="govuk-tabs__panel" id="button-inside-a-text-input-html-code-snippet-5">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -2002,7 +2069,7 @@
 
                 <!-- Jinja snippet -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="button-inside-a-text-input-jinja-code-snippet-6">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="button-inside-a-text-input-jinja-code-snippet-5">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -2056,8 +2123,8 @@
             
 
             <div class="a-toggle_code">
-                <button href="#button-inside-a-text-input-with-another-button-code-7" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#button-inside-a-text-input-with-another-button-code-7" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#button-inside-a-text-input-with-another-button-code-6" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#button-inside-a-text-input-with-another-button-code-6" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -2067,11 +2134,11 @@
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="button-inside-a-text-input-with-another-button-code-7">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="button-inside-a-text-input-with-another-button-code-6">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#button-inside-a-text-input-with-another-button-html-code-snippet-7">
+                        <a class="govuk-tabs__tab" href="#button-inside-a-text-input-with-another-button-html-code-snippet-6">
                             HTML code snippet
                         </a>
                     </li>
@@ -2083,7 +2150,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="button-inside-a-text-input-with-another-button-html-code-snippet-7">
+                <section class="govuk-tabs__panel" id="button-inside-a-text-input-with-another-button-html-code-snippet-6">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -2250,8 +2317,8 @@
         <div class="block block__sub">
             <small>
                 <strong>Page last edited:</strong>
-                <time datetime="2020-04-22 16:55:40 +0000">
-                     4:55:40 PM Apr 22, 2020
+                <time datetime="2020-04-23 21:29:08 +0000">
+                     9:29:08 PM Apr 23, 2020
                 </time>
             </small>
         </div>
