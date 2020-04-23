@@ -5,9 +5,9 @@ section: components
 secondary_section: Layout options
 status: Released
 description: >-
-  Link blobs are text-only layout modules that are used to provide context and
-  lead users to additional content. They link to child and sibling pages from a
-  parent page. They are used on higher-level pages: [Landing
+  Link blobs are text-only layout modules that are used for navigational
+  purposes: they  provide context and lead users to child and sibling pages from
+  a parent page. They are only used on higher-level pages: [Landing
   pages](https://cfpb.github.io/design-system/templates/landing-pages),
   [sublanding
   pages](https://cfpb.github.io/design-system/templates/sublanding-pages), and
@@ -91,10 +91,14 @@ variation_groups:
           ![](/design-system/images/uploads/third_width_link_blob_style.png)
     variation_group_name: Standard link blobs
     variation_group_description: >-
-      There is like a component of heading/desriptive text/link. Right? Ok so
-      link blobs are just groupings of this basic component. Half-width blobs
-      are laid out in groups of two at breakpoints above 601 px. Third-widths
-      are laid out in groups of three.
+      A link blob is a unit consisting of heading, short descriptive text, and
+      call to action. In our CMS, we refer to "half-width" and "third-width"
+      link blobs, and they refer to a grouping of either two or three blobs in a
+      row at breakpoints above 601 px.
+
+      - Half-width link blobs are laid out in a row of two. Two blobs.
+
+      - Third-width link blobs are laid out in a row of three. Three blobs.
 usage: >-
   ### Behavior
 
