@@ -43,6 +43,12 @@ variation_groups:
 
           https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d1dc/cfgov/jinja2/v1/_includes/organisms/half-width-link-blob-group.html
         variation_name: Half-width
+        variation_specs: |-
+          * Headings: Use H3 or H4. Do not use both.
+            * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more.
+            * H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.
+
+          ![](/design-system/images/uploads/halfwidthblob_style_mockup.png)
       - variation_code_snippet: ''
         variation_description: >-
           ![Info unit group: example of third width link
@@ -76,6 +82,12 @@ variation_groups:
 
           https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d1dc/cfgov/jinja2/v1/_includes/organisms/third-width-link-blob-group.html
         variation_name: Third-width link blob
+        variation_specs: |-
+          * Headings: Use H3 or H4. Do not use both.
+            * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more.
+            * H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.
+
+          ![](/design-system/images/uploads/third_width_link_blob_style.png)
     variation_group_name: Standard link blobs
 usage: >-
   ### Behavior
@@ -107,41 +119,22 @@ usage: >-
 
   ### Content guidelines
 
+  Copy should be succinct.
 
-  * Headings should be as succinct as possible.
-    * For half-width link blobs, ideally 1 line at max column width (25 characters) or two lines at max column width maximum (50 characters)
-    * For third-width link blobs, ideally 1 line at max column width (25 characters) or two lines at max column width maximum (45 characters)
-  * Description beneath heading should also be succinct.
-    * For half-width link blobs, roughly 3-5 lines at max column width of text (100-250 characters)
-    * For third-width link blobs, roughly 3-5 lines at max column width of text (between 90 and 150 characters)
-  * Call to action link should stay on a single line at max column width. Link
-  content should follow [link
-  guidelines](https://cfpb.github.io/design-system/components/links).
-    * For half-width link blobs, 40 characters or less
-    * For third-width link blobs, 30 characters or less
+  * Headings  
+    * 45 characters max. 25 characters max is preferred, which renders as one line at max column width.
+  * Descriptions
+    * Half-width link blobs: 100-250 characters max
+    * Third-width link blobs: 90-150 characters max
+  * Call to action
+    * Half-width link blobs: 40 characters max
+    * Third-width link blobs: 30 characters max
+    * Follow [link guidelines](https://cfpb.github.io/design-system/components/links).
   * When these components are featured together (which is ideal), the amount of
   content in each component should be as close to the same number of total lines
   as possible.
     * For half-width link blobs, one or two lines different is ok
     * For third-width link blobs, a difference of one line is ok
-
-  ### Style
-
-
-  * Headings: Use H3 or H4. Do not use both.
-    * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more.
-    * H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.
-  * Body copy: Avenir paragraph.
-
-  * At breakpoints below 601: H3 automatically drops down to an H4, the
-  three-column pattern transitions into a single column and stacks, and the
-  mobile link style is used for the call to action link(s)
-
-
-  ![](/design-system/images/uploads/halfwidthblob_style_mockup.png)
-
-
-  ![](/design-system/images/uploads/third_width_link_blob_style.png)
 related_items: >-
   * [Info Unit Groups: image and
   text](https://cfpb.github.io/design-system/components/info-unit-groups-image-and-text)
