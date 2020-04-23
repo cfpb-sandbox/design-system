@@ -5,9 +5,9 @@ section: components
 secondary_section: Layout options
 status: Released
 description: >-
-  Link blobs are text-only layout modules that are used for navigational
-  purposes: they  provide context and lead users to child and sibling pages from
-  a parent page. They are only used on higher-level pages: [Landing
+  Link blobs are text-only layout modules used for navigational purposes: they
+  provide context and lead users to child and sibling pages from a parent page.
+  They are only used on higher-level pages: [Landing
   pages](https://cfpb.github.io/design-system/templates/landing-pages),
   [sublanding
   pages](https://cfpb.github.io/design-system/templates/sublanding-pages), and
@@ -43,7 +43,7 @@ variation_groups:
 
 
           https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d1dc/cfgov/jinja2/v1/_includes/organisms/half-width-link-blob-group.html
-        variation_name: Half-width
+        variation_name: Half-width link blob
         variation_specs: |-
           * Headings: Use H3 or H4. Do not use both.
             * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more.
@@ -92,13 +92,13 @@ variation_groups:
     variation_group_name: Standard link blobs
     variation_group_description: >-
       A link blob is a unit consisting of heading, short descriptive text, and
-      call to action. In our CMS, we refer to "half-width" and "third-width"
-      link blobs, and they refer to a grouping of either two or three blobs in a
-      row at breakpoints above 601 px.
+      call to action. What we call "half-width" and "third-width" link blobs
+      refer to a grouping of either two or three of these units in a row, at
+      breakpoints above 601 px.
 
-      - Half-width link blobs are laid out in a row of two. Two blobs.
+      - Half-width link blobs consist of two units in a row 
 
-      - Third-width link blobs are laid out in a row of three. Three blobs.
+      - Third-width link blobs consist of three units in a row
 usage: >-
   ### Behavior
 
@@ -111,7 +111,7 @@ usage: >-
 
   | Above 600 px | Below 601 px | 
 
-  | -- | -- |  
+  | - | - |  
 
   | ![](/design-system/images/uploads/halfwidthblob_behavior_mockup_1.png) |
   ![](/design-system/images/uploads/halfwidthblob_behavior_mockup_2.png) |
@@ -121,7 +121,7 @@ usage: >-
 
   | Above 600 px | Below 601 px | 
 
-  | -- | -- |  
+  | - | - |  
 
   | ![](/design-system/images/uploads/third_width_link_blob_behavior_1.png) |
   ![](/design-system/images/uploads/third_width_link_blob_behavior_2.png) |
