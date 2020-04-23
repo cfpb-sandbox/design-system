@@ -26,64 +26,7 @@ variation_groups:
         variation_jinja_code_snippet: ''
         variation_name: ''
         variation_specs: "| Heading | Specs | Responsive behavior at < 601px | \n| - | - | - |\n| Display | Avenir Next Regular, 48px / 60px\x03 | Drops to Heading 1 |\n| \rHeading 1 | Avenir Next Regular. 34px / 42px\x03 | <601px wide: Drops to Heading 2\r |\n| Heading 2 | Avenir Next Regular. 34px / 42px | Drops to Heading 3\r | \n\nElement | Variable name | Variable | web value | Print value\n--- | --- | --- | --- | ---\nTypeface | | | Avenir Next Regular | Avenir Next Regular\nWebfont | @webfont-regular: | Arial; | Arial\nText color | @text: | @black; | Black (#101820)\t| 0, 0, 0, 100\nText size | @size-xl: | 48px; | 48px | 38pt\nSmall screen text size | | | 34px | \nLine height | @base-line-height: | unit( @base-line-height-px / @base-font-size-px ); | \nLine height (pixels) | ? |  | 60px | 66pt\nSmall screen line height | | 42px | \nBottom margin | | | | 30px\nExtra-small breakpoint | @bp-xs-max: | 600px; |"
-      - variation_code_snippet: >
-          <!-- The eyebrow heading text is styled the same as H5 heading text,
-          but built using div tags instead of h5.
-
-          -->
-        variation_description: >-
-          Use the eyebrow heading to label page headings that are part of a
-          larger group of related pages, or when additional context can help
-          orient the user to the page's purpose.
-
-
-          The eyebrow heading is secondary to and serves to support the main
-          page heading. So it should be concise and shorter than the main page
-          heading.
-
-
-          #### When other options are better
-
-          For most pages, a single informative page heading provides enough
-          detail to communicate the page's purpose and contents.
-        variation_name: Eyebrow heading
-      - variation_code_snippet: |-
-          <header class="m-slug-header">
-              <h2 class="a-heading">
-                  Blog summary
-              </h2>
-          </header>
-        variation_description: Use headers to lead content.
-        variation_name: Slug header
-      - variation_code_snippet: |
-          <header class="m-meta-header">
-              <div class="m-meta-header_right">
-                  <span class="a-date">
-                      Nov 4, 2013
-                  </span>
-              </div>
-              <div class="m-meta-header_left">
-                  <span class="u-visually-hidden">Categories: </span>
-                  <a href="#" class="a-heading a-heading__icon">
-                      {% include icons/credit-card.svg %}
-                      Consumer finance
-                  </a>
-                  |
-                  <a href="#" class="a-heading a-heading__icon">
-                      {% include icons/bullhorn.svg %}
-                      At the CFPB
-                  </a>
-              </div>
-          </header>
-        variation_description: >-
-          Note that the example shows `.m-meta-header_left` using the
-          `.a-heading__icon` pattern and `.m-meta-header_right` using the
-          `.a-date` pattern but you could use other patterns in place of them.
-          Or you can even swap them so that date is attached to
-          `.m-meta-header_left` and `.a-heading.a-heading__icon` is attached to
-          `.m-meta-header_right`.
-        variation_name: Meta header
-    variation_group_name: Types
+    variation_group_name: Standard headings
     variation_group_description: >-
       At screen widths of 600px and below, the Display heading and Headings 1-4
       drop in size. Headings 5-6 remain consistent at all screen widths.
@@ -116,6 +59,76 @@ variation_groups:
           Small screen line height | | 32px |
 
           Bottom margin | | | 15px |
+      - variation_name: 'Heading with icon: Meta header'
+        variation_description: >-
+          This example of a heading with icon shows .m-meta-header_left using
+          the .a-heading__icon pattern and .m-meta-header_right using the
+          .a-date pattern but you could use other patterns in place of them. Or
+          you can even swap them so that date is attached to .m-meta-header_left
+          and .a-heading.a-heading__icon is attached to .m-meta-header_right.
+        variation_code_snippet: |-
+          <header class="m-meta-header">
+              <div class="m-meta-header_right">
+                  <span class="a-date">
+                      Nov 4, 2013
+                  </span>
+              </div>
+              <div class="m-meta-header_left">
+                  <span class="u-visually-hidden">Categories: </span>
+                  <a href="#" class="a-heading a-heading__icon">
+                      {% include icons/credit-card.svg %}
+                      Consumer finance
+                  </a>
+                  |
+                  <a href="#" class="a-heading a-heading__icon">
+                      {% include icons/bullhorn.svg %}
+                      At the CFPB
+                  </a>
+              </div>
+          </header>
+      - variation_name: Eyebrow headings
+        variation_description: >-
+          Use the eyebrow heading to label page headings that are part of a
+          larger group of related pages, or when additional context can help
+          orient the user to the page's purpose.
+
+
+          The eyebrow heading is secondary to and serves to support the main
+          page heading. So it should be concise and shorter than the main page
+          heading.
+
+
+          #### When other options are better
+
+          For most pages, a single informative page heading provides enough
+          detail to communicate the page's purpose and contents.
+        variation_code_snippet: >-
+          <!-- The eyebrow heading text is styled the same as H5 heading text,
+          but built using div tags instead of h5.
+
+          -->
+      - variation_name: Slug heading
+        variation_description: >-
+          Use the eyebrow heading to label page headings that are part of a
+          larger group of related pages, or when additional context can help
+          orient the user to the page's purpose.
+
+
+          The eyebrow heading is secondary to and serves to support the main
+          page heading. So it should be concise and shorter than the main page
+          heading.
+
+
+          #### When other options are better
+
+          For most pages, a single informative page heading provides enough
+          detail to communicate the page's purpose and contents.
+        variation_code_snippet: |-
+          <header class="m-slug-header">
+              <h2 class="a-heading">
+                  Blog summary
+              </h2>
+          </header>
 usage: >-
   #### Use cases
 
