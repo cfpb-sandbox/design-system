@@ -17,24 +17,66 @@ description: >-
 
   * https://cfpb.github.io/capital-framework/components/cf-forms/#text-inputs
 variation_groups:
-  - variations:
-      - variation_code_snippet: |-
-          <label class="a-label a-label__heading" for="textinput-example-default">
-              Label
+  - variation_group_name: Standard text input
+    variations:
+      - variation_code_snippet: >
+          <label class="a-label a-label__heading"
+          for="textinput-example-default">
+
+          Default
+
           </label>
+
           <input class="a-text-input"
                 type="text"
                 id="textinput-example-default"
                 placeholder="Enter text…"
                 value="Placeholder text">
-        variation_description: >-
-          The default section below demonstrates how a text input would normally
-          appear in code.
-        variation_name: Basic text input
-      - variation_code_snippet: |-
-          <label class="a-label a-label__heading" for="textarea-example-default">
+
+          <label class="a-label a-label__heading" for="textinput-example-hover">
+
+          Hover
+
+          </label>
+
+          <input class="a-text-input hover"
+                 type="text"
+                 id="textinput-example-hover"
+                 placeholder="Enter text…"
+                 value="Placeholder text">
+
+          <label class="a-label a-label__heading" for="textinput-example-focus">
+
+          Focus
+
+          </label>
+
+          <input class="a-text-input focus"
+                 type="text"
+                 id="textinput-example-focus"
+                 placeholder="Enter text…"
+                 value="Lorem ipsum">
+
+          <label class="a-label a-label__heading"
+          for="textinput-example-disabled">
+
+          Disabled
+
+          </label>
+
+          <input class="a-text-input"
+                 type="text"
+                 id="textinput-example-disabled"
+                 placeholder="Enter text…"
+                 value="Lorem ipsum"
+                 disabled>
+  - variations:
+      - variation_code_snippet: >-
+          <label class="a-label a-label__heading"
+          for="textarea-example-default">
               Label
           </label>
+
           <textarea class="a-text-input"
                     id="textarea-example-default"
                     placeholder="Enter text…">Placeholder text</textarea>
@@ -85,8 +127,8 @@ variation_groups:
               </button>
           </div>
         variation_description: >-
-          These offer the user an action to take related to the input, typically to
-          clear the input.
+          These offer the user an action to take related to the input, typically
+          to clear the input.
         variation_jinja_code_snippet: ''
         variation_name: Button inside a text input
       - variation_code_snippet: |-
@@ -108,9 +150,10 @@ variation_groups:
               </div>
           </div>
         variation_description: >-
-          This example combines both of the previous patterns, creating a typical
-          site search form.
+          This example combines both of the previous patterns, creating a
+          typical site search form.
         variation_name: Button inside a text input with another button
+    variation_group_name: Variations
 usage: >-
   <h3>Use cases</h3>
 
@@ -167,6 +210,6 @@ accessibility: >-
   across the page.
 research: TBD
 related_items: '* A related item'
-help_us: '* Help us do a thing'
 last_updated: 2020-01-28T15:55:47.394Z
+help_us: '* Help us do a thing'
 ---
