@@ -1,9 +1,0 @@
-[build]
-  base = "docs/"
-  publish = "docs/_site/"
-  command = "yarn run build-netlify && cd _site/ && mkdir design-system && mv !(design-system) design-system"
-
-[[redirects]]
-  from = "/"
-  to = "/design-system"
-  status = 302
