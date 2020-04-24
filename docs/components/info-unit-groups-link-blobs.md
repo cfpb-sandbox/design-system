@@ -92,13 +92,14 @@ variation_groups:
     variation_group_name: Standard link blobs
     variation_group_description: >-
       A link blob is a unit consisting of heading, short descriptive text, and
-      call to action. What we call "half-width" and "third-width" link blobs
-      refer to a grouping of either two or three of these units in a row, at
-      breakpoints above 601 px.
+      call to action. Half-width and third-width link blobs are a grouping of
+      either two or three units in a row, at breakpoints above 601 px.
 
-      - Half-width link blobs consist of two units in a row 
+      - Half-width link blobs consist of two units in a row at breakpoints above
+      601 px
 
-      - Third-width link blobs consist of three units in a row
+      - Third-width link blobs consist of three units in a row at breakpoints
+      above 601 px
 usage: >-
   ### Behavior
 
@@ -121,7 +122,7 @@ usage: >-
 
   | Above 600 px | Below 601 px | 
 
-  | - | - |  
+  | - | - |
 
   | ![](/design-system/images/uploads/third_width_link_blob_behavior_1.png) |
   ![](/design-system/images/uploads/third_width_link_blob_behavior_2.png) |
