@@ -32,6 +32,7 @@ variation_groups:
                 id="textinput-example-default"
                 placeholder="Enter text…"
                 value="Placeholder text">
+          <br><br>
 
           <label class="a-label a-label__heading" for="textinput-example-hover">
 
@@ -44,6 +45,7 @@ variation_groups:
                  id="textinput-example-hover"
                  placeholder="Enter text…"
                  value="Placeholder text">
+          <br><br>
 
           <label class="a-label a-label__heading" for="textinput-example-focus">
 
@@ -56,6 +58,7 @@ variation_groups:
                  id="textinput-example-focus"
                  placeholder="Enter text…"
                  value="Lorem ipsum">
+          <br><br>
 
           <label class="a-label a-label__heading"
           for="textinput-example-disabled">
