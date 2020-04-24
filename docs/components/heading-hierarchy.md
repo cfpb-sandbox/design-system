@@ -26,10 +26,25 @@ variation_groups:
         variation_jinja_code_snippet: ''
         variation_name: ''
         variation_specs: "| Heading | Specs | Responsive behavior at < 601px | \n| - | - | - |\n| Display | Avenir Next Regular, 48px / 60px\x03 | Drops to Heading 1 |\n| \rHeading 1 | Avenir Next Regular. 34px / 42px\x03 | <601px wide: Drops to Heading 2\r |\n| Heading 2 | Avenir Next Regular. 34px / 42px | Drops to Heading 3\r | \n\nElement | Variable name | Variable | web value | Print value\n--- | --- | --- | --- | ---\nTypeface | | | Avenir Next Regular | Avenir Next Regular\nWebfont | @webfont-regular: | Arial; | Arial\nText color | @text: | @black; | Black (#101820)\t| 0, 0, 0, 100\nText size | @size-xl: | 48px; | 48px | 38pt\nSmall screen text size | | | 34px | \nLine height | @base-line-height: | unit( @base-line-height-px / @base-font-size-px ); | \nLine height (pixels) | ? |  | 60px | 66pt\nSmall screen line height | | 42px | \nBottom margin | | | | 30px\nExtra-small breakpoint | @bp-xs-max: | 600px; |"
-    variation_group_name: Standard headings
+    variation_group_name: Web headings
     variation_group_description: >-
       At screen widths of 600px and below, the Display heading and Headings 1-4
       drop in size. Headings 5-6 remain consistent at all screen widths.
+  - variation_group_name: Print headings
+    variations:
+      - variation_code_snippet: |-
+          <h1 class="superheading">Display heading</h1>
+          <h1>Heading level 1</h1>
+          <h2>Heading level 2</h2>
+          <h3>Heading level 3</h3>
+          <h4>Heading level 4</h4>
+          <h5>Heading level 5</h5>
+          <h6>Heading level 6</h6>
+
+          <!--
+          Example of a non heading element:
+          <p class="h1">A non-heading element</p>
+          -->
   - variation_group_name: Variations
     variations:
       - variation_name: ' Heading with icon'
