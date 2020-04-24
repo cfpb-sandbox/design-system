@@ -1,5 +1,5 @@
 ---
-title: 'Info Unit Groups: Link blobs'
+title: Layout options
 layout: variation
 section: components
 secondary_section: Layout options
