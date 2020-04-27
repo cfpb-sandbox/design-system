@@ -6,8 +6,8 @@ secondary_section: Layout options
 status: Released
 description: >-
   Heroes are used to introduce landing and sublanding pages. To introduce
-  lower-level pages that describe specific pieces of content, like blogs or
-  press releases, use the [text introduction]().
+  lower-level pages like blogs or press releases that contain specific pieces of
+  content, use the [text introduction]().
 variation_groups:
   - variations:
       - variation_code_snippet: |-
@@ -64,12 +64,9 @@ variation_groups:
                   }
               </style>
           </section>
-        variation_description: >-
+        variation_description: |-
           Use case for illustrations here.
-
-          [Live example](https://www.consumerfinance.gov/owning-a-home/) For
-          full-bleed illustrations, click "Show Source" and look at the
-          Implementation and Specs tabs.
+          [Live example](https://www.consumerfinance.gov/owning-a-home/)
         variation_name: Hero with illustration
         variation_specs: >-
           #### Standard hero with illustration
@@ -220,10 +217,7 @@ variation_groups:
           dimensions](/design-system/images/uploads/hero_style_photo_small.png
           "Image of smaller photographic hero graphic with dimensions")
     variation_group_name: Standard heroes
-    variation_group_description: >-
-      Heroes consist of a headline, concise description, and image, either
-      illustration or photograph. The background color or image is flush with
-      the sides of the screen.
+    variation_group_description: ''
   - variation_group_name: Variations
     variations:
       - variation_name: Hero with knockout text
@@ -287,30 +281,30 @@ variation_groups:
           </section>
     variation_group_description: ''
 usage: >+
-  #### Content guidelines
+  ### Content guidelines
 
 
   Hero content should orient the user and communicate the primary goal of the
-  page. Write hero copy from the user’s perspective.  
+  page. 
 
+
+  #### Do
+
+  Write hero copy from the user’s perspective. 
 
   * Orient the user: "Is this page what I was looking for?" 
 
   * Engage the user: "Do I want to keep reading?" 
 
 
-  Avoid writing about what the Bureau does or offers. Make user needs the
-  priority. 
+  #### Don't
+
+  * Don't write copy from the perspective of what the Bureau does or offers.
+
+  * Don’t include links or calls to action within the hero. 
 
 
-  Copy should be succinct and engaging, reflecting the voice and tone of the
-  CFPB.
-
-
-  Don’t include links or calls to action within the hero. 
-
-
-  ##### Heading
+  #### Headings
 
 
   Communicate what the user can learn from the page or the benefit the page
@@ -330,7 +324,7 @@ usage: >+
   * Two-line (at largest breakpoint): 82 characters maximum
 
 
-  ##### Subheading content
+  #### Subheading content
 
 
   Copy underneath the heading should be brief, enticing, and build upon the
@@ -344,14 +338,15 @@ usage: >+
   breakpoint)
 
 
-  #### Behavior
+  ### Behavior
 
 
   | Above 600 px | Below 601 px | 
 
   | -- | ----- |
 
-  | Text and image are side-by-side  | Text and image stack vertically |
+  | Text and hero image appear side-by-side  | Text and hero image stack
+  vertically |
 
   | ![Mockup of hero graphic at desktop
   size](/design-system/images/uploads/hero_behavior_large.png "Mockup of hero
