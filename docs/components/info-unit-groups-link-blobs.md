@@ -1,5 +1,5 @@
 ---
-title: Layout options
+title: Link blobs
 layout: variation
 section: components
 secondary_section: Layout options
