@@ -5,13 +5,13 @@ section: components
 secondary_section: Layout options
 status: Released
 description: >-
-  Link blobs are text-only layout modules used for navigational purposes: they
-  provide context and lead users to child and sibling pages from a parent page.
-  They are only used on higher-level pages: [Landing
+  Link blobs are text-only layout modules. They provide brief context to lead
+  users from a parent page ([landing
   pages](https://cfpb.github.io/design-system/templates/landing-pages),
   [sublanding
   pages](https://cfpb.github.io/design-system/templates/sublanding-pages), and
-  [browse pages](https://cfpb.github.io/design-system/templates/browse-pages).
+  [browse pages](https://cfpb.github.io/design-system/templates/browse-pages))
+  to a child or sibling page.
 variation_groups:
   - variations:
       - variation_code_snippet: ''
@@ -36,8 +36,6 @@ variation_groups:
 
           * When content requires imagery, use the 50/50 image and text or 25/75
           image and text components.
-
-          * When there are multiple paragraphs of copy
         variation_jinja_code_snippet: >-
           File in https://github.com/cfpb/cfgov-refresh:
 
@@ -74,9 +72,7 @@ variation_groups:
           they break to 3 lines or more.
 
           * When content requires imagery, use the 50/50 image and text or the
-          25/75 image and text instead
-
-          * When there are multiple paragraphs of copy
+          25/75 image and text instead.
         variation_jinja_code_snippet: >-
           File in https://github.com/cfpb/cfgov-refresh:
 
@@ -92,14 +88,11 @@ variation_groups:
     variation_group_name: Standard link blobs
     variation_group_description: >-
       A link blob is a unit consisting of heading, short descriptive text, and
-      call to action. Half-width and third-width link blobs are a grouping of
-      either two or three units in a row, at breakpoints above 601 px.
+      call to action. There are two layout options for breakpoints above 601 px:
 
-      - Half-width link blobs consist of two units in a row at breakpoints above
-      601 px
+      - Half-width link blobs consist of two units in a row  
 
-      - Third-width link blobs consist of three units in a row at breakpoints
-      above 601 px
+      - Third-width link blobs consist of three units in a row  
 usage: >-
   ### Behavior
 
@@ -130,7 +123,7 @@ usage: >-
 
   ### Content guidelines
 
-  Copy should be succinct.
+  Do not use blobs for multiple paragraphs of copy. Copy should be succinct.
 
   * Headings  
     * 45 characters max. 25 characters max is preferred, which renders as one line at max column width.
