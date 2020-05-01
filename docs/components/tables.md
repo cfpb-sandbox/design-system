@@ -6,8 +6,13 @@ secondary_section: Layout options
 status: Released
 description: "Tables divide information into distinct columns and rows to create an intersection “cell” where data is displayed.\n\nMore information can be found at:\n\n* http://cfpb.github.io/design-manual/page-components/tables.html\t\n* https://cfpb.github.io/capital-framework/components/cf-tables/#responsive-tables\n* https://cfpb.github.io/capital-framework/components/cf-tables/#sortable-tables"
 variation_groups:
-  - variations:
-      - variation_code_snippet: >-
+  - variation_group_name: Standard table
+    variation_group_description: ''
+    variations:
+      - variation_description: >-
+          This is the default style without stripes and without a breakpoint. It
+          is equivalent to defining a classless `<table>` element.
+        variation_code_snippet: >-
           <table>
               <caption>Table caption describing the data</caption>
               <thead>
@@ -39,15 +44,12 @@ variation_groups:
 
           <!--
 
-          Note: While th elements normally only contain raw text, they may sometimes
-          contain heading elements when that would be beneficial to navigating a
-          page’s content with a screenreader.
+          Note: While th elements normally only contain raw text, they may
+          sometimes contain heading elements when that would be beneficial to
+          navigating a page’s content with a screenreader.
 
           -->
-        variation_description: >-
-          This is the default style without stripes and without a breakpoint. It is
-          equivalent to defining a classless `<table>` element.
-        variation_name: Standard table
+  - variations:
       - variation_code_snippet: |-
           <table class="o-table o-table__striped">
               <thead>
@@ -81,9 +83,10 @@ variation_groups:
               </tbody>
           </table>
         variation_description: >-
-          Striping is useful to help the eye track across table rows. Use striping
-          for tables that have more than five columns, or for tables with rows that
-          are difficult to follow across the full width of the table.
+          Striping is useful to help the eye track across table rows. Use
+          striping for tables that have more than five columns, or for tables
+          with rows that are difficult to follow across the full width of the
+          table.
 
 
           The `.o-table__striped` class adds stripes to the `table` rows. This
@@ -122,18 +125,18 @@ variation_groups:
       - variation_code_snippet: ''
         variation_description: >-
           Column widths are automatically set by browsers by default. If needed,
-          some or all columns can be set to specific widths instead to accommodate
-          longer data or labels.
+          some or all columns can be set to specific widths instead to
+          accommodate longer data or labels.
 
 
-          Fixed-width columns at the 600 px breakpoint and less lose their custom
-          widths and expand to full width. This is the same responsive pattern used
-          for default tables at small screens.
+          Fixed-width columns at the 600 px breakpoint and less lose their
+          custom widths and expand to full width. This is the same responsive
+          pattern used for default tables at small screens.
 
 
           * This isn't present in CF and doesn't have a code snippet.
         variation_name: Fixed-width table
-      - variation_code_snippet: |2-
+      - variation_code_snippet: |-
           <table class="o-table o-table__row-links">
               <thead>
                   <tr>
@@ -163,7 +166,7 @@ variation_groups:
           The `.o-table_cell__row-links` class is added to a `table` to enable
           highlighting and hyperlinking rows which contain links.
         variation_name: Table with row links
-      - variation_code_snippet: |2-
+      - variation_code_snippet: |-
           <table class="o-table o-table__stack-on-small">
               <thead>
                   <tr>
@@ -197,26 +200,26 @@ variation_groups:
           </table>
         variation_description: >-
           Since the nature of tables relies so much on visual space, there are
-          several common variations that can be used to accommodate different types
-          of data in a table.
+          several common variations that can be used to accommodate different
+          types of data in a table.
 
 
-          A default table would “stack” the information on a smaller screen, since
-          shrinking a table that maintained its columns/row structure would make it
-          illegible.
+          A default table would “stack” the information on a smaller screen,
+          since shrinking a table that maintained its columns/row structure
+          would make it illegible.
 
 
-          The `.o-table__stack-on-small` class adds the “stacked” `table` style for
-          small screens.
+          The `.o-table__stack-on-small` class adds the “stacked” `table` style
+          for small screens.
 
 
-          Please note that tables are not responsive without adding one of the small
-          screen classes.
+          Please note that tables are not responsive without adding one of the
+          small screen classes.
 
 
-          Also note that the `data-label` attribute is used to label each entry in a
-          `table` for small screen responsive views. Always include the `data-label`
-          attribute for each cell.
+          Also note that the `data-label` attribute is used to label each entry
+          in a `table` for small screen responsive views. Always include the
+          `data-label` attribute for each cell.
         variation_name: Responsive stacked table
       - variation_code_snippet: |-
           <table class="o-table
@@ -254,34 +257,35 @@ variation_groups:
           </table>
         variation_description: >-
           When the data you’re presenting should only be read across the rows
-          (instead of down columns), you can use a directory table. The first column
-          in these tables is what organizes or labels the other data points in the
-          row.
+          (instead of down columns), you can use a directory table. The first
+          column in these tables is what organizes or labels the other data
+          points in the row.
 
 
-          For instance, contact information is comprised of a name, phone number,
-          and email address. An event is made up of the name of the event, time, and
-          location. You need all three pieces of data to create an understanding of
-          the thing being shown, and the first column of data is the key to that
-          understanding.
+          For instance, contact information is comprised of a name, phone
+          number, and email address. An event is made up of the name of the
+          event, time, and location. You need all three pieces of data to create
+          an understanding of the thing being shown, and the first column of
+          data is the key to that understanding.
 
 
-          The default stacking behavior on smaller breakpoints doesn’t maintain that
-          “first column” importance since it stacks based on column headers.
+          The default stacking behavior on smaller breakpoints doesn’t maintain
+          that “first column” importance since it stacks based on column
+          headers.
 
 
-          As such, at the small screen breakpoint, the directory table pattern uses
-          that first column data (employee name, for instance) as a way to group and
-          label stacks of rows.
+          As such, at the small screen breakpoint, the directory table pattern
+          uses that first column data (employee name, for instance) as a way to
+          group and label stacks of rows.
 
 
           The `.o-table__entry-header-on-small` class in addition to
-          `.o-table__stack-on-small` class changes the first column to be styled as
-          an entry header. This style requires both classes be added.
+          `.o-table__stack-on-small` class changes the first column to be styled
+          as an entry header. This style requires both classes be added.
 
 
-          Note that tables are not responsive without adding one of the small screen
-          classes.
+          Note that tables are not responsive without adding one of the small
+          screen classes.
 
 
           Also note that the `data-label` attribute is used to label each entry.
@@ -349,9 +353,9 @@ variation_groups:
         variation_description: >-
           When the data you’re presenting has more columns than what will
           comfortably fit on the screen, you can use a table that scrolls
-          horizontally. This becomes especially important when thinking about tables
-          on smaller screens, instead of allowing the data to stack at smaller
-          breakpoints.
+          horizontally. This becomes especially important when thinking about
+          tables on smaller screens, instead of allowing the data to stack at
+          smaller breakpoints.
 
 
           Using a table that scrolls ensures that all the information can be
@@ -361,10 +365,32 @@ variation_groups:
           The `.o-table-wrapper__scrolling` class must be added to the parent
           element of the table (by adding a wrapping `div`, in most cases). The
           `table` element does not need additional markup in this case. The
-          “Comparative with horizontal scroll” style also adds striped rows to the
-          table contained within, and remains striped on small screens (unlike the
-          `o-table__striped` class, below).
+          “Comparative with horizontal scroll” style also adds striped rows to
+          the table contained within, and remains striped on small screens
+          (unlike the `o-table__striped` class, below).
         variation_name: Responsive table with horizontal scroll
+    variation_group_name: Variations
+  - variation_group_name: Responsive tables
+  - variation_group_name: Sortable tables
+    variation_group_description: >-
+      When the data you’re presenting has more columns than what will
+      comfortably fit on the screen, you can use a table that scrolls
+      horizontally. This becomes especially important when thinking about tables
+      on smaller screens, instead of allowing the data to stack at smaller
+      breakpoints.
+
+
+      Using a table that scrolls ensures that all the information can be
+      accessed in its original tabular structure, even on a smaller screen.
+
+
+      The `.o-table-wrapper__scrolling` class must be added to the parent
+      element of the table (by adding a wrapping `div`, in most cases). The
+      `table` element does not need additional markup in this case. The
+      “Comparative with horizontal scroll” style also adds striped rows to the
+      table contained within, and remains striped on small screens (unlike the
+      `o-table__striped` class, below).
+    variations:
       - variation_code_snippet: |-
           <table class="o-table o-table__sortable">
               <thead>
@@ -464,16 +490,6 @@ variation_groups:
                   </tr>
               </tbody>
           </table>
-        variation_description: >-
-          Sorting allows users to reorder the contents of a table by a sortable
-          column of their choice.
-
-
-          Any column that can sort needs to be specified in the table’s markup. When
-          the table loads, it should be sorted by one of the sortable columns by
-          default and indicate which column is already sorted. Not every column of a
-          table needs to be sortable.
-        variation_name: Sortable table
 usage: >-
   #### Use cases
 
@@ -694,7 +710,6 @@ usage: >-
 accessibility: >-
   Remember to always use headers (that is, `<th>` elements) for all data tables
   to make tabular data accessible.
-research: ''
 last_updated: 2019-08-30T15:18:28.960Z
+research: ''
 ---
-
