@@ -4,7 +4,9 @@ layout: variation
 section: components
 secondary_section: Layout options
 status: Released
-description: "Tables divide information into distinct columns and rows to create an intersection “cell” where data is displayed.\n\nMore information can be found at:\n\n* http://cfpb.github.io/design-manual/page-components/tables.html\t\n* https://cfpb.github.io/capital-framework/components/cf-tables/#responsive-tables\n* https://cfpb.github.io/capital-framework/components/cf-tables/#sortable-tables"
+description: >-
+  Tables divide information into distinct columns and rows to create an
+  intersection “cell” where data is displayed.
 variation_groups:
   - variation_group_name: Standard table
     variation_group_description: ''
