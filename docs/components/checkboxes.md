@@ -3,6 +3,9 @@ title: Checkboxes
 layout: variation
 section: components
 secondary_section: Forms
+design_artifacts:
+  - design_artifact: /design-system/images/uploads/sample.pdf
+  - design_artifact: /design-system/images/uploads/icon-collection.zip
 status: Released
 description: "Use checkboxes when the user can select more than one option from a list. Make clear with helper text that this is the case.\n\nMore information can be found at:\n\n* <http://cfpb.github.io/design-manual/page-components/form-fields.html#checkboxes>\t\n* <https://cfpb.github.io/capital-framework/components/cf-forms/#basic-checkboxes>"
 variation_groups:
@@ -87,6 +90,6 @@ usage: >-
 accessibility: >-
   To optimize screen reader accessibility, lay out checkboxes vertically rather
   than horizontally.
-research: ''
 last_updated: 2019-09-17T14:30:15.293Z
+research: ''
 ---
