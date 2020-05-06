@@ -252,10 +252,13 @@ collections:
             value: 'Tables'
           - label: 'Components > Text'
             value: 'Text'
-      - name: "design_artifacts"
-        label: "Design artifacts"
-        widget: "file"
-        allow_multiple: true
+      - name: 'design_artifacts'
+        label: 'Design artifacts'
+        widget: 'list'
+        fields:
+          - name: 'design_artifact'
+            label: 'Design artifact'
+            widget: 'file'
       - name: 'status'
         label: 'Implementation status'
         widget: 'select'
