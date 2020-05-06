@@ -235,12 +235,6 @@ collections:
         widget: 'select'
         required: false
         hint: 'Where on the website will this page live?'
-      - label: "Design artifacts"
-        name: "design_artifacts"
-        widget: "file"
-        media_library:
-          config:
-            multiple: true
         options:
           - label: 'Components > Alerts'
             value: 'Alerts'
@@ -258,6 +252,12 @@ collections:
             value: 'Tables'
           - label: 'Components > Text'
             value: 'Text'
+      - name: "design_artifacts"
+        label: "Design artifacts"
+        widget: "file"
+        media_library:
+          config:
+            multiple: true
       - name: 'status'
         label: 'Implementation status'
         widget: 'select'
