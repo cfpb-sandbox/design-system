@@ -255,9 +255,7 @@ collections:
       - name: "design_artifacts"
         label: "Design artifacts"
         widget: "file"
-        media_library:
-          config:
-            multiple: true
+        allow_multiple: true
       - name: 'status'
         label: 'Implementation status'
         widget: 'select'
