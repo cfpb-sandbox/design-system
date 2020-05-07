@@ -156,51 +156,6 @@ variation_groups:
           highlighting and hyperlinking rows which contain links.
         variation_name: Table with row links
       - variation_code_snippet: |-
-          <table class="o-table o-table__stack-on-small">
-              <thead>
-                  <tr>
-                      <th>Column 1</th>
-                      <th>Column 2</th>
-                      <th>Column 3</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td data-label="Column 1">Row A</td>
-                      <td data-label="Column 2">Cell A2</td>
-                      <td data-label="Column 3">Cell A3</td>
-                  </tr>
-                  <tr>
-                      <td data-label="Column 1">Row B</td>
-                      <td data-label="Column 2">Cell B2</td>
-                      <td data-label="Column 3">Cell B3</td>
-                  </tr>
-                  <tr>
-                      <td data-label="Column 1">Row C</td>
-                      <td data-label="Column 2">Cell C2</td>
-                      <td data-label="Column 3">Cell C3</td>
-                  </tr>
-                  <tr>
-                      <td data-label="Column 1">Row D</td>
-                      <td data-label="Column 2">Cell D2</td>
-                      <td data-label="Column 3">Cell D3</td>
-                  </tr>
-              </tbody>
-          </table>
-        variation_description: >-
-          To stack table information on smaller screens and make the information
-          legible, use the `.o-table__stack-on-small` class. 
-
-
-          Note:
-
-          * Tables are **not** responsive unless you add a small screen class.
-
-          * The `data-label` attribute must be used to label each entry in a
-          `table` for small screen responsive views. Always include the
-          `data-label` attribute for each cell.
-        variation_name: Responsive stacked table
-      - variation_code_snippet: |-
           <table class="o-table
                         o-table__stack-on-small
                         o-table__entry-header-on-small">
@@ -514,6 +469,169 @@ variation_groups:
           `.sorted-down` starts with the column sorted largest to smallest (or
           highest to lowest)
     variation_group_name: Variations
+  - variation_group_name: Responsive tables
+    variation_group_description: >-
+      Tables are **not** responsive unless you add one of the small screen
+      classes detailed below.
+
+
+      Also, the `data-label` attribute must be used to label each entry in a
+      `table` for small screen responsive views. Always include the `data-label`
+      attribute for each cell.
+    variations:
+      - variation_name: Responsive stacked table
+        variation_description: >
+          To stack table information on smaller screens and make the information
+          legible, use the `.o-table__stack-on-small` class. 
+        variation_code_snippet: |-
+          <table class="o-table o-table__stack-on-small">
+              <thead>
+                  <tr>
+                      <th>Column 1</th>
+                      <th>Column 2</th>
+                      <th>Column 3</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td data-label="Column 1">Row A</td>
+                      <td data-label="Column 2">Cell A2</td>
+                      <td data-label="Column 3">Cell A3</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Column 1">Row B</td>
+                      <td data-label="Column 2">Cell B2</td>
+                      <td data-label="Column 3">Cell B3</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Column 1">Row C</td>
+                      <td data-label="Column 2">Cell C2</td>
+                      <td data-label="Column 3">Cell C3</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Column 1">Row D</td>
+                      <td data-label="Column 2">Cell D2</td>
+                      <td data-label="Column 3">Cell D3</td>
+                  </tr>
+              </tbody>
+          </table>
+      - variation_name: Directory tables (responsive stacked table with header)
+        variation_code_snippet: |-
+          <table class="o-table
+                        o-table__stack-on-small
+                        o-table__entry-header-on-small">
+              <thead>
+                  <tr>
+                      <th>Employee name</th>
+                      <th>Phone number</th>
+                      <th>Email address</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td data-label="Employee name">Andrew Able</td>
+                      <td data-label="Phone number">(202) XXX-XXXX</td>
+                      <td data-label="Email address">aable@example.com</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Employee name">Betsy Bort</td>
+                      <td data-label="Phone number">(202) XXX-XXXX</td>
+                      <td data-label="Email address">bbort@example.com</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Employee name">Charles Clark</td>
+                      <td data-label="Phone number">(202) XXX-XXXX</td>
+                      <td data-label="Email address">cclark@example.com</td>
+                  </tr>
+                  <tr>
+                      <td data-label="Employee name">David Durn</td>
+                      <td data-label="Phone number">(202) XXX-XXXX</td>
+                      <td data-label="Email address">durn@example.com</td>
+                  </tr>
+              </tbody>
+          </table>
+        variation_description: >-
+          Use when data should be read across rows, instead of down columns. The
+          first column organizes or labels the other data points in the row. An
+          example is a table of contact information with employee name, phone
+          number, and email address presented in adjacent columns. 
+
+
+          At the small screen breakpoint, the directory table pattern uses the
+          first column data (employee name, for instance) as a way to group and
+          label stacks of rows.
+
+
+          The `.o-table__entry-header-on-small` class in addition to
+          `.o-table__stack-on-small` class changes the first column to be styled
+          as an entry header. This style requires both classes be added.
+      - variation_name: Responsive table with horizontal scroll
+        variation_code_snippet: |-
+          <div class="o-table o-table-wrapper__scrolling">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Column 1</th>
+                          <th>Column 2</th>
+                          <th>Column 3</th>
+                          <th>Column 4</th>
+                          <th>Column 5</th>
+                          <th>Column 6</th>
+                          <th>Column 7</th>
+                          <th>Column 8</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td data-label="Column 1">Row A</td>
+                          <td data-label="Column 2">Cell A2</td>
+                          <td data-label="Column 3">Cell A3</td>
+                          <td data-label="Column 4">Cell A4</td>
+                          <td data-label="Column 5">Cell A5</td>
+                          <td data-label="Column 6">Cell A6</td>
+                          <td data-label="Column 7">Cell A7</td>
+                          <td data-label="Column 8">Cell A8</td>
+                      </tr>
+                      <tr>
+                          <td data-label="Column 1">Row B</td>
+                          <td data-label="Column 2">Cell B2</td>
+                          <td data-label="Column 3">Cell B3</td>
+                          <td data-label="Column 4">Cell B4</td>
+                          <td data-label="Column 5">Cell B5</td>
+                          <td data-label="Column 6">Cell B6</td>
+                          <td data-label="Column 7">Cell B7</td>
+                          <td data-label="Column 8">Cell B8</td>
+                      </tr>
+                      <tr>
+                          <td data-label="Column 1">Row C</td>
+                          <td data-label="Column 2">Cell C2</td>
+                          <td data-label="Column 3">Cell C3</td>
+                          <td data-label="Column 4">Cell C4</td>
+                          <td data-label="Column 5">Cell C5</td>
+                          <td data-label="Column 6">Cell C6</td>
+                          <td data-label="Column 7">Cell C7</td>
+                          <td data-label="Column 8">Cell C8</td>
+                      </tr>
+                      <tr>
+                          <td data-label="Column 1">Row D</td>
+                          <td data-label="Column 2">Cell D2</td>
+                          <td data-label="Column 3">Cell D3</td>
+                          <td data-label="Column 4">Cell D4</td>
+                          <td data-label="Column 5">Cell D5</td>
+                          <td data-label="Column 6">Cell D6</td>
+                          <td data-label="Column 7">Cell D7</td>
+                          <td data-label="Column 8">Cell D8</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+        variation_description: >-
+          The `.o-table-wrapper__scrolling` class must be added to the parent
+          element of the `table` (by adding a wrapping `div`, in most cases).
+          The `table` element does not need additional markup in this case. The
+          “Comparative with horizontal scroll” style also adds striped rows to
+          the table contained within, and remains striped on small screens
+          (unlike the o-table__striped class, below).
 usage: >-
   #### Use cases
 
