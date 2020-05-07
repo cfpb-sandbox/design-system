@@ -8,8 +8,14 @@ description: "Tables divide information into distinct columns and rows to create
 variation_groups:
   - variation_group_name: Standard table
     variation_group_description: >-
-      This is the default style without stripes and without a breakpoint. It is
-      equivalent to defining a classless `<table>` element.
+      This is the default style. It is not responsive. It is equivalent to
+      defining a classless `<table>` element.  
+
+
+      * For  variations, such as striped tables, right-aligned data, or sortable
+      columns, see [Variations](). 
+
+      * For responsive tables, see [Responsive tables]().  
     variations:
       - variation_code_snippet: >-
           <table>
@@ -48,6 +54,7 @@ variation_groups:
           navigating a page’s content with a screenreader.
 
           -->
+        variation_specs: "Default table and directory table (large screens)\nThis is the default style at the large screen breakpoint. It is also how the directory table pattern appears at the large screen breakpoint.\n\nHEADER\nBackground: Gray-05 #F8F8F8\nFont: Avenir Next Demi-bold, all caps\nFont-color: Black #101820\nFont-size: 14px\nBORDER\nBottom: 1px, Gray-50 #BABBBD on each row, including header\nCELLS\nBackground: Gray-05 #F8F8F8\nFont: Avenir Next Regular Black\nFont-color: Black #101820\nFont-size: 16px\nPadding: 10px\n \nCOLUMN 1\tCOLUMN 2\tCOLUMN 3\nCell A1\tCell A2\tCell A3\nCell B1\tCell B2\tCell B3\nCell C1\tCell C2\tCell C3\nCell D1\tCell D2\tCell D3 \nDefault table (small screens)\nThis is the default style for small screens. Remember to add data-label attributes to every <td> in the table body.\n\nBORDER\nBottom: 1px, Gray-50 #BABBBD\nCELLS\nFont: 16px Avenir Next Regular Black\nFont-color: Black #101820\nLabels font: 14px Avenir Next Regular, all caps\nLabels font-color: Black #101820\nPADDING\nPadding, label / content: 15px\nPadding, content / next label: 30px\nPadding, rule line / first label: 15px"
   - variations:
       - variation_code_snippet: |-
           <table class="o-table o-table__striped">
@@ -511,13 +518,9 @@ variation_groups:
 usage: >
   #### Use cases
 
-  Tables are only one method for presenting many data points grouped together in
-  a visual way. Other options include charts or graphs.
-
-
-  Tables serve a unique purpose of allowing easy organization or comparison of
-  more complex data than a chart or graph. They can be read either vertically
-  (by columns) or horizontally (by rows).
+  Tables allow easy organization or comparison of more complex data than a chart
+  or graph. They can be read either vertically (by columns) or horizontally (by
+  rows).
 
 
   Tables work best when:
@@ -584,32 +587,6 @@ usage: >
   shrinking a table that maintained its columns/row structure would make it
   illegible.
 
-
-  #### Directory tables
-
-  When the data you’re presenting should only be read across the rows (instead
-  of down columns), you can use a directory table. The first column in these
-  tables is what organizes or labels the other data points in the row.
-
-
-  For instance, contact information is comprised of a name, phone number, and
-  email address. An event is made up of the name of the event, time, and
-  location. You need all three pieces of data to create an understanding of the
-  thing being shown, and the first column of data is the key to that
-  understanding.
-
-
-  The default stacking behavior on smaller breakpoints doesn’t maintain that
-  “first column” importance since it stacks based on column headers.
-
-
-  As such, at the small screen breakpoint, the directory table pattern uses that
-  first column data (employee name, for instance) as a way to group and label
-  stacks of rows.
-
-
-  See guidance on styles for a a directory table and how it should look on
-  smaller breakpoints.
 
 
   #### Scrolling tables
