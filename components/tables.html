@@ -1501,7 +1501,12 @@
 
         
         <div class="o-variation_group_description">
-            <p>This is the default style without stripes and without a breakpoint. It is equivalent to defining a classless <code class="highlighter-rouge">&lt;table&gt;</code> element.</p>
+            <p>This is the default style. It is not responsive. It is equivalent to defining a classless <code class="highlighter-rouge">&lt;table&gt;</code> element.</p>
+
+<ul>
+  <li>For  variations, such as striped tables, right-aligned data, or sortable columns, see <a href="">Variations</a>.</li>
+  <li>For responsive tables, see <a href="">Responsive tables</a>.</li>
+</ul>
 
         </div>
         
@@ -1579,6 +1584,12 @@ Note: While th elements normally only contain raw text, they may sometimes conta
                     
                     
                     
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#-specs-1">
+                            Specs
+                        </a>
+                    </li>
+                    
                 </ul>
 
                 <!-- HTML snippet -->
@@ -1630,6 +1641,51 @@ Note: While th elements normally only contain raw text, they may sometimes conta
                 
 
                 <!-- Specs -->
+                
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-specs-1">
+                    <div>
+                        <h4 class="variation-specs-title">Specs</h4>
+                        <div style="padding:40px">
+                            <p>Default table and directory table (large screens)
+This is the default style at the large screen breakpoint. It is also how the directory table pattern appears at the large screen breakpoint.</p>
+
+<p>HEADER
+Background: Gray-05 #F8F8F8
+Font: Avenir Next Demi-bold, all caps
+Font-color: Black #101820
+Font-size: 14px
+BORDER
+Bottom: 1px, Gray-50 #BABBBD on each row, including header
+CELLS
+Background: Gray-05 #F8F8F8
+Font: Avenir Next Regular Black
+Font-color: Black #101820
+Font-size: 16px
+Padding: 10px</p>
+
+<p>COLUMN 1	COLUMN 2	COLUMN 3
+Cell A1	Cell A2	Cell A3
+Cell B1	Cell B2	Cell B3
+Cell C1	Cell C2	Cell C3
+Cell D1	Cell D2	Cell D3 
+Default table (small screens)
+This is the default style for small screens. Remember to add data-label attributes to every &lt;td&gt; in the table body.</p>
+
+<p>BORDER
+Bottom: 1px, Gray-50 #BABBBD
+CELLS
+Font: 16px Avenir Next Regular Black
+Font-color: Black #101820
+Labels font: 14px Avenir Next Regular, all caps
+Labels font-color: Black #101820
+PADDING
+Padding, label / content: 15px
+Padding, content / next label: 30px
+Padding, rule line / first label: 15px</p>
+
+                        </div>
+                    </div>
+                </section>
                 
 
             </div>
@@ -2826,9 +2882,7 @@ Note: While th elements normally only contain raw text, they may sometimes conta
                     <p>
                     </p>
 <h4 id="use-cases">Use cases</h4>
-<p>Tables are only one method for presenting many data points grouped together in a visual way. Other options include charts or graphs.</p>
-
-<p>Tables serve a unique purpose of allowing easy organization or comparison of more complex data than a chart or graph. They can be read either vertically (by columns) or horizontally (by rows).</p>
+<p>Tables allow easy organization or comparison of more complex data than a chart or graph. They can be read either vertically (by columns) or horizontally (by rows).</p>
 
 <p>Tables work best when:</p>
 <ul>
@@ -2859,17 +2913,6 @@ Note: While th elements normally only contain raw text, they may sometimes conta
 
 <h4 id="stacking-tables">Stacking tables</h4>
 <p>A default table would “stack” the information on a smaller screen, since shrinking a table that maintained its columns/row structure would make it illegible.</p>
-
-<h4 id="directory-tables">Directory tables</h4>
-<p>When the data you’re presenting should only be read across the rows (instead of down columns), you can use a directory table. The first column in these tables is what organizes or labels the other data points in the row.</p>
-
-<p>For instance, contact information is comprised of a name, phone number, and email address. An event is made up of the name of the event, time, and location. You need all three pieces of data to create an understanding of the thing being shown, and the first column of data is the key to that understanding.</p>
-
-<p>The default stacking behavior on smaller breakpoints doesn’t maintain that “first column” importance since it stacks based on column headers.</p>
-
-<p>As such, at the small screen breakpoint, the directory table pattern uses that first column data (employee name, for instance) as a way to group and label stacks of rows.</p>
-
-<p>See guidance on styles for a a directory table and how it should look on smaller breakpoints.</p>
 
 <h4 id="scrolling-tables">Scrolling tables</h4>
 <p>When the data you’re presenting has more columns than what will comfortably fit on the screen, you can use a table that scrolls horizontally. This becomes especially important when thinking about tables on smaller screens, instead of allowing the data to stack at smaller breakpoints.</p>
@@ -2941,8 +2984,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
         <div class="block block__sub">
             <small>
                 <strong>Page last edited:</strong>
-                <time datetime="2020-05-07 16:11:03 +0000">
-                     4:11:03 PM May 07, 2020
+                <time datetime="2020-05-07 16:20:41 +0000">
+                     4:20:41 PM May 07, 2020
                 </time>
             </small>
         </div>
