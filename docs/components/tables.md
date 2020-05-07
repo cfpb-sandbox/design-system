@@ -12,8 +12,8 @@ variation_groups:
     variation_group_description: ''
     variations:
       - variation_description: >-
-          This is the default style without stripes and without a breakpoint. It
-          is equivalent to defining a classless `<table>` element.
+          This default style  is without a breakpoint. It is equivalent to
+          defining a classless `<table>` element.
         variation_code_snippet: >-
           <table>
               <caption>Table caption describing the data</caption>
@@ -51,6 +51,18 @@ variation_groups:
           navigating a page’s content with a screenreader.
 
           -->
+        variation_specs: |-
+          Color variables
+
+          @table-cell-bg:              @white;
+          @table-cell-bg_alt:          @gray-5;
+          @table-row-link-bg-hover:    @pacific-80;
+          @table-row-link-hover-color: @white;
+          @table-scrolling-border:     @gray-40;
+          @table-border:               @gray;
+        variation_implementation: >-
+          A basic o-table table is not striped by default and is equivalent to
+          defining a classless <table> element in cf-core, for example.
   - variations:
       - variation_code_snippet: |-
           <table class="o-table o-table__striped">
