@@ -457,16 +457,72 @@ variation_groups:
                   </tr>
               </tbody>
           </table>
-        variation_description: >-
+        variation_description: >
           Sorting allows users to reorder the contents of a table by a sortable
-          column of their choice.
+          column of their choice. 
 
 
-          Any column that can sort needs to be specified in the table’s markup.
-          When the table loads, it should be sorted by one of the sortable
-          columns by default and indicate which column is already sorted. Not
-          every column of a table needs to be sortable.
+          Add the `.o-table__sortable` class to a table to make it sortable. To
+          sort by a specific column, add a `button` to the `th` of the column.
+          The use of a `button` helps address accessibility concerns.
+
+
+          Not every column of a table needs to be sortable.
         variation_name: Sortable table
+        variation_implementation: >-
+          ### Sorting type
+
+          To sort properly, the type of the `data` can be specified. 
+
+
+          #### Sorting by string values
+
+          By default, the column’s values will be sorted as `string` values. 
+
+
+          #### Sorting by number values
+
+          A column can be specifically sorted by number values (in which case,
+          the cell’s contents are stripped of non-numeric characters, then
+          sorted by the resulting number). To do so, add the
+          `data-sort_type="number"` attribute to the sorting button:
+
+
+          `<table class="o-table o-table__sortable">
+              …
+                  <th>
+                      <button class="sortable" data-sort_type="number">Column Name</button>
+                  </th>
+              …
+          </table>
+
+          `
+
+
+          ### Sorting table on page load
+
+          To sort the table on page load, use the `.sorted-up` and
+          `.sorted-down` classes:
+
+
+          `
+
+          <table class="o-table o-table__sortable">
+              …
+                  <th>
+                      <button class="sortable sorted-up">Column Name</button>
+                  </th>
+              …
+          </table>
+
+          `
+
+          `.sorted-up` starts with the column sorted smallest to largest (or
+          lowest to highest)
+
+
+          `.sorted-down` starts with the column sorted largest to smallest (or
+          highest to lowest)
     variation_group_name: Variations
 usage: >-
   #### Use cases
