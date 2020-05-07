@@ -188,26 +188,16 @@ variation_groups:
               </tbody>
           </table>
         variation_description: >-
-          Since the nature of tables relies so much on visual space, there are
-          several common variations that can be used to accommodate different
-          types of data in a table.
+          To stack table information on smaller screens and make the information
+          legible, use the `.o-table__stack-on-small` class. 
 
 
-          A default table would “stack” the information on a smaller screen,
-          since shrinking a table that maintained its columns/row structure
-          would make it illegible.
+          Note:
 
+          * Tables are **not** responsive unless you add a small screen class.
 
-          The `.o-table__stack-on-small` class adds the “stacked” `table` style
-          for small screens.
-
-
-          Please note that tables are not responsive without adding one of the
-          small screen classes.
-
-
-          Also note that the `data-label` attribute is used to label each entry
-          in a `table` for small screen responsive views. Always include the
+          * The `data-label` attribute must be used to label each entry in a
+          `table` for small screen responsive views. Always include the
           `data-label` attribute for each cell.
         variation_name: Responsive stacked table
       - variation_code_snippet: |-
