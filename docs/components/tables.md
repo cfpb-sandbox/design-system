@@ -4,18 +4,18 @@ layout: variation
 section: components
 secondary_section: Layout options
 status: Released
-description: "Tables divide information into distinct columns and rows to create an intersection “cell” where data is displayed.\n\nMore information can be found at:\n\n* http://cfpb.github.io/design-manual/page-components/tables.html\t\n* https://cfpb.github.io/capital-framework/components/cf-tables/#responsive-tables\n* https://cfpb.github.io/capital-framework/components/cf-tables/#sortable-tables"
+description: >-
+  Tables divide information into distinct columns and rows to create an
+  intersection “cell” where data is displayed.
 variation_groups:
   - variation_group_name: Standard table
     variation_group_description: >-
-      This is the default style. It is not responsive. It is equivalent to
-      defining a classless `<table>` element.  
+      Default table is shown. This is equivalent to defining a classless
+      `<table>` element.  
 
 
-      * For  variations, such as striped tables, right-aligned data, or sortable
-      columns, see [Variations](). 
-
-      * For responsive tables, see [Responsive tables]().  
+      This default table is not responsive. For responsive options, see
+      [Responsive tables]().  
     variations:
       - variation_code_snippet: >-
           <table>
@@ -104,33 +104,30 @@ variation_groups:
                   <tr>
                       <th>Column 1</th>
                       <th>Column 2</th>
-                      <th>Amount</th>
+                      <th>Right-aligned column</th>
                   </tr>
               </thead>
               <tbody>
                   <tr>
                       <td data-label="Column 1">Row A</td>
                       <td data-label="Column 2">Cell A2</td>
-                      <td data-label="Amount" class="o-table_cell__right-align">$1.00</td>
+                      <td data-label="Right-aligned column" class="o-table_cell__right-align">$1.00</td>
                   </tr>
                   <tr>
                       <td data-label="Column 1">Row B</td>
                       <td data-label="Column 2">Cell B2</td>
-                      <td data-label="Amount" class="o-table_cell__right-align">$2.00</td>
+                      <td data-label="Right-aligned column" class="o-table_cell__right-align">$2.00</td>
                   </tr>
               </tbody>
           </table>
         variation_description: >-
           Right-align columns of numbers when they're quantities (counts, dollar
-          amounts, percentages) or ordinals (ranks, item numbers).
+          amounts, percentages) or ordinals (ranks, item numbers). Use the
+          `.o-table_cell__right-align` class on a `td`.
 
 
           Left-align columns of numbers when they're nominal (ZIP codes, room
           numbers) or non-numeric values (names, phrases).
-
-
-          Use the `.o-table_cell__right-align` class on a td to align the text
-          right.  See the third column.
         variation_name: Right-aligned table
       - variation_code_snippet: |-
           <table class="o-table o-table__row-links">
@@ -354,15 +351,17 @@ variation_groups:
     variation_group_name: Variations
   - variation_group_name: Responsive tables
     variation_group_description: >-
+      Responsive tables fall into two main types: stacked and scrolling.
+
+
       Tables are **not** responsive unless you add one of the small screen
-      classes detailed below.
+      classes detailed below. 
 
 
-      Also, the `data-label` attribute must be used to label each entry in a
-      `table` for small screen responsive views. Always include the `data-label`
-      attribute for each cell.
+      Also, the `data-label` attribute must be used to label each cell in a
+      `table` for small screen responsive views. 
     variations:
-      - variation_name: Responsive stacked table
+      - variation_name: Stacked table
         variation_description: >
           To stack table information on smaller screens and make the information
           legible, use the `.o-table__stack-on-small` class. 
@@ -398,7 +397,7 @@ variation_groups:
                   </tr>
               </tbody>
           </table>
-      - variation_name: Directory tables (responsive stacked table with header)
+      - variation_name: Directory tables (stacked with header)
         variation_code_snippet: |-
           <table class="o-table
                         o-table__stack-on-small
@@ -427,22 +426,26 @@ variation_groups:
                       <td data-label="Email address">cclark@example.com</td>
                   </tr>
                   <tr>
-                      <td data-label="Employee name">David Durn</td>
+                      <td data-label="Employee name">David Dern</td>
                       <td data-label="Phone number">(202) XXX-XXXX</td>
-                      <td data-label="Email address">durn@example.com</td>
+                      <td data-label="Email address">ddern@example.com</td>
                   </tr>
               </tbody>
           </table>
         variation_description: >-
-          Use when data should be read across rows, instead of down columns. The
-          first column organizes or labels the other data points in the row. An
-          example is a table of contact information with employee name, phone
-          number, and email address presented in adjacent columns. 
+          This stacked table variation turns the first column of data into
+          headers.  
 
 
-          At the small screen breakpoint, the directory table pattern uses the
-          first column data (employee name, for instance) as a way to group and
-          label stacks of rows.
+          Use these when data should be read across rows, instead of down
+          columns, and the first column serves to organize or label the other
+          data in the row. An example is a table of contact information (see
+          below).
+
+
+          At the small screen breakpoint, the first column of data (here,
+          employee name) becomes a header, and the remaining data points in the
+          same row are stacked.  
 
 
           The `.o-table__entry-header-on-small` class in addition to
@@ -509,6 +512,12 @@ variation_groups:
               </table>
           </div>
         variation_description: >-
+          Use a table with horizontal scroll when the data you’re presenting has
+          more columns than will fit comfortably on the screen, and you want to
+          ensure all information can be accessed in its original tabular
+          structure, even on smaller screens. 
+
+
           The `.o-table-wrapper__scrolling` class must be added to the parent
           element of the `table` (by adding a wrapping `div`, in most cases).
           The `table` element does not need additional markup in this case. The
