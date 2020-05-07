@@ -1457,6 +1457,16 @@
     <ul class="m-list m-list__horizontal u-mb30">
         
         
+        <li class="m-list_item">
+            <a class="m-list_link" href="#standard-table">Standard table</a>
+        </li>
+        
+        
+        
+        <li class="m-list_item">
+            <a class="m-list_link" href="#variations">Variations</a>
+        </li>
+        
         
     </ul>
     
@@ -1478,20 +1488,27 @@
 
     
     
-    <section class="o-variation_group" id="">
+    <section class="o-variation_group" id="standard-table">
+        
+        <h2 class="o-variation_group_title">Standard table</h2>
         
 
+        
+        <div class="o-variation_group_description">
+            <p>This is the default style without stripes and without a breakpoint. It is equivalent to defining a classless <code class="highlighter-rouge">&lt;table&gt;</code> element.</p>
+
+        </div>
         
 
         
         <div class="m-variation">
 
             <div class="m-variation_name">
-                <h3>Standard table</h3>
+                <h3></h3>
             </div>
 
             <div class="m-variation_description">
-                <p>This is the default style without stripes and without a breakpoint. It is equivalent to defining a classless <code class="highlighter-rouge">&lt;table&gt;</code> element.</p>
+                
 
             </div>
 
@@ -1533,8 +1550,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
 
             <div class="a-toggle_code">
-                <button href="#standard-table-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#standard-table-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1544,11 +1561,11 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="standard-table-code-1">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="-code-1">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#standard-table-html-code-snippet-1">
+                        <a class="govuk-tabs__tab" href="#-html-code-snippet-1">
                             HTML code snippet
                         </a>
                     </li>
@@ -1560,7 +1577,7 @@ Note: While th elements normally only contain raw text, they may sometimes conta
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="standard-table-html-code-snippet-1">
+                <section class="govuk-tabs__panel" id="-html-code-snippet-1">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1615,6 +1632,16 @@ Note: While th elements normally only contain raw text, they may sometimes conta
 
         </div>
         
+    </section>
+    
+    <section class="o-variation_group" id="variations">
+        
+        <h2 class="o-variation_group_title">Variations</h2>
+        
+
+        
+
+        
         <div class="m-variation">
 
             <div class="m-variation_name">
@@ -1666,8 +1693,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
 
             <div class="a-toggle_code">
-                <button href="#striped-table-code-2" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#striped-table-code-2" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#striped-table-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#striped-table-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1677,11 +1704,11 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="striped-table-code-2">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="striped-table-code-1">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#striped-table-html-code-snippet-2">
+                        <a class="govuk-tabs__tab" href="#striped-table-html-code-snippet-1">
                             HTML code snippet
                         </a>
                     </li>
@@ -1693,7 +1720,7 @@ Note: While th elements normally only contain raw text, they may sometimes conta
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="striped-table-html-code-snippet-2">
+                <section class="govuk-tabs__panel" id="striped-table-html-code-snippet-1">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1755,9 +1782,11 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             </div>
 
             <div class="m-variation_description">
-                <p>Right-align columns of numbers that contain quantities (counts, dollar amounts, percentages) or ordinals (ranks, item numbers).</p>
+                <p>Right-align columns of numbers when they’re quantities (counts, dollar amounts, percentages) or ordinals (ranks, item numbers).</p>
 
-<p>The use of the <code class="highlighter-rouge">.o-table_cell__right-align</code> class on a <code class="highlighter-rouge">td</code> aligns the text right - see the third column.</p>
+<p>Left-align columns of numbers when they’re nominal (ZIP codes, room numbers) or non-numeric values (names, phrases).</p>
+
+<p>Use the <code class="highlighter-rouge">.o-table_cell__right-align</code> class on a td to align the text right.  See the third column.</p>
 
             </div>
 
@@ -1769,19 +1798,19 @@ Note: While th elements normally only contain raw text, they may sometimes conta
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
-            <th>Column 3</th>
+            <th>Amount</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td data-label="Column 1">Row A</td>
             <td data-label="Column 2">Cell A2</td>
-            <td data-label="Column 3" class="o-table_cell__right-align">Cell A3</td>
+            <td data-label="Amount" class="o-table_cell__right-align">$1.00</td>
         </tr>
         <tr>
             <td data-label="Column 1">Row B</td>
             <td data-label="Column 2">Cell B2</td>
-            <td data-label="Column 3" class="o-table_cell__right-align">Cell B3</td>
+            <td data-label="Amount" class="o-table_cell__right-align">$2.00</td>
         </tr>
     </tbody>
 </table>
@@ -1789,8 +1818,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
 
             <div class="a-toggle_code">
-                <button href="#right-aligned-table-code-3" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#right-aligned-table-code-3" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#right-aligned-table-code-2" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#right-aligned-table-code-2" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1800,11 +1829,11 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="right-aligned-table-code-3">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="right-aligned-table-code-2">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#right-aligned-table-html-code-snippet-3">
+                        <a class="govuk-tabs__tab" href="#right-aligned-table-html-code-snippet-2">
                             HTML code snippet
                         </a>
                     </li>
@@ -1816,7 +1845,7 @@ Note: While th elements normally only contain raw text, they may sometimes conta
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="right-aligned-table-html-code-snippet-3">
+                <section class="govuk-tabs__panel" id="right-aligned-table-html-code-snippet-2">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1825,99 +1854,22 @@ Note: While th elements normally only contain raw text, they may sometimes conta
         &lt;tr&gt;
             &lt;th&gt;Column 1&lt;/th&gt;
             &lt;th&gt;Column 2&lt;/th&gt;
-            &lt;th&gt;Column 3&lt;/th&gt;
+            &lt;th&gt;Amount&lt;/th&gt;
         &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
             &lt;td data-label="Column 1"&gt;Row A&lt;/td&gt;
             &lt;td data-label="Column 2"&gt;Cell A2&lt;/td&gt;
-            &lt;td data-label="Column 3" class="o-table_cell__right-align"&gt;Cell A3&lt;/td&gt;
+            &lt;td data-label="Amount" class="o-table_cell__right-align"&gt;$1.00&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td data-label="Column 1"&gt;Row B&lt;/td&gt;
             &lt;td data-label="Column 2"&gt;Cell B2&lt;/td&gt;
-            &lt;td data-label="Column 3" class="o-table_cell__right-align"&gt;Cell B3&lt;/td&gt;
+            &lt;td data-label="Amount" class="o-table_cell__right-align"&gt;$2.00&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-                        </div>
-                    </div>
-                </section>
-                
-
-                <!-- Jinja snippet -->
-                
-
-                <!-- Implementation details -->
-                
-
-                <!-- Specs -->
-                
-
-            </div>
-<!-- .govuk-tabs -->
-            
-
-        </div>
-        
-        <div class="m-variation">
-
-            <div class="m-variation_name">
-                <h3>Fixed-width table</h3>
-            </div>
-
-            <div class="m-variation_description">
-                <p>Column widths are automatically set by browsers by default. If needed, some or all columns can be set to specific widths instead to accommodate longer data or labels.</p>
-
-<p>Fixed-width columns at the 600 px breakpoint and less lose their custom widths and expand to full width. This is the same responsive pattern used for default tables at small screens.</p>
-
-<ul>
-  <li>This isn’t present in CF and doesn’t have a code snippet.</li>
-</ul>
-
-            </div>
-
-            <!-- Live code example -->
-            
-            <div class="a-live_code">
-                
-            </div>
-            
-
-            <div class="a-toggle_code">
-                <button href="#fixed-width-table-code-4" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#fixed-width-table-code-4" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
-            </div>
-
-            
-            
-            
-            
-            
-            
-
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="fixed-width-table-code-4">
-                <ul class="govuk-tabs__list">
-                    
-                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#fixed-width-table-html-code-snippet-4">
-                            HTML code snippet
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                </ul>
-
-                <!-- HTML snippet -->
-                
-                <section class="govuk-tabs__panel" id="fixed-width-table-html-code-snippet-4">
-                    <div class="variation-code-snippet">
-                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
-                        <div class="source-code">
-                            <pre><code class="language-html"></code></pre>
                         </div>
                     </div>
                 </section>
@@ -1981,8 +1933,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
 
             <div class="a-toggle_code">
-                <button href="#table-with-row-links-code-5" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#table-with-row-links-code-5" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#table-with-row-links-code-3" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#table-with-row-links-code-3" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1992,11 +1944,11 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="table-with-row-links-code-5">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="table-with-row-links-code-3">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#table-with-row-links-html-code-snippet-5">
+                        <a class="govuk-tabs__tab" href="#table-with-row-links-html-code-snippet-3">
                             HTML code snippet
                         </a>
                     </li>
@@ -2008,7 +1960,7 @@ Note: While th elements normally only contain raw text, they may sometimes conta
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="table-with-row-links-html-code-snippet-5">
+                <section class="govuk-tabs__panel" id="table-with-row-links-html-code-snippet-3">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -2114,8 +2066,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
 
             <div class="a-toggle_code">
-                <button href="#responsive-stacked-table-code-6" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#responsive-stacked-table-code-6" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#responsive-stacked-table-code-4" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#responsive-stacked-table-code-4" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -2125,11 +2077,11 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="responsive-stacked-table-code-6">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="responsive-stacked-table-code-4">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#responsive-stacked-table-html-code-snippet-6">
+                        <a class="govuk-tabs__tab" href="#responsive-stacked-table-html-code-snippet-4">
                             HTML code snippet
                         </a>
                     </li>
@@ -2141,7 +2093,7 @@ Note: While th elements normally only contain raw text, they may sometimes conta
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="responsive-stacked-table-html-code-snippet-6">
+                <section class="govuk-tabs__panel" id="responsive-stacked-table-html-code-snippet-4">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -2259,8 +2211,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
 
             <div class="a-toggle_code">
-                <button href="#responsive-stacked-table-with-header-code-7" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#responsive-stacked-table-with-header-code-7" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#responsive-stacked-table-with-header-code-5" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#responsive-stacked-table-with-header-code-5" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -2270,11 +2222,11 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="responsive-stacked-table-with-header-code-7">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="responsive-stacked-table-with-header-code-5">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#responsive-stacked-table-with-header-html-code-snippet-7">
+                        <a class="govuk-tabs__tab" href="#responsive-stacked-table-with-header-html-code-snippet-5">
                             HTML code snippet
                         </a>
                     </li>
@@ -2286,7 +2238,7 @@ Note: While th elements normally only contain raw text, they may sometimes conta
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="responsive-stacked-table-with-header-html-code-snippet-7">
+                <section class="govuk-tabs__panel" id="responsive-stacked-table-with-header-html-code-snippet-5">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -2423,8 +2375,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
 
             <div class="a-toggle_code">
-                <button href="#responsive-table-with-horizontal-scroll-code-8" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#responsive-table-with-horizontal-scroll-code-8" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#responsive-table-with-horizontal-scroll-code-6" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#responsive-table-with-horizontal-scroll-code-6" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -2434,11 +2386,11 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="responsive-table-with-horizontal-scroll-code-8">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="responsive-table-with-horizontal-scroll-code-6">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#responsive-table-with-horizontal-scroll-html-code-snippet-8">
+                        <a class="govuk-tabs__tab" href="#responsive-table-with-horizontal-scroll-html-code-snippet-6">
                             HTML code snippet
                         </a>
                     </li>
@@ -2450,7 +2402,7 @@ Note: While th elements normally only contain raw text, they may sometimes conta
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="responsive-table-with-horizontal-scroll-html-code-snippet-8">
+                <section class="govuk-tabs__panel" id="responsive-table-with-horizontal-scroll-html-code-snippet-6">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -2541,7 +2493,9 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             <div class="m-variation_description">
                 <p>Sorting allows users to reorder the contents of a table by a sortable column of their choice.</p>
 
-<p>Any column that can sort needs to be specified in the table’s markup. When the table loads, it should be sorted by one of the sortable columns by default and indicate which column is already sorted. Not every column of a table needs to be sortable.</p>
+<p>Add the <code class="highlighter-rouge">.o-table__sortable</code> class to a table to make it sortable. To sort by a specific column, add a <code class="highlighter-rouge">button</code> to the <code class="highlighter-rouge">th</code> of the column. The use of a <code class="highlighter-rouge">button</code> helps address accessibility concerns.</p>
+
+<p>Not every column of a table needs to be sortable.</p>
 
             </div>
 
@@ -2650,8 +2604,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
 
             <div class="a-toggle_code">
-                <button href="#sortable-table-code-9" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#sortable-table-code-9" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#sortable-table-code-7" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#sortable-table-code-7" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -2661,23 +2615,29 @@ Note: While th elements normally only contain raw text, they may sometimes conta
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="sortable-table-code-9">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="sortable-table-code-7">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#sortable-table-html-code-snippet-9">
+                        <a class="govuk-tabs__tab" href="#sortable-table-html-code-snippet-7">
                             HTML code snippet
                         </a>
                     </li>
                     
                     
                     
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#sortable-table-implementation-7">
+                            Implementation
+                        </a>
+                    </li>
+                    
                     
                 </ul>
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="sortable-table-html-code-snippet-9">
+                <section class="govuk-tabs__panel" id="sortable-table-html-code-snippet-7">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -2788,6 +2748,48 @@ Note: While th elements normally only contain raw text, they may sometimes conta
                 
 
                 <!-- Implementation details -->
+                
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="sortable-table-implementation-7">
+                    <div>
+                        <h4 class="variation-implementation-title">Implementation details</h4>
+                        <div style="padding:40px">
+                            <h3 id="sorting-type">Sorting type</h3>
+<p>To sort properly, the type of the <code class="highlighter-rouge">data</code> can be specified.</p>
+
+<h4 id="sorting-by-string-values">Sorting by string values</h4>
+<p>By default, the column’s values will be sorted as <code class="highlighter-rouge">string</code> values.</p>
+
+<h4 id="sorting-by-number-values">Sorting by number values</h4>
+<p>A column can be specifically sorted by number values (in which case, the cell’s contents are stripped of non-numeric characters, then sorted by the resulting number). To do so, add the <code class="highlighter-rouge">data-sort_type="number"</code> attribute to the sorting button:</p>
+
+<p><code class="highlighter-rouge">&lt;table class="o-table o-table__sortable"&gt;
+    …
+        &lt;th&gt;
+            &lt;button class="sortable" data-sort_type="number"&gt;Column Name&lt;/button&gt;
+        &lt;/th&gt;
+    …
+&lt;/table&gt;
+</code></p>
+
+<h3 id="sorting-table-on-page-load">Sorting table on page load</h3>
+<p>To sort the table on page load, use the <code class="highlighter-rouge">.sorted-up</code> and <code class="highlighter-rouge">.sorted-down</code> classes:</p>
+
+<p>`</p>
+<table class="o-table o-table__sortable">
+    …
+        <th>
+            <button class="sortable sorted-up">Column Name</button>
+        </th>
+    …
+</table>
+<p><code class="highlighter-rouge">
+</code>.sorted-up` starts with the column sorted smallest to largest (or lowest to highest)</p>
+
+<p><code class="highlighter-rouge">.sorted-down</code> starts with the column sorted largest to smallest (or highest to lowest)</p>
+
+                        </div>
+                    </div>
+                </section>
                 
 
                 <!-- Specs -->
@@ -2970,8 +2972,8 @@ Note: While th elements normally only contain raw text, they may sometimes conta
         <div class="block block__sub">
             <small>
                 <strong>Page last edited:</strong>
-                <time datetime="2020-04-22 16:55:40 +0000">
-                     4:55:40 PM Apr 22, 2020
+                <time datetime="2020-05-07 15:10:57 +0000">
+                     3:10:57 PM May 07, 2020
                 </time>
             </small>
         </div>
