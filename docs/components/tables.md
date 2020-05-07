@@ -54,7 +54,45 @@ variation_groups:
           navigating a page’s content with a screenreader.
 
           -->
-        variation_specs: "Default table and directory table (large screens)\nThis is the default style at the large screen breakpoint. It is also how the directory table pattern appears at the large screen breakpoint.\n\nHEADER\nBackground: Gray-05 #F8F8F8\nFont: Avenir Next Demi-bold, all caps\nFont-color: Black #101820\nFont-size: 14px\nBORDER\nBottom: 1px, Gray-50 #BABBBD on each row, including header\nCELLS\nBackground: Gray-05 #F8F8F8\nFont: Avenir Next Regular Black\nFont-color: Black #101820\nFont-size: 16px\nPadding: 10px\n \nCOLUMN 1\tCOLUMN 2\tCOLUMN 3\nCell A1\tCell A2\tCell A3\nCell B1\tCell B2\tCell B3\nCell C1\tCell C2\tCell C3\nCell D1\tCell D2\tCell D3 \nDefault table (small screens)\nThis is the default style for small screens. Remember to add data-label attributes to every <td> in the table body.\n\nBORDER\nBottom: 1px, Gray-50 #BABBBD\nCELLS\nFont: 16px Avenir Next Regular Black\nFont-color: Black #101820\nLabels font: 14px Avenir Next Regular, all caps\nLabels font-color: Black #101820\nPADDING\nPadding, label / content: 15px\nPadding, content / next label: 30px\nPadding, rule line / first label: 15px"
+        variation_specs: |-
+          ### Color variables
+
+          | --- | --- | 
+          | @table-cell-bg: | @white; |
+          | @table-cell-bg_alt: | @gray-5; | 
+          | @table-row-link-bg-hover:  |  @pacific-80; |
+          | @table-row-link-hover-color: | @white; | 
+          | @table-scrolling-border:  | @gray-40; | 
+          | @table-border:  | @gray; |
+
+          ### Default table and directory table (large screens)
+
+          HEADER
+          Background: Gray-05 #F8F8F8
+          Font: Avenir Next Demi-bold, all caps
+          Font-color: Black #101820
+          Font-size: 14px
+          BORDER
+          Bottom: 1px, Gray-50 #BABBBD on each row, including header
+          CELLS
+          Background: Gray-05 #F8F8F8
+          Font: Avenir Next Regular Black
+          Font-color: Black #101820
+          Font-size: 16px
+          Padding: 10px 
+
+          ### Default style for small screens. 
+          BORDER
+          Bottom: 1px, Gray-50 #BABBBD
+          CELLS
+          Font: 16px Avenir Next Regular Black
+          Font-color: Black #101820
+          Labels font: 14px Avenir Next Regular, all caps
+          Labels font-color: Black #101820
+          PADDING
+          Padding, label / content: 15px
+          Padding, content / next label: 30px
+          Padding, rule line / first label: 15px
   - variations:
       - variation_code_snippet: |-
           <table class="o-table o-table__striped">
