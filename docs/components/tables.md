@@ -10,12 +10,12 @@ description: >-
 variation_groups:
   - variation_group_name: Standard table
     variation_group_description: >-
-      Default table is shown. This is equivalent to defining a classless
-      `<table>` element.  
+      The default table style is shown below. This is equivalent to defining a
+      classless `<table>` element.  
 
 
-      This default table is not responsive. For responsive options, see
-      [Responsive tables]().  
+      Tables are not responsive by default. See options below for [stacked and
+      scrolling responsive tables]().  
     variations:
       - variation_code_snippet: >-
           <table>
@@ -65,34 +65,39 @@ variation_groups:
           | @table-scrolling-border:  | @gray-40; | 
           | @table-border:  | @gray; |
 
-          ### Default table and directory table (large screens)
+          ### Specs for default and directory table (large screens)
 
-          HEADER
-          Background: Gray-05 #F8F8F8
-          Font: Avenir Next Demi-bold, all caps
-          Font-color: Black #101820
-          Font-size: 14px
-          BORDER
-          Bottom: 1px, Gray-50 #BABBBD on each row, including header
-          CELLS
-          Background: Gray-05 #F8F8F8
-          Font: Avenir Next Regular Black
-          Font-color: Black #101820
-          Font-size: 16px
-          Padding: 10px 
+          #### Header
+          - Background: Gray-05 #F8F8F8
+          - Font: Avenir Next Demi-bold, all caps
+          - Font-color: Black #101820
+          - Font-size: 14px
 
-          ### Default style for small screens. 
-          BORDER
+          #### Border 
+          - Bottom: 1px, Gray-50 #BABBBD on each row, including header
+
+          #### Cells
+          - Background: Gray-05 #F8F8F8
+          - Font: Avenir Next Regular Black
+          - Font-color: Black #101820
+          - Font-size: 16px
+          - Padding: 10px 
+
+          ### Specs for small screens 
+
+          #### Border 
           Bottom: 1px, Gray-50 #BABBBD
-          CELLS
-          Font: 16px Avenir Next Regular Black
-          Font-color: Black #101820
-          Labels font: 14px Avenir Next Regular, all caps
-          Labels font-color: Black #101820
-          PADDING
-          Padding, label / content: 15px
-          Padding, content / next label: 30px
-          Padding, rule line / first label: 15px
+
+          #### Cells
+          - Font: 16px Avenir Next Regular Black
+          - Font-color: Black #101820
+          - Labels font: 14px Avenir Next Regular, all caps
+          - Labels font-color: Black #101820
+
+          #### Padding
+          - Padding, label / content: 15px
+          - Padding, content / next label: 30px
+          - Padding, rule line / first label: 15px
   - variations:
       - variation_code_snippet: |-
           <table class="o-table o-table__striped">
