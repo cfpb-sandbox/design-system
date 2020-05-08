@@ -301,21 +301,18 @@ variation_groups:
                   </tr>
               </tbody>
           </table>
-        variation_description: >
+        variation_description: >-
           Sorting allows users to reorder the contents of a table by a sortable
-          column of their choice. 
-
-
+          column of their choice. See the [Behavior]() section for more
+          information.
+           
           Add the `.o-table__sortable` class to a table to make it sortable. To
           sort by a specific column, add a `button` to the `th` of the column.
           The use of a `button` helps address accessibility concerns.
-
-
-          Not every column of a table needs to be sortable.
         variation_name: Sortable table
         variation_implementation: >-
-
           #### Making a table sortable
+
 
           By adding the `.o-table__sortable` class to a `table`, the table
           becomes sortable. To allow the table to be sorted by a column, add a
@@ -334,10 +331,12 @@ variation_groups:
 
           ```
 
+
           The use of a `button` helps address certain accessibility concerns.
 
 
           #### Sorting type
+
 
           To sort properly, the type of the `data` can be specified. By default,
           the column’s values will be sorted as `string` values. However, the
@@ -366,6 +365,7 @@ variation_groups:
 
           #### Sorting table on page load
 
+
           To sort the table on page load, use the `.sorted-up` and
           `.sorted-down` classes:
 
@@ -383,7 +383,6 @@ variation_groups:
           ```
 
 
-
           * The class `.sorted-up` refers to a sort from smallest to greatest
           (first to last), and `.sorted-down` refers to a sort from greatest to
           smallest (last to first). These classes are added to the `th` when
@@ -394,15 +393,18 @@ variation_groups:
     variation_group_name: Variations
   - variation_group_name: Responsive tables
     variation_group_description: >-
-      Responsive tables fall into two main types: stacked and scrolling.
+      Responsive tables fall into two main types: stacked (which stacks
+      information vertically on smaller screens), and scrolling (which ensures
+      that all the information can be accessed in its original tabular
+      structure, even on a smaller screen). 
 
 
-      Tables are **not** responsive unless you add one of the small screen
-      classes detailed below. 
+      Note that tables are **not** responsive unless you add one of the small
+      screen classes detailed below. 
 
 
-      Also, the `data-label` attribute must be used to label each cell in a
-      `table` for small screen responsive views. 
+      Also note that the `data-label` attribute must be used to label each cell
+      in a `table` for small screen responsive views. 
     variations:
       - variation_name: Stacked table
         variation_description: >
@@ -477,18 +479,18 @@ variation_groups:
           </table>
         variation_description: >-
           This stacked table variation turns the first column of data into
-          headers.  
+          headers on smaller screens.  
 
 
-          Use these when data should be read across rows, instead of down
-          columns, and the first column serves to organize or label the other
-          data in the row. An example is a table of contact information (see
-          below).
+          This is useful when data should be read across rows, instead of down
+          columns. An example is a table of directory information, where the
+          first column contains a person's name, and the remaining columns
+          contain their contact information (see below).   
 
 
-          At the small screen breakpoint, the first column of data (here,
-          employee name) becomes a header, and the remaining data points in the
-          same row are stacked.  
+          At the small screen breakpoint, the first column (here, employee name)
+          becomes a header, and the remaining data points in the same row (phone
+          number, email address) are stacked below.  
 
 
           The `.o-table__entry-header-on-small` class in addition to
@@ -568,7 +570,7 @@ variation_groups:
           the table contained within, and remains striped on small screens
           (unlike the o-table__striped class, below).
 usage: >
-  #### Use cases
+  ### Use cases
 
   Tables allow easy organization or comparison of more complex data than a chart
   or graph. They can be read either vertically (by columns) or horizontally (by
@@ -586,7 +588,7 @@ usage: >
   * Values across columns or rows require different units of measurement
 
 
-  #### Content guidelines
+  ### Content guidelines
 
   As a rule, design tables so that they are easy to read. Label columns
   precisely and include units of measurement where necessary. Organize the data
@@ -602,13 +604,13 @@ usage: >
   The title given to this table”).
 
 
-  ##### Long column labels
+  #### Long column labels
 
   Consider using fixed columns or truncation for column labels that are
   significantly longer than the expected width of the data.
 
 
-  ##### Unit of measurement
+  #### Unit of measurement
 
   Make sure to indicate the unit of measurement. In terms of placement, if the
   units are the same across columns, indicate the unit of measurement in the
@@ -626,41 +628,13 @@ usage: >
   obscure abbreviations.
 
 
-  #### Behavior
 
-  Since the nature of tables relies so much on visual space, there are several
-  common variations that can be used to accommodate different types of data in a
-  table.
+  ### Behavior
 
+  #### Sortable tables 
 
-  #### Stacking tables
+  At large screen sizes,  
 
-  A default table would “stack” the information on a smaller screen, since
-  shrinking a table that maintained its columns/row structure would make it
-  illegible.
-
-
-
-  #### Scrolling tables
-
-  When the data you’re presenting has more columns than what will comfortably
-  fit on the screen, you can use a table that scrolls horizontally. This becomes
-  especially important when thinking about tables on smaller screens, instead of
-  allowing the data to stack at smaller breakpoints.
-
-
-  Using a table that scrolls ensures that all the information can be accessed in
-  its original tabular structure, even on a smaller screen.
-
-
-  See guidance on styles for a table that scrolls horizontally at all screen
-  sizes.
-
-
-  #### Sorting tables
-
-  At large screen sizes, tables can be sorted using the header of any sortable
-  column.
 
   * The currently sorted column is marked with an up or down triangle for
   ascending and descending sorts, respectively
@@ -674,7 +648,7 @@ usage: >
 
   If sorting is needed for smaller screens, use a filter-like expandable with a
   sorting control (or add a sorting control to the existing filter if the table
-  has one) that only appears when the table switches from tabular to stacked.
+  has one) that only appears when the table switches from tabular to stacked. 
 accessibility: >-
   Remember to always use headers (that is, `<th>` elements) for all data tables
   to make tabular data accessible.
