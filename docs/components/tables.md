@@ -83,22 +83,6 @@ variation_groups:
           - Font-color: Black #101820
           - Font-size: 16px
           - Padding: 10px 
-
-          ### Specs for small screens 
-
-          #### Border 
-          Bottom: 1px, Gray-50 #BABBBD
-
-          #### Cells
-          - Font: 16px Avenir Next Regular Black
-          - Font-color: Black #101820
-          - Labels font: 14px Avenir Next Regular, all caps
-          - Labels font-color: Black #101820
-
-          #### Padding
-          - Padding, label / content: 15px
-          - Padding, content / next label: 30px
-          - Padding, rule line / first label: 15px
   - variations:
       - variation_code_snippet: |-
           <table class="o-table o-table__striped">
@@ -444,6 +428,22 @@ variation_groups:
                   </tr>
               </tbody>
           </table>
+        variation_specs: |-
+          ### Style
+
+          #### Border 
+          Bottom: 1px, Gray-50 #BABBBD
+
+          #### Cells
+          - Font: 16px Avenir Next Regular Black
+          - Font-color: Black #101820
+          - Labels font: 14px Avenir Next Regular, all caps
+          - Labels font-color: Black #101820
+
+          #### Padding
+          - Padding, label / content: 15px
+          - Padding, content / next label: 30px
+          - Padding, rule line / first label: 15px
       - variation_name: Directory tables (stacked with header)
         variation_code_snippet: |-
           <table class="o-table
@@ -571,6 +571,11 @@ variation_groups:
           “Comparative with horizontal scroll” style also adds striped rows to
           the table contained within, and remains striped on small screens
           (unlike the o-table__striped class, below).
+        variation_specs: |-
+          ### Styles
+
+          * Border: 1px, Gray-50 #BABBBD around the scrolling table
+          * Alternate row striping: Grey-05 #F8F8F8
 usage: >
   ### Use cases
 
