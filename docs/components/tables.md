@@ -15,7 +15,8 @@ variation_groups:
 
 
       Tables are not responsive by default. See options below for [stacked and
-      scrolling responsive tables]().  
+      scrolling responsive
+      tables](https://cfpb-sandbox.github.io/design-system/components/tables#responsive-tables).  
     variations:
       - variation_code_snippet: >-
           <table>
@@ -303,8 +304,9 @@ variation_groups:
           </table>
         variation_description: >-
           Sorting allows users to reorder the contents of a table by a sortable
-          column of their choice. See the [Behavior]() section for more
-          information.
+          column of their choice. See the
+          [Behavior](https://cfpb-sandbox.github.io/design-system/components/tables#behavior)
+          section for more information.
            
           Add the `.o-table__sortable` class to a table to make it sortable. To
           sort by a specific column, add a `button` to the `th` of the column.
