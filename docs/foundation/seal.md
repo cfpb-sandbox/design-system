@@ -13,6 +13,10 @@ variations:
       The primary seal should be used on materials printed in color.
 
       ![](/design-system/images/uploads/cfpb_primary_seal_color_rgb.png)
+
+
+
+      The primary seal contains the following colors:
   - variation_name: One-color seal
     variation_description: >-
       For the rare case that the seal is on a material not being printed in full
