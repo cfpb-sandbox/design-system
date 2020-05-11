@@ -8,22 +8,19 @@ description: >-
   The seal was created as a symbol of CFPB to use in uniquely governmental and
   ceremonial contexts.
 variations:
-  - variation_description: >-
-      ![CFPB primary
-      seal](/design-system/images/uploads/cfpb_primary_seal_color_rgb.png)
-
-
+  - variation_name: Primary seal
+    variation_description: |-
       The primary seal should be used on materials printed in color.
-    variation_name: Primary seal
-  - variation_description: >-
-      ![CFPB one-color
-      seal](/design-system/images/uploads/bcfp_primary_seal_black_rgb.png)
 
-
+      ![](/design-system/images/uploads/cfpb_primary_seal_color_rgb.png)
+  - variation_name: One-color seal
+    variation_description: >-
       For the rare case that the seal is on a material not being printed in full
       color, the one-color seal in black should be used. The one-color seal
       should always be placed on a white background.
-    variation_name: One-color seal
+
+
+      ![](/design-system/images/uploads/bcfp_primary_seal_black_rgb.png)
 usage: >-
   Use of the seal is very limited. It should never be used on consumer-facing
   materials, as it is important that the CFPB logo is consistently used to help
