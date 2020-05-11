@@ -26,14 +26,13 @@ variations:
 
       ![](/design-system/images/uploads/bcfp_primary_seal_black_rgb.png)
 usage: >-
-  Use of the seal is very limited. It should never be used on consumer-facing
-  materials, as it is important that the CFPB logo is consistently used to help
-  consumers recognize and trust the CFPB. 
+  ## Use cases
 
 
-  The seal is used on a limited set of materials regarding enforcement,
-  governmental affairs and official items from the Director’s office. These
-  materials are limited to:
+  The seal should never be used on consumer-facing materials, as it is important
+  that the CFPB logo is consistently used to help consumers recognize and trust
+  the CFPB. The seal should be used only on materials regarding enforcement,
+  governmental affairs and official items from the Director’s office:
 
 
   * Official correspondence from the Director
@@ -56,19 +55,73 @@ usage: >-
   * Employee awards, commendations, and certificates from the Director
 
   * Delegations of Authority from the Director
+
+
+  <br/>
+
+
+  <hr>
+
+
+  <br/>
+
+
+  ## Sizing
+
+
+  Use the seal at its benchmark size of 1.75" for most materials, such as a
+  report cover. For materials such as signage and flags where the seal needs to
+  appear larger, increase the seal's size in increments of 0.5".
+
+
+  <br/>
+
+
+  <hr>
+
+
+  <br/>
+
+
+  ## Placement
+
+
+  #### Clearspace
+
+
+  Use ample space around the seal to ensure maximum impact and keep the mark
+  from looking cluttered. The clear space on each side of the seal should be
+  1/4" of the seal's size. 
+
+
+  #### Background color
+
+
+  Place the seal on a white background. The only other color the seal may be
+  placed on is navy, and this is reserved for select cases, such as the CFPB's
+  flag. 
+
+
+  <br/>
+
+
+  <hr>
+
+
+  <br/>
+
+
+  ## Color palette
+
+
+  The seal is comprised of the following colors.
+
+
+
+
+  <br/>
 restrictions:
-  - restrictions_do: >-
-      * Use the seal at its benchmark size of 1.75” for most materials, such as
-      a report cover. For materials such as signage and flags where the seal
-      needs to appear larger, increase the seal's size in increments of 0.5”. 
-
-      * Use ample space around the seal to ensure maximum impact and keep the
-      mark from looking cluttered. The clear space on each side of the seal
-      should be ¼” of the seal’s size. 
-
-      * Place the seal on a white background. The only other color the seal may
-      be placed on is navy, and this is reserved for select cases, such as the
-      CFPB's flag.
+  - restrictions_do: ''
     restrictions_do_not: >-
       * Don’t stretch or condense the seal. This weakens the brand. 
 
@@ -84,47 +137,6 @@ restrictions:
 
       * Don't place the seal on a background that is a pattern, photo, or color
       other than white or navy.
-related_items: |-
-  ## Color
-
-  The seal is comprised of the following colors.
-
-  <h4>Dark Navy</h4>
-
-  **CMYK:** 100, 80, 6, 32
-
-  **RGB:** 0, 45, 114
-
-  **PMS:** 288C
-
-  <h4>Beige</h4>
-
-  **CMYK:** 0, 10, 50, 30
-
-  **RGB:** 190, 169, 111
-
-  **PMS:** 4515C
-
-  <h4>Mid beige</h4>
-
-  **CMYK:** 0, 6, 30, 18
-
-  **RGB:** 216, 200, 160
-
-  **PMS:** 4515C 60%
-
-  <h4>Light beige</h4>
-
-  **CMYK:** 0, 2, 10, 6
-
-  **RGB:** 240, 232, 216
-
-  **PMS:** 4515C 30%
-
-  <h4>White</h4>
-
-  **CMYK:** 0, 0, 0, 0
-
-  **RGB:** 255, 255, 255
+related_items: ''
 last_updated: 2020-02-27T16:56:46.952Z
 ---
