@@ -116,6 +116,167 @@ usage: >-
 
   The seal is comprised of the following colors.
 
+    <div class="swatches-container__primary">
+      <div class="swatches swatches__primary">
+          <figure class="swatch swatch__primary">
+              <div class="swatch_field swatch_field__green"></div>
+              <figcaption class="swatch_label">
+                  <h4 class="swatch_head">CFPB Green</h4>
+                  <table class="swatch_table">
+                      <tbody>
+                           <tr>
+                              <th>Hex</th>
+                              <td>#20aa3f</td>
+                          </tr>
+                          <tr>
+                              <th>RGB</th>
+                              <td>32, 170, 63</td>
+                          </tr>
+                          <tr>
+                              <th>PMS</th>
+                              <td>361</td>
+                          </tr>
+                          <tr>
+                              <th>CMYK</th>
+                              <td>80, 0, 100, 0</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </figcaption>
+          </figure>
+          <figure class="swatch swatch__primary">
+              <div class="swatch_field swatch_field__green-60"></div>
+              <figcaption class="swatch_label">
+                  <h4 class="swatch_head">Green 60</h4>
+                  <table class="swatch_table">
+                      <tbody>
+                           <tr>
+                              <th>Hex</th>
+                              <td>#addc91</td>
+                          </tr>
+                          <tr>
+                              <th>RGB</th>
+                              <td>173, 220, 145</td>
+                          </tr>
+                          <tr>
+                              <th>PMS</th>
+                              <td>358</td>
+                          </tr>
+                          <tr>
+                              <th>CMYK</th>
+                              <td>32, 0, 52, 0</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </figcaption>
+          </figure>
+          <figure class="swatch swatch__primary">
+              <div class="swatch_field swatch_field__green-20"></div>
+              <figcaption class="swatch_label">
+                  <h4 class="swatch_head">Green 20</h4>
+                  <table class="swatch_table">
+                      <tbody>
+                           <tr>
+                              <th>Hex</th>
+                              <td>#e2efd8</td>
+                          </tr>
+                          <tr>
+                              <th>RGB</th>
+                              <td>226, 239, 216</td>
+                          </tr>
+                          <tr>
+                              <th>PMS</th>
+                              <td>361 @ 20%</td>
+                          </tr>
+                          <tr>
+                              <th>CMYK</th>
+                              <td>12, 0, 19, 0</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </figcaption>
+          </figure>
+          <figure class="swatch swatch__primary">
+              <div class="swatch_field swatch_field__black"></div>
+              <figcaption class="swatch_label">
+                  <h4 class="swatch_head">Black</h4>
+                  <table class="swatch_table">
+                      <tbody>
+                           <tr>
+                              <th>Hex</th>
+                              <td>#101820</td>
+                          </tr>
+                          <tr>
+                              <th>RGB</th>
+                              <td>16, 24, 32</td>
+                          </tr>
+                          <tr>
+                              <th>PMS</th>
+                              <td>Black 6</td>
+                          </tr>
+                          <tr>
+                              <th>CMYK</th>
+                              <td>0, 0, 0, 100</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </figcaption>
+          </figure>
+          <figure class="swatch swatch__primary">
+              <div class="swatch_field swatch_field__gray"></div>
+              <figcaption class="swatch_label">
+                  <h4 class="swatch_head">Gray</h4>
+                  <table class="swatch_table">
+                      <tbody>
+                           <tr>
+                              <th>Hex</th>
+                              <td>#5a5d61</td>
+                          </tr>
+                          <tr>
+                              <th>RGB</th>
+                              <td>90, 93, 97</td>
+                          </tr>
+                          <tr>
+                              <th>PMS</th>
+                              <td>Cool Gray 9C</td>
+                          </tr>
+                          <tr>
+                              <th>CMYK</th>
+                              <td>0, 0, 0, 77</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </figcaption>
+          </figure>
+          <figure class="swatch swatch__primary">
+              <div class="swatch_field swatch_field__gray-10"></div>
+              <figcaption class="swatch_label">
+                  <h4 class="swatch_head">Gray 10</h4>
+                  <table class="swatch_table">
+                      <tbody>
+                           <tr>
+                              <th>Hex</th>
+                              <td>#e7e8e9</td>
+                          </tr>
+                          <tr>
+                              <th>RGB</th>
+                              <td>231, 231, 233</td>
+                          </tr>
+                          <tr>
+                              <th>PMS</th>
+                              <td>Cool Gray 1C</td>
+                          </tr>
+                          <tr>
+                              <th>CMYK</th>
+                              <td>0, 0, 0, 10</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </figcaption>
+          </figure>
+      </div>
+  </div>
+
 
 
 
