@@ -74,6 +74,9 @@ usage: >-
   appear larger, increase the seal's size in increments of 0.5".
 
 
+  ![](/design-system/images/uploads/seal_clearspace.png)
+
+
   <br/>
 
 
