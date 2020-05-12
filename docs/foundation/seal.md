@@ -29,6 +29,8 @@ usage: >-
   ## Use cases
 
 
+
+
   The seal should never be used on consumer-facing materials, as it is important
   that the CFPB logo is consistently used to help consumers recognize and trust
   the CFPB. The seal should be used only on materials regarding enforcement,
@@ -66,15 +68,37 @@ usage: >-
   <br/>
 
 
-  ## Sizing
+  ## Size and Placement
 
 
-  Use the seal at its benchmark size of 1.75" for most materials, such as a
-  report cover. For materials such as signage and flags where the seal needs to
-  appear larger, increase the seal's size in increments of 0.5".
+  | Benchmark
+  size                                                                                                                             
+  |
+  Clearspace                                                                                                                       
+  |
+
+  |
+  -----------------------------------------------------------------------------------------------------------------------------------------
+  |
+  -------------------------------------------------------------------------------------------------------------------------------------
+  |
+
+  | Text and hero image appear
+  side-by-side                                                                                                  
+  | Text and hero image stack
+  vertically                                                                                                 
+  |
+
+  | ![Mockup of hero graphic at desktop
+  size](/design-system/images/uploads/hero_behavior_large.png "Mockup of hero
+  graphic at desktop size") | ![Mockup of hero graphic at small
+  size](/design-system/images/uploads/hero_behavior_small.png "Mockup of hero
+  graphic at small size") |
 
 
-  ![](/design-system/images/uploads/seal_clearspace.png)
+
+
+
 
 
   <br/>
@@ -279,8 +303,6 @@ usage: >-
           </figure>
       </div>
   </div>
-
-
 
 
   <br/>
