@@ -59,7 +59,7 @@ variation_groups:
     variation_group_description: >-
       ![Info unit group: example of third width link
       blob](/design-system/images/uploads/third_width_link_blob_intro.png "Info
-      unit group: example of third width link blob")
+      unit group: example of third width link blob") 
 
 
       ##### When to use
