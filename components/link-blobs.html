@@ -1440,7 +1440,13 @@
         
         
         <li class="m-list_item">
-            <a class="m-list_link" href="#standard-link-blobs">Standard link blobs</a>
+            <a class="m-list_link" href="#half-width-link-blob">Half-width link blob</a>
+        </li>
+        
+        
+        
+        <li class="m-list_item">
+            <a class="m-list_link" href="#third-width-link-blob">Third-width link blob</a>
         </li>
         
         
@@ -1449,25 +1455,23 @@
 
     
         <section id="description" class="u-mb30">
-            <p>Link blobs are text-only layout modules. They are used on higher-level template pages to provide succinct descriptions and lead users to content deeper within the section. They commonly appear on <a href="https://cfpb.github.io/design-system/templates/landing-pages">landing pages</a>, <a href="https://cfpb.github.io/design-system/templates/sublanding-pages">sublanding pages</a>, and <a href="https://cfpb.github.io/design-system/templates/browse-pages">browse pages</a>. See also: <a href="">image and text modules</a>.</p>
+            <p>Link blobs are text-only layout modules. They are used on higher-level template pages to provide succinct descriptions and lead users to content deeper within the section. They commonly appear on <a href="https://cfpb.github.io/design-system/templates/landing-pages">landing pages</a>, <a href="https://cfpb.github.io/design-system/templates/sublanding-pages">sublanding pages</a>, and <a href="https://cfpb.github.io/design-system/templates/browse-pages">browse pages</a>.</p>
+
+<p>Each link blob is comprised of a heading, short descriptive text, and call to action. Link blobs appear in groups of 2 in a row (half-width link blob) or 3 in a row (third-width link blob) at breakpoints above 600 px.</p>
 
         </section>
     
 
     
     
-    <section class="o-variation_group" id="standard-link-blobs">
+    <section class="o-variation_group" id="half-width-link-blob">
         
-        <h2 class="o-variation_group_title">Standard link blobs</h2>
+        <h2 class="o-variation_group_title">Half-width link blob</h2>
         
 
         
         <div class="o-variation_group_description">
-            <p>A link blob is a unit consisting of heading, short descriptive text, and call to action. They appear in groups of 2 or 3 in a row</p>
-<ul>
-  <li>Half-width link blobs consist of two units in a row at breakpoints above 600 px.</li>
-  <li>Third-width link blobs consist of three units in a row at breakpoints above 600 px.</li>
-</ul>
+            
 
         </div>
         
@@ -1476,7 +1480,7 @@
         <div class="m-variation">
 
             <div class="m-variation_name">
-                <h3>Half-width link blob</h3>
+                <h3></h3>
             </div>
 
             <div class="m-variation_description">
@@ -1505,8 +1509,8 @@
             
 
             <div class="a-toggle_code">
-                <button href="#half-width-link-blob-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#half-width-link-blob-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1516,18 +1520,18 @@
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="half-width-link-blob-code-1">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="-code-1">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#half-width-link-blob-html-code-snippet-1">
+                        <a class="govuk-tabs__tab" href="#-html-code-snippet-1">
                             HTML code snippet
                         </a>
                     </li>
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#half-width-link-blob-jinja-code-snippet-1">
+                        <a class="govuk-tabs__tab" href="#-jinja-code-snippet-1">
                             Jinja code snippet
                         </a>
                     </li>
@@ -1535,7 +1539,7 @@
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#half-width-link-blob-specs-1">
+                        <a class="govuk-tabs__tab" href="#-specs-1">
                             Specs
                         </a>
                     </li>
@@ -1544,7 +1548,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="half-width-link-blob-html-code-snippet-1">
+                <section class="govuk-tabs__panel" id="-html-code-snippet-1">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1556,7 +1560,7 @@
 
                 <!-- Jinja snippet -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="half-width-link-blob-jinja-code-snippet-1">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-jinja-code-snippet-1">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -1573,7 +1577,7 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 
                 <!-- Specs -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="half-width-link-blob-specs-1">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-specs-1">
                     <div>
                         <h4 class="variation-specs-title">Specs</h4>
                         <div style="padding:40px">
@@ -1599,14 +1603,16 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 
         </div>
         
-        <div class="m-variation">
+    </section>
+    
+    <section class="o-variation_group" id="third-width-link-blob">
+        
+        <h2 class="o-variation_group_title">Third-width link blob</h2>
+        
 
-            <div class="m-variation_name">
-                <h3>Third-width link blob</h3>
-            </div>
-
-            <div class="m-variation_description">
-                <p><img src="/design-system/images/uploads/third_width_link_blob_intro.png" alt="Info unit group: example of third width link blob" title="Info unit group: example of third width link blob"></p>
+        
+        <div class="o-variation_group_description">
+            <p><img src="/design-system/images/uploads/third_width_link_blob_intro.png" alt="Info unit group: example of third width link blob" title="Info unit group: example of third width link blob"></p>
 
 <h5 id="when-to-use">When to use</h5>
 
@@ -1622,18 +1628,27 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
   <li>When content requires imagery, use the 50/50 image and text or the 25/75 image and text instead.</li>
 </ul>
 
+        </div>
+        
+
+        
+        <div class="m-variation">
+
+            <div class="m-variation_name">
+                <h3></h3>
+            </div>
+
+            <div class="m-variation_description">
+                
+
             </div>
 
             <!-- Live code example -->
             
-            <div class="a-live_code">
-                
-            </div>
-            
 
             <div class="a-toggle_code">
-                <button href="#third-width-link-blob-code-2" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#third-width-link-blob-code-2" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
+                <button href="#-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
             </div>
 
             
@@ -1643,26 +1658,26 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
             
             
 
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="third-width-link-blob-code-2">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="-code-1">
                 <ul class="govuk-tabs__list">
-                    
-                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#third-width-link-blob-html-code-snippet-2">
-                            HTML code snippet
-                        </a>
-                    </li>
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#third-width-link-blob-jinja-code-snippet-2">
+                        <a class="govuk-tabs__tab" href="#-jinja-code-snippet-1">
                             Jinja code snippet
                         </a>
                     </li>
                     
                     
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#-implementation-1">
+                            Implementation
+                        </a>
+                    </li>
+                    
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#third-width-link-blob-specs-2">
+                        <a class="govuk-tabs__tab" href="#-specs-1">
                             Specs
                         </a>
                     </li>
@@ -1671,19 +1686,10 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="third-width-link-blob-html-code-snippet-2">
-                    <div class="variation-code-snippet">
-                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
-                        <div class="source-code">
-                            <pre><code class="language-html"></code></pre>
-                        </div>
-                    </div>
-                </section>
-                
 
                 <!-- Jinja snippet -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="third-width-link-blob-jinja-code-snippet-2">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-jinja-code-snippet-1">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -1697,12 +1703,9 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 
                 <!-- Implementation details -->
                 
-
-                <!-- Specs -->
-                
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="third-width-link-blob-specs-2">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-implementation-1">
                     <div>
-                        <h4 class="variation-specs-title">Specs</h4>
+                        <h4 class="variation-implementation-title">Implementation details</h4>
                         <div style="padding:40px">
                             <ul>
   <li>Headings: Use H3 or H4. Do not use both.
@@ -1714,6 +1717,19 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 </ul>
 
 <p><img src="/design-system/images/uploads/third_width_link_blob_style.png" alt=""></p>
+
+                        </div>
+                    </div>
+                </section>
+                
+
+                <!-- Specs -->
+                
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-specs-1">
+                    <div>
+                        <h4 class="variation-specs-title">Specs</h4>
+                        <div style="padding:40px">
+                            
 
                         </div>
                     </div>
@@ -1832,8 +1848,8 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
         <div class="block block__sub">
             <small>
                 <strong>Page last edited:</strong>
-                <time datetime="2020-05-21 16:10:35 +0000">
-                     4:10:35 PM May 21, 2020
+                <time datetime="2020-05-21 16:16:35 +0000">
+                     4:16:35 PM May 21, 2020
                 </time>
             </small>
         </div>
