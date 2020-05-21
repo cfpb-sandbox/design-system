@@ -9,13 +9,17 @@ description: >-
   intersection “cell” where data is displayed.
 variation_groups:
   - variation_group_name: Standard table
-    variation_group_description: >-
-      The default table style is shown below. This is equivalent to defining a
-      classless `table` element.  
+    variation_group_description: >
+      This is the default style at the large screen breakpoint. It is also how
+      the directory table pattern appears at the large screen breakpoint. This
+      is equivalent to defining a classless `table` element. 
 
 
       Tables are not responsive by default. See options below for [responsive
       tables](https://cfpb-sandbox.github.io/design-system/components/tables#responsive-tables).  
+
+
+      For design specs, look under the "Show detail" link.
     variations:
       - variation_code_snippet: >-
           <table>
@@ -82,6 +86,7 @@ variation_groups:
           - Font-color: Black #101820
           - Font-size: 16px
           - Padding: 10px 
+        variation_implementation: ''
   - variations:
       - variation_code_snippet: |-
           <table class="o-table o-table__striped">
@@ -125,6 +130,9 @@ variation_groups:
           The `.o-table__striped` class adds stripes to the `table` rows. This
           striping is not visible on small screens.
         variation_name: Striped table
+        variation_specs: |
+          ### Style for striped rows
+          - Alternate row background: Grey-05 #F8F8F8
       - variation_code_snippet: |-
           <table class="o-table o-table__stack-on-small">
               <thead>
@@ -428,7 +436,7 @@ variation_groups:
               </tbody>
           </table>
         variation_specs: |-
-          ### Style
+          ### Default table (small screens) 
 
           #### Border 
           Bottom: 1px, Gray-50 #BABBBD
@@ -495,6 +503,17 @@ variation_groups:
           The `.o-table__entry-header-on-small` class in addition to
           `.o-table__stack-on-small` class changes the first column to be styled
           as an entry header. This style requires both classes be added.
+        variation_specs: |-
+          ### Style for directory tables (small screens)
+          - Bottom border: 1px, Gray-50 #BABBBD on each row
+          - Font: 16px Avenir Next Regular Black
+          - Font-color: Black #101820
+          - Header background color: #f1f1f1
+          - Labels font: 14px Avenir Next Regular, all caps
+          - Labels font-color: Black #101820
+          - Padding, column label/bottom border: 15px
+          - Padding, bottom border/content: 15px
+          - Padding, content / next label: 30px
       - variation_name: Responsive table with horizontal scroll
         variation_code_snippet: |-
           <div class="o-table o-table-wrapper__scrolling">
@@ -569,7 +588,7 @@ variation_groups:
           the table contained within, and remains striped on small screens
           (unlike the o-table__striped class, below).
         variation_specs: |-
-          ### Styles
+          ### Styles for scrolling tables
 
           * Border: 1px, Gray-50 #BABBBD around the scrolling table
           * Alternate row striping: Grey-05 #F8F8F8
