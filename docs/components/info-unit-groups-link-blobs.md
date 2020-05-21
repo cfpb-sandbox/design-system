@@ -103,6 +103,7 @@ usage: >-
 
   #### Half-width link blob
 
+
   | Above 600 px | Below 601 px |
 
   | - | - |
@@ -112,6 +113,7 @@ usage: >-
 
 
   #### Third-width link blob
+
 
   | Above 600 px | Below 601 px |
 
