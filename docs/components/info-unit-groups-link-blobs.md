@@ -5,13 +5,14 @@ section: components
 secondary_section: Layout options
 status: Released
 description: >-
-  Link blobs are text-only layout modules. They provide brief context to lead
-  users from a parent page ([landing
+  Link blobs are text-only layout modules. They are used on higher-level
+  template pages to provide succinct descriptions and lead users to content
+  deeper within the section. They commonly appear on [landing
   pages](https://cfpb.github.io/design-system/templates/landing-pages),
   [sublanding
   pages](https://cfpb.github.io/design-system/templates/sublanding-pages), and
-  [browse pages](https://cfpb.github.io/design-system/templates/browse-pages))
-  to a child or sibling page.
+  [browse pages](https://cfpb.github.io/design-system/templates/browse-pages).
+  See also: [image and text modules]().
 variation_groups:
   - variations:
       - variation_code_snippet: ''
@@ -88,11 +89,13 @@ variation_groups:
     variation_group_name: Standard link blobs
     variation_group_description: >-
       A link blob is a unit consisting of heading, short descriptive text, and
-      call to action. There are two layout options for breakpoints above 601 px:
+      call to action. They appear in groups of 2 or 3 in a row 
 
-      - Half-width link blobs consist of two units in a row  
+      - Half-width link blobs consist of two units in a row at breakpoints above
+      600 px.  
 
-      - Third-width link blobs consist of three units in a row  
+      - Third-width link blobs consist of three units in a row at breakpoints
+      above 600 px.  
 usage: >-
   ### Behavior
 
@@ -123,7 +126,8 @@ usage: >-
 
   ### Content guidelines
 
-  Do not use blobs for multiple paragraphs of copy. Copy should be succinct.
+  Copy should be succinct. Do not use link blobs for multiple paragraphs of
+  copy. 
 
   #### Headings  
 
