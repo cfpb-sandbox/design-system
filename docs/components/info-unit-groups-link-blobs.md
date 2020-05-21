@@ -103,9 +103,9 @@ usage: >-
 
   #### Half-width link blob
 
-  | Above 600 px | Below 601 px | 
+  | Above 600 px | Below 601 px |
 
-  | - | - |  
+  | - | - |
 
   | ![](/design-system/images/uploads/halfwidthblob_behavior_mockup_1.png) |
   ![](/design-system/images/uploads/halfwidthblob_behavior_mockup_2.png) |
@@ -113,7 +113,7 @@ usage: >-
 
   #### Third-width link blob
 
-  | Above 600 px | Below 601 px | 
+  | Above 600 px | Below 601 px |
 
   | - | - |
 
@@ -125,16 +125,21 @@ usage: >-
 
   Do not use blobs for multiple paragraphs of copy. Copy should be succinct.
 
-  * Headings  
-    * 45 characters max. 25 characters max is preferred, which renders as one line at max column width.
-  * Descriptions
+  #### Headings  
+
+  45 characters max. 25 characters max is preferred, which renders as one line
+  at max column width.
+
+  #### Descriptions
     * Half-width link blobs: 100-250 characters max
     * Third-width link blobs: 90-150 characters max
-  * Call to action
+
+  #### Call to action
     * Half-width link blobs: 40 characters max
     * Third-width link blobs: 30 characters max
     * Follow [link guidelines](https://cfpb.github.io/design-system/components/links).
-  * When these components are featured together (which is ideal), the amount of
+
+  When these components are featured together (which is ideal), the amount of
   content in each component should be as close to the same number of total lines
   as possible.
     * For half-width link blobs, one or two lines different is ok
