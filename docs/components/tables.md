@@ -11,11 +11,10 @@ variation_groups:
   - variation_group_name: Standard table
     variation_group_description: >-
       The default table style is shown below. This is equivalent to defining a
-      classless `<table>` element.  
+      classless `table` element.  
 
 
-      Tables are not responsive by default. See options below for [stacked and
-      scrolling responsive
+      Tables are not responsive by default. See options below for [responsive
       tables](https://cfpb-sandbox.github.io/design-system/components/tables#responsive-tables).  
     variations:
       - variation_code_snippet: >-
@@ -392,7 +391,7 @@ variation_groups:
       Also note that the `data-label` attribute must be used to label each cell
       in a `table` for small screen responsive views. 
     variations:
-      - variation_name: Stacked table
+      - variation_name: Responsive stacked table
         variation_description: >
           To stack table information on smaller screens and make the information
           legible, use the `.o-table__stack-on-small` class. 
@@ -444,7 +443,7 @@ variation_groups:
           - Padding, label / content: 15px
           - Padding, content / next label: 30px
           - Padding, rule line / first label: 15px
-      - variation_name: Directory tables (stacked with header)
+      - variation_name: Directory tables (responsive stacked table with header)
         variation_code_snippet: |-
           <table class="o-table
                         o-table__stack-on-small
@@ -472,27 +471,25 @@ variation_groups:
                       <td data-label="Phone number">(202) XXX-XXXX</td>
                       <td data-label="Email address">cclark@example.com</td>
                   </tr>
-                  <tr>
-                      <td data-label="Employee name">David Dern</td>
-                      <td data-label="Phone number">(202) XXX-XXXX</td>
-                      <td data-label="Email address">ddern@example.com</td>
-                  </tr>
               </tbody>
           </table>
         variation_description: >-
-          This stacked table variation turns the first column of data into
-          headers on smaller screens.  
+          The directory table is a variation of the stacked table. At the small
+          screen breakpoint, the directory table pattern uses first column data
+          (employee name, for instance) as a way to group and label stacks of
+          rows.
 
 
-          This is useful when data should be read across rows, instead of down
-          columns. An example is a table of directory information, where the
-          first column contains a person's name, and the remaining columns
-          contain their contact information (see below).   
-
-
-          At the small screen breakpoint, the first column (here, employee name)
-          becomes a header, and the remaining data points in the same row (phone
-          number, email address) are stacked below.  
+          This is useful when data is read across rows, instead of down columns.
+          For instance, contact information is comprised of a name, phone
+          number, and email address. An event is made up of the name of the
+          event, time, and location. You need all three pieces of data to create
+          an understanding of the thing being shown, and the first column of
+          data is the key to that understanding. 
+           
+          At the small screen breakpoint, the first column (in the example shown
+          below, employee names) become headers, and the remaining data points
+          in the same row (phone number, email address) are stacked below.  
 
 
           The `.o-table__entry-header-on-small` class in addition to
