@@ -12,7 +12,11 @@ description: >-
   [sublanding
   pages](https://cfpb.github.io/design-system/templates/sublanding-pages), and
   [browse pages](https://cfpb.github.io/design-system/templates/browse-pages).
-  See also: [image and text modules]().
+
+
+  Each link blob is comprised of a heading, short descriptive text, and call to
+  action. Link blobs appear in groups of 2 in a row (half-width link blob) or 3
+  in a row (third-width link blob) at breakpoints above 600 px.  
 variation_groups:
   - variations:
       - variation_code_snippet: ''
@@ -42,60 +46,53 @@ variation_groups:
 
 
           https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d1dc/cfgov/jinja2/v1/_includes/organisms/half-width-link-blob-group.html
-        variation_name: Half-width link blob
+        variation_name: ''
         variation_specs: |-
           * Headings: Use H3 or H4. Do not use both.
             * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more.
             * H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.
 
           ![](/design-system/images/uploads/halfwidthblob_style_mockup.png)
-      - variation_code_snippet: ''
-        variation_description: >-
-          ![Info unit group: example of third width link
-          blob](/design-system/images/uploads/third_width_link_blob_intro.png
-          "Info unit group: example of third width link blob")
+    variation_group_name: Half-width link blob
+    variation_group_description: ''
+  - variation_group_name: Third-width link blob
+    variation_group_description: >-
+      ![Info unit group: example of third width link
+      blob](/design-system/images/uploads/third_width_link_blob_intro.png "Info
+      unit group: example of third width link blob")
 
 
-          ##### When to use
+      ##### When to use
 
 
-          * Ideally, when a group of these components can be featured together
-          in multiples of three (3, 6, 9, etc.).
+      * Ideally, when a group of these components can be featured together in
+      multiples of three (3, 6, 9, etc.).
 
 
-          ##### When other options are better
+      ##### When other options are better
 
 
-          * When the number of components would be better featured in multiples
-          of 2, use the half-width link blob instead
+      * When the number of components would be better featured in multiples of
+      2, use the half-width link blob instead
 
-          * When headings are too long for the narrower width, for example, when
-          they break to 3 lines or more.
+      * When headings are too long for the narrower width, for example, when
+      they break to 3 lines or more.
 
-          * When content requires imagery, use the 50/50 image and text or the
-          25/75 image and text instead.
-        variation_jinja_code_snippet: >-
-          File in https://github.com/cfpb/cfgov-refresh:
-
-
-          https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d1dc/cfgov/jinja2/v1/_includes/organisms/third-width-link-blob-group.html
-        variation_name: Third-width link blob
-        variation_specs: |-
+      * When content requires imagery, use the 50/50 image and text or the 25/75
+      image and text instead.
+    variations:
+      - variation_implementation: |-
           * Headings: Use H3 or H4. Do not use both.
             * H3: Use when you wish to give the blob heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more.
             * H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the blob set follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.
 
           ![](/design-system/images/uploads/third_width_link_blob_style.png)
-    variation_group_name: Standard link blobs
-    variation_group_description: >-
-      A link blob is a unit consisting of heading, short descriptive text, and
-      call to action. They appear in groups of 2 or 3 in a row 
+        variation_specs: ''
+        variation_jinja_code_snippet: >-
+          File in https://github.com/cfpb/cfgov-refresh:
 
-      - Half-width link blobs consist of two units in a row at breakpoints above
-      600 px.  
 
-      - Third-width link blobs consist of three units in a row at breakpoints
-      above 600 px.  
+          https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d1dc/cfgov/jinja2/v1/_includes/organisms/third-width-link-blob-group.html
 usage: >-
   ### Behavior
 
