@@ -5,9 +5,9 @@ section: components
 secondary_section: Alerts
 status: Released
 description: >-
-  Describe this component. If needed, add a short summary of when and where this
-  should be used. If needed, include cross references [here]() and [here]().
-  Limit to around 300-350 characters with spaces.
+  Describe this component. Be brief. If needed, add a short summary of when and
+  where it should be used. Include any needed cross references [here]() and
+  [here](). Limit to around 300-350 characters with spaces.
 variation_groups:
   - variation_group_name: 'Standard [component name]'
     variation_group_description: >
@@ -17,22 +17,22 @@ variation_groups:
       _**Instructions**_
 
 
-      _This is where you'll display your default component in all its glory.
-      Show states and add design specs here. Any variations will go into
-      subsequent groups below._ 
+      _This is where you'll display your default component in all its glory,
+      including states and design specs. You will add component variations by
+      adding a new "Component variation group"-—see the next section below._ 
 
 
-      _To display your default component, start by clicking on the "Add
-      variations" button below. Leave the "Variation name" field blank._
+      _Start by clicking on the "Add variations" button below. Leave the
+      "Variation name" field blank if there's one standard component._
 
 
       _Add code showing all states for your standard component in one code
-      snippet field, as shown below. Code snippets are strongly preferred over
-      images._
+      snippet field, as shown below. If necessary, you can add an image instead
+      of a code snippet, but live samples are strongly preferred._
 
 
-      _Add implementation notes to the "implementation details" tab. Add design
-      and style notes to the "optional specs" tab._
+      _If you have them, add implementation notes to the "Implementation
+      details" tab. Add design and style notes to the "Optional specs" tab._
     variations:
       - variation_name: ''
         variation_description: ''
@@ -102,7 +102,27 @@ variation_groups:
           - Background: Gray 10 (#e7e8e9)
           - Avenir Next Regular, 16 px, Gray (#5a5d61)
   - variation_group_name: Variations
-    variation_group_description: >-
-      Generally, your page should be fine with two "component variation groups":
-      Standard [component name] and Variations.
+    variation_group_description: >
+      _Add component variations to this group. To get started, click on the "Add
+      variations" button below. For each variation, add a "Variation name" in
+      the corresponding field, and fill in the description, code snippet,
+      implementation, and specs fields as needed._
+
+
+      _If there is a large number of variations to add, you may want to consider
+      grouping them differently. See the examples below:_
+       
+       
+      | Page | Group 1 | Group 2 | Group 3 | Group 4 |
+
+      | - | - | - | - | - |
+
+      | [Checkboxes](https://cfpb.github.io/design-system/components/checkboxes)
+      | Standard checkboxes | Large target area checkboxes | - | - |
+
+      | [Buttons](https://cfpb.github.io/design-system/components/buttons) | 
+      Standard buttons | Sizes | Groups | Buttons with icons |
+
+      | [Tables](https://cfpb-sandbox.github.io/design-system/components/tables)
+      | Standard table  | Responsive tables | Variations | - |
 ---
