@@ -103,14 +103,14 @@ variation_groups:
           - Avenir Next Regular, 16 px, Gray (#5a5d61)
   - variation_group_name: Variations
     variation_group_description: >
-      _Add component variations to this group. To get started, click on the "Add
-      variations" button below. For each variation, add a "Variation name" in
-      the corresponding field, and fill in the description, code snippet,
-      implementation, and specs fields as needed._
+      _Add variations to this group. To get started, click on the "Add
+      variations" button. Add a "Variation name" in the corresponding field, and
+      fill in the description, code snippet, implementation, and specs fields as
+      needed._
 
 
-      _If there is a large number of variations to add, you may want to consider
-      grouping them differently. See the examples below:_
+      _If there is a large number of variations, consider a different grouping.
+      Some examples are below._
        
        
       | Page | Group 1 | Group 2 | Group 3 | Group 4 |
@@ -124,5 +124,14 @@ variation_groups:
       Standard buttons | Sizes | Groups | Buttons with icons |
 
       | [Tables](https://cfpb-sandbox.github.io/design-system/components/tables)
-      | Standard table  | Responsive tables | Variations | - |
+      | Standard table  | Responsive tables | Variations | - | 
+    variations:
+      - variation_name: Variation 1
+      - variation_name: Variation 2
+      - variation_name: Variation 3
+usage: |-
+  Include use cases here. 
+  Include behavior.
+  Include content guidelines. 
+  Shoot. Sandbox is not in sync.
 ---
