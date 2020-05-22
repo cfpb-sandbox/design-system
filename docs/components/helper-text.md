@@ -4,50 +4,73 @@ layout: variation
 section: components
 secondary_section: Text
 status: Released
-description: ' '
+description: >-
+  Helper text is used with form elements to give the user context about their
+  usage. Examples include indicating whether a field is optional or required.
 variation_groups:
   - variations:
-      - variation_code_snippet: |-
-          <label class="a-label a-label__heading">
-              A label heading <small class="a-label_helper">(optional)</small>
-          </label>
-        variation_description: >-
-          Appears with label headings. Use to indicate whether a field is optional
-          or required.
-        variation_name: Inline helper text
       - variation_code_snippet: |-
           <label class="a-label a-label__heading">
               A label heading
               <small class="a-label_helper a-label_helper__block">Use block helper text for instructions</small>
           </label>
+
+          <input class="a-text-input" type="text" id="helper-example">
         variation_description: >-
-          Use block helper text to explain why a piece of information is being
-          requested, address security and privacy concerns, or to suggest ways of
-          providing answers other than providing formatting examples.
-
-
-          Appears with labels and label headings.
+          Use to explain why a piece of information is being requested, address
+          security and privacy concerns, or to suggest ways of providing answers
+          other than providing formatting examples. (For formatting examples,
+          use placeholder text.) Appears with labels and label headings.
         variation_name: Block helper text
+        variation_specs: |-
+          #### Block helper text
+          - Avenir Next Regular, 16 px, Gray (#5a5d61)
+          - Margin top: 10 px
+          - Margin bottom: 10 px
       - variation_code_snippet: |-
-          <label class="a-label a-label__heading" for="textinput-example-default">
-              A text input
+          <label class="a-label a-label__heading">
+              A label heading <small class="a-label_helper">(optional)</small>
           </label>
+
+          <input class="a-text-input" type="text" id="helper-example">
+        variation_description: >-
+          Use to indicate whether a field is optional or required. Appears
+          inline with label headings. 
+        variation_name: Inline helper text
+      - variation_code_snippet: >-
+          <label class="a-label a-label__heading"
+          for="textinput-example-default">
+              A label heading
+          </label>
+
           <input class="a-text-input"
                 type="text"
                 id="textinput-example-default"
                 placeholder="Enter text…"
                 value="mm/dd/yyyy">
           <br><br>
+
           <input class="a-text-input"
                 type="text"
                 id="textinput-example-default"
                 placeholder="Enter text…"
                 value="email@example.com">
+          <br><br>
+
+          <input class="a-text-input"
+                type="text"
+                id="textinput-example-default"
+                placeholder="Enter text…"
+                value="placeholder text">
         variation_description: >-
           Use placeholder text for formatting examples only. Don’t use for
-          instructions. Placeholder text disappears once a user begins typing in the
-          field.
+          instructions. Placeholder text disappears once a user begins typing in
+          the field.
         variation_name: Placeholder text
+        variation_specs: |-
+          #### Placeholder text
+          Avenir Next Regular, 16 px, Gray (#5a5d61)
+    variation_group_name: Variations
 usage: >-
   <h3>Content guidelines</h3>
 
