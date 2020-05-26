@@ -103,35 +103,44 @@ variation_groups:
           - Avenir Next Regular, 16 px, Gray (#5a5d61)
   - variation_group_name: Variations
     variation_group_description: >
+      Optional description. 
+
+
+      _**Instructions**_
+
+
       _Add variations to this group. To get started, click on the "Add
       variations" button. Add a "Variation name" in the corresponding field, and
-      fill in the description, code snippet, implementation, and specs fields as
-      needed._
+      fill in the description, code snippet, implementation, and specs fields._
 
 
-      _If there is a large number of variations, consider a different grouping.
-      Some examples are below._
-       
-       
-      | Page | Group 1 | Group 2 | Group 3 | Group 4 |
+      _Occasionally, "Variations" may not be the right grouping; see
+      [checkboxes](https://cfpb.github.io/design-system/components/checkboxes),
+      [buttons](https://cfpb.github.io/design-system/components/buttons), and 
 
-      | - | - | - | - | - |
-
-      | [Checkboxes](https://cfpb.github.io/design-system/components/checkboxes)
-      | Standard checkboxes | Large target area checkboxes | - | - |
-
-      | [Buttons](https://cfpb.github.io/design-system/components/buttons) | 
-      Standard buttons | Sizes | Groups | Buttons with icons |
-
-      | [Tables](https://cfpb-sandbox.github.io/design-system/components/tables)
-      | Standard table  | Responsive tables | Variations | - | 
+      [tables](https://cfpb-sandbox.github.io/design-system/components/tables)
+      for other ways to group samples._
     variations:
-      - variation_name: Variation 1
-      - variation_name: Variation 2
-      - variation_name: Variation 3
+      - variation_name: Feathered checkbox
+        variation_description: Brief statement of what this is. Sample would appear below.
+      - variation_name: Striped checkbox
+        variation_description: Brief statement of what this is. Sample would appear below.
+      - variation_name: Pleated checkbox
+        variation_description: Brief statement of what this is. Sample would appear below.
 usage: |-
-  Include use cases here. 
-  Include behavior.
-  Include content guidelines. 
-  Shoot. Sandbox is not in sync.
+  ### Use cases
+  Details on when and where to use.
+
+  ### Content guidelines
+  Casing guidelines, character counts, voice, etc. 
+
+  ### Behavior  
+  Responsive guidelines 
+
+  | Above 600 px | Below 601 px |
+  | ---- | ----- |
+  | Image | Image |
+restrictions:
+  - restrictions_do: 'Do '
+    restrictions_do_not: Do not
 ---
