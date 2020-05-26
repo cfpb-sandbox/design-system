@@ -1,5 +1,5 @@
 ---
-title: Blocks
+title: 'Blocks                  '
 layout: variation
 section: components
 secondary_section: Core development
@@ -28,8 +28,8 @@ variation_groups:
               Content block
           </div>
         variation_description: >-
-          The standard `.block` class by itself simply adds a `margin` of twice the
-          gutter width to the top and bottom.
+          The standard `.block` class by itself simply adds a `margin` of twice
+          the gutter width to the top and bottom.
         variation_name: Standard block example
       - variation_code_snippet: |-
           Main content...
@@ -103,8 +103,8 @@ variation_groups:
           </main>
         variation_description: >-
           Removes the side `margin` from `.block`. Typically used in conjunction
-          with `.block__bg` to create a ‘well’ whose `background` extends into the
-          left and right gutters. (See below.)
+          with `.block__bg` to create a ‘well’ whose `background` extends into
+          the left and right gutters. (See below.)
         variation_name: Flush-sides modifier
       - variation_code_snippet: |-
           <main class="content content__1-3" role="main">
@@ -157,8 +157,8 @@ variation_groups:
           </div>
         variation_description: >-
           Breaks top `margin` into `margin` and `padding`. Useful in combination
-          with `block__border-top` to add `padding` between `.block` contents and
-          `border`.
+          with `block__border-top` to add `padding` between `.block` contents
+          and `border`.
         variation_name: Padded-top modifier
       - variation_code_snippet: |-
           Main content...
@@ -167,9 +167,9 @@ variation_groups:
               and border.
           </div>
         variation_description: >-
-          Breaks bottom `margin` into `margin` and `padding`. Useful in combination
-          with `block__border-bottom` to add `padding` between `.block` contents and
-          `border`.
+          Breaks bottom `margin` into `margin` and `padding`. Useful in
+          combination with `block__border-bottom` to add `padding` between
+          `.block` contents and `border`.
         variation_name: Padded-bottom modifier
       - variation_code_snippet: |-
           <div class="block block__sub">
@@ -188,8 +188,8 @@ variation_groups:
               </div>
           </div>
         variation_description: >-
-          Useful for when you need some consistent `margin` between `.blocks` that
-          are nested within other `.blocks`.
+          Useful for when you need some consistent `margin` between `.blocks`
+          that are nested within other `.blocks`.
 
 
           Note that the `div`s with inline styles are for demonstration purposes
@@ -204,6 +204,6 @@ usage: |-
 
   TBD
 accessibility: ''
-research: ''
 last_updated: 2020-01-06T20:29:09.912Z
+research: ''
 ---
