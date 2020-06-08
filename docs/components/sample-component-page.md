@@ -6,33 +6,43 @@ secondary_section: Alerts
 status: Released
 description: >-
   Describe this component. Be brief. If needed, add a short summary of when and
-  where it should be used. Include any needed cross references [here]() and
-  [here](). Limit to around 300-350 characters with spaces.
+  where it should be used. Include any needed cross references [here](<>) and
+  [here](<>). Limit to around 400 characters with spaces.
 variation_groups:
   - variation_group_name: 'Standard [component name]'
-    variation_group_description: >
-      Optional description. 
+    variation_group_description: >-
+      Optional description.
 
 
-      _**Instructions**_
+      ***Instructions***
 
 
-      _This is where you'll display your default component in all its glory,
-      including states and design specs. You will add component variations by
-      adding a new "Component variation group"-—see the next section below._ 
+      *1) If there is one standard default component, add the label "Standard
+      \[component]" to the field "Component variation group name" above.
+      Examples: https://cfpb.github.io/design-system/components/checkboxes,
+      https://cfpb.github.io/design-system/components/tables*
 
 
-      _Start by clicking on the "Add variations" button below. Leave the
-      "Variation name" field blank if there's one standard component._
+      *If your component doesn't really have just one standard default, but
+      rather more than one type with different use cases, add the label "Types"
+      to the field "Component variation group name" above. Examples:
+      https://cfpb.github.io/design-system/components/e-mail-signup-forms,
+      https://cfpb.github.io/design-system/components/buttons*
 
 
-      _Add code showing all states for your standard component in one code
-      snippet field, as shown below. If necessary, you can add an image instead
-      of a code snippet, but live samples are strongly preferred._
+      *2) Click on the "Add variations" button below. Leave the "Variation name"
+      field blank if there's one standard component. If you're adding types,
+      then you'll need to add more than one variation; add the name of each type
+      to the "Variation name" field.* 
 
 
-      _If you have them, add implementation notes to the "Implementation
-      details" tab. Add design and style notes to the "Optional specs" tab._
+      *3) If there are states, add a single code snippet showing them, as shown
+      in this example. If necessary, you can add an image instead of a code
+      snippet, but live samples are strongly preferred.*  
+
+
+      *4) If you have them, add implementation notes to the "Implementation
+      details" tab. Add design and style notes to the "Optional specs" tab.*
     variations:
       - variation_name: ''
         variation_description: ''
@@ -72,8 +82,9 @@ variation_groups:
               <label class="a-label" for="test_checkbox_basic_disabled">Disabled/selected</label>
           </div>
         variation_implementation: >-
-          Be sure to add the `.o-blahblah` class to `blahblah` if you're doing
-          this or that, otherwise this bad thing will happen. 
+          This is developer-focused stuff. Be sure to add the `.o-blahblah`
+          class to `blahblah` if you're doing this or that, otherwise this bad
+          thing will happen.
         variation_specs: |-
           You can add images here too. 
 
@@ -102,45 +113,60 @@ variation_groups:
           - Background: Gray 10 (#e7e8e9)
           - Avenir Next Regular, 16 px, Gray (#5a5d61)
   - variation_group_name: Variations
-    variation_group_description: >
-      Optional description. 
+    variation_group_description: >-
+      Optional descriptive text
 
 
-      _**Instructions**_
+      ***Instructions***
 
 
-      _Add variations to this group. To get started, click on the "Add
+      *Add variations to this group. To get started, click on the "Add
       variations" button. Add a "Variation name" in the corresponding field, and
-      fill in the description, code snippet, implementation, and specs fields._
+      fill in the description, code snippet, implementation, and specs fields.*
 
 
-      _Occasionally, "Variations" may not be the right grouping; see
+      *Occasionally, "Variations" may not be the right label for this group.
+      Some other instances of this label: "Groups", "Sizes", "Responsive
+      \[component]." see
       [checkboxes](https://cfpb.github.io/design-system/components/checkboxes),
       [buttons](https://cfpb.github.io/design-system/components/buttons), and 
-
       [tables](https://cfpb-sandbox.github.io/design-system/components/tables)
-      for other ways to group samples._
+      for other ways to group samples.*
     variations:
       - variation_name: Feathered checkbox
-        variation_description: Brief statement of what this is. Sample would appear below.
+        variation_description: 'Brief statement of what this is, if needed. Sample would appear below.'
       - variation_name: Striped checkbox
-        variation_description: Brief statement of what this is. Sample would appear below.
+        variation_description: 'Brief statement of what this is, if needed. Sample would appear below.'
       - variation_name: Pleated checkbox
-        variation_description: Brief statement of what this is. Sample would appear below.
-usage: |-
+        variation_description: 'Brief statement of what this is, if needed. Sample would appear below.'
+usage: >-
   ### Use cases
+
+
   Details on when and where to use.
 
+
   ### Content guidelines
+
+
   Casing guidelines, character counts, voice, etc. 
 
-  ### Behavior  
-  Responsive guidelines 
 
-  | Above 600 px | Below 601 px |
-  | ---- | ----- |
-  | Image | Image |
+  ### Behavior
+
+
+  Responsive guidelines.   
+
+
+  | Above 600 px                                                         | Below
+  601 px                                                 |
+
+  | -------------------------------------------------------------------- |
+  ------------------------------------------------------------ |
+
+  | Image showing what component looks like at tablet/desktop breakpoint | Image
+  showing what component looks like at mobile breakpoint |
 restrictions:
-  - restrictions_do: 'Do '
-    restrictions_do_not: Do not
+  - restrictions_do: Words or photos
+    restrictions_do_not: Words or photos
 ---
