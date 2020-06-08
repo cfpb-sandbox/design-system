@@ -1473,7 +1473,7 @@
 
     
         <section id="description" class="u-mb30">
-            <p>Describe this component. Be brief. If needed, add a short summary of when and where it should be used. Include any needed cross references <a href="">here</a> and <a href="">here</a>. Limit to around 300-350 characters with spaces.</p>
+            <p>Describe this component. Be brief. If needed, add a short summary of when and where it should be used. Include any needed cross references <a href="">here</a> and <a href="">here</a>. Limit to around 400 characters with spaces.</p>
 
         </section>
     
@@ -1489,15 +1489,17 @@
         <div class="o-variation_group_description">
             <p>Optional description.</p>
 
-<p><em><strong>Instructions</strong></em></p>
+<p><strong><em>Instructions</em></strong></p>
 
-<p><em>This is where you’ll display your default component in all its glory, including states and design specs. You will add component variations by adding a new “Component variation group”-—see the next section below.</em></p>
+<p><em>1) If there is one standard default component, add the label “Standard [component]” to the field “Component variation group name” above. Examples: https://cfpb.github.io/design-system/components/checkboxes, https://cfpb.github.io/design-system/components/tables</em></p>
 
-<p><em>Start by clicking on the “Add variations” button below. Leave the “Variation name” field blank if there’s one standard component.</em></p>
+<p><em>If your component doesn’t really have just one standard default, but rather more than one type with different use cases, add the label “Types” to the field “Component variation group name” above. Examples: https://cfpb.github.io/design-system/components/e-mail-signup-forms, https://cfpb.github.io/design-system/components/buttons</em></p>
 
-<p><em>Add code showing all states for your standard component in one code snippet field, as shown below. If necessary, you can add an image instead of a code snippet, but live samples are strongly preferred.</em></p>
+<p><em>2) Click on the “Add variations” button below. Leave the “Variation name” field blank if there’s one standard component. If you’re adding types, then you’ll need to add more than one variation; add the name of each type to the “Variation name” field.</em></p>
 
-<p><em>If you have them, add implementation notes to the “Implementation details” tab. Add design and style notes to the “Optional specs” tab.</em></p>
+<p><em>3) If there are states, add a single code snippet showing them, as shown in this example. If necessary, you can add an image instead of a code snippet, but live samples are strongly preferred.</em></p>
+
+<p><em>4) If you have them, add implementation notes to the “Implementation details” tab. Add design and style notes to the “Optional specs” tab.</em></p>
 
         </div>
         
@@ -1646,7 +1648,7 @@
                     <div>
                         <h4 class="variation-implementation-title">Implementation details</h4>
                         <div style="padding:40px">
-                            <p>Be sure to add the <code class="highlighter-rouge">.o-blahblah</code> class to <code class="highlighter-rouge">blahblah</code> if you’re doing this or that, otherwise this bad thing will happen.</p>
+                            <p>This is developer-focused stuff. Be sure to add the <code class="highlighter-rouge">.o-blahblah</code> class to <code class="highlighter-rouge">blahblah</code> if you’re doing this or that, otherwise this bad thing will happen.</p>
 
                         </div>
                     </div>
@@ -1716,14 +1718,13 @@
 
         
         <div class="o-variation_group_description">
-            <p>Optional description.</p>
+            <p>Optional descriptive text</p>
 
-<p><em><strong>Instructions</strong></em></p>
+<p><strong><em>Instructions</em></strong></p>
 
 <p><em>Add variations to this group. To get started, click on the “Add variations” button. Add a “Variation name” in the corresponding field, and fill in the description, code snippet, implementation, and specs fields.</em></p>
 
-<p><em>Occasionally, “Variations” may not be the right grouping; see <a href="https://cfpb.github.io/design-system/components/checkboxes">checkboxes</a>, <a href="https://cfpb.github.io/design-system/components/buttons">buttons</a>, and 
-<a href="https://cfpb-sandbox.github.io/design-system/components/tables">tables</a> for other ways to group samples.</em></p>
+<p><em>Occasionally, “Variations” may not be the right label for this group. Some other instances of this label: “Groups”, “Sizes”, “Responsive [component].” see <a href="https://cfpb.github.io/design-system/components/checkboxes">checkboxes</a>, <a href="https://cfpb.github.io/design-system/components/buttons">buttons</a>, and  <a href="https://cfpb-sandbox.github.io/design-system/components/tables">tables</a> for other ways to group samples.</em></p>
 
         </div>
         
@@ -1736,7 +1737,7 @@
             </div>
 
             <div class="m-variation_description">
-                <p>Brief statement of what this is. Sample would appear below.</p>
+                <p>Brief statement of what this is, if needed. Sample would appear below.</p>
 
             </div>
 
@@ -1764,7 +1765,7 @@
             </div>
 
             <div class="m-variation_description">
-                <p>Brief statement of what this is. Sample would appear below.</p>
+                <p>Brief statement of what this is, if needed. Sample would appear below.</p>
 
             </div>
 
@@ -1792,7 +1793,7 @@
             </div>
 
             <div class="m-variation_description">
-                <p>Brief statement of what this is. Sample would appear below.</p>
+                <p>Brief statement of what this is, if needed. Sample would appear below.</p>
 
             </div>
 
@@ -1826,13 +1827,16 @@
                     <p>
                     </p>
 <h3 id="use-cases">Use cases</h3>
+
 <p>Details on when and where to use.</p>
 
 <h3 id="content-guidelines">Content guidelines</h3>
+
 <p>Casing guidelines, character counts, voice, etc.</p>
 
 <h3 id="behavior">Behavior</h3>
-<p>Responsive guidelines</p>
+
+<p>Responsive guidelines.</p>
 
 <table>
   <thead>
@@ -1843,8 +1847,8 @@
   </thead>
   <tbody>
     <tr>
-      <td>Image</td>
-      <td>Image</td>
+      <td>Image showing what component looks like at tablet/desktop breakpoint</td>
+      <td>Image showing what component looks like at mobile breakpoint</td>
     </tr>
   </tbody>
 </table>
@@ -1867,7 +1871,7 @@
                                     </header>
                                     <p>
                                     </p>
-<p>Do</p>
+<p>Words or photos</p>
 
                                     
                                 </div>
@@ -1883,7 +1887,7 @@
                                     </header>
                                     <p>
                                     </p>
-<p>Do not</p>
+<p>Words or photos</p>
 
                                     
                                 </div>
@@ -1932,8 +1936,8 @@
         <div class="block block__sub">
             <small>
                 <strong>Page last edited:</strong>
-                <time datetime="2020-05-26 14:32:37 +0000">
-                     2:32:37 PM May 26, 2020
+                <time datetime="2020-06-08 16:08:13 +0000">
+                     4:08:13 PM Jun 08, 2020
                 </time>
             </small>
         </div>
