@@ -5,29 +5,34 @@ section: components
 secondary_section: Alerts
 status: Released
 description: >-
-  Describe this component. Be brief. If needed, add a short summary of when and
-  where it should be used. Include any needed cross references [here](<>) and
-  [here](<>). Limit to around 400 characters with spaces.
+  Intro: Describe this component in 1-3 sentences. Explain why the page exists
+  and what users will get out of the content on this page. Be brief. Limit to
+  around 400 characters with spaces.
 variation_groups:
   - variation_group_name: 'Standard [component name]'
     variation_group_description: >-
-      Optional description.
+      Optional description. 1-3 sentences, 200-350 characters.
 
 
-      ***Instructions***
+      ### Instructions
+
+
+      ***Use the following prompts to get started on your component page:***
 
 
       *1) If there is one standard default component, add the label "Standard
       \[component]" to the field "Component variation group name" above.
-      Examples: https://cfpb.github.io/design-system/components/checkboxes,
-      https://cfpb.github.io/design-system/components/tables*
+      Examples: See
+      [checkboxes](https://cfpb.github.io/design-system/components/checkboxes)
+      and
+      [tables](https://cfpb-sandbox.github.io/design-system/components/tables).*
 
 
-      *If your component doesn't really have just one standard default, but
-      rather more than one type with different use cases, add the label "Types"
-      to the field "Component variation group name" above. Examples:
-      https://cfpb.github.io/design-system/components/e-mail-signup-forms,
-      https://cfpb.github.io/design-system/components/buttons*
+      *If your component doesn't have just one standard default, but rather more
+      than one type with different use cases, add the label "Types" to the field
+      "Component variation group name" above. Examples: [E-mail signup
+      forms](*https://cfpb.github.io/design-system/components/e-mail-signup-forms*)
+      and [buttons](*https://cfpb.github.io/design-system/components/buttons*).*
 
 
       *2) Click on the "Add variations" button below. Leave the "Variation name"
@@ -38,7 +43,7 @@ variation_groups:
 
       *3) If there are states, add a single code snippet showing them, as shown
       in this example. If necessary, you can add an image instead of a code
-      snippet, but live samples are strongly preferred.*  
+      snippet, but live samples are strongly preferred.*
 
 
       *4) If you have them, add implementation notes to the "Implementation
@@ -114,10 +119,13 @@ variation_groups:
           - Avenir Next Regular, 16 px, Gray (#5a5d61)
   - variation_group_name: Variations
     variation_group_description: >-
-      Optional descriptive text
+      Optional descriptive text. 1-3 sentences, 200-350 characters. 
 
 
-      ***Instructions***
+      ### Instructions
+
+
+      ***Use the following prompts to add variations:***
 
 
       *Add variations to this group. To get started, click on the "Add
@@ -143,13 +151,15 @@ usage: >-
   ### Use cases
 
 
-  Details on when and where to use.
+  Provide details on when and where to use this component. Use active voice. No
+  character limit. Paragraph content is optional.
 
 
   ### Content guidelines
 
 
-  Casing guidelines, character counts, voice, etc. 
+  Include character count restrictions/recommendations, casing guidelines,
+  voice, etc. No character limit. Paragraph content is optional.
 
 
   ### Behavior
