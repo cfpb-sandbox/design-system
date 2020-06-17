@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: cfpb/design-system
+  repo: cfpb-sandbox/design-system
   branch: master
   auth_scope: public_repo
   squash_merges: true
@@ -13,8 +13,8 @@ backend:
 # one is running (yarn start-netlify, which uses netlify-cms-proxy-server).
 local_backend: true
 
-site_url: https://cfpb.github.io/design-system
-logo_url: https://cfpb.github.io/design-system/assets/img/cfpb-netlify-logo.png
+site_url: https://cfpb-sandbox.github.io/design-system
+logo_url: https://cfpb-sandbox.github.io/design-system/assets/img/cfpb-netlify-logo.png
 publish_mode: editorial_workflow
 media_folder: docs/images/uploads
 public_folder: /design-system/images/uploads
