@@ -24,27 +24,31 @@
         Skip to main content
     </a>
   </div>
-  <div class="m-global-eyebrow
-            m-global-eyebrow__horizontal">
-    <div class="wrapper
-                wrapper__match-content">
-        <div class="a-tagline">
-            An official website of the United States government
-        </div>
+  <header role="banner" class="site-header-wrapper">
+
+  <div class="m-global-eyebrow">
+    <div class="a-tagline">
+        An official website of the United States government
     </div>
 </div>
 
-  <div class="body-wrapper">
-    <header role="banner" class="site-header">
-  <div class="wrapper">
-    <div class="title content-l_col content-l_col-1-3">
-      <h1 class="title_heading">
-        <a class="title-link" href="/design-system/">
-          <span class="demi">CFPB</span> Design System
-        </a>
-      </h1>
-    </div>
-    <nav class="global-nav content-l_col content-l_col-2-3" role="navigation">
+
+  <div class="site-header">
+
+    <form id="search-form" action="/design-system/search" method="get">
+    <label class="u-visually-hidden" for="search-box">Search:</label>
+    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="enter your query">
+    <button class="a-btn" type="submit">Search!</button>
+</form>
+
+
+    <h1 class="title">
+      <a class="title-link" href="/design-system/">
+        <span class="demi">CFPB</span> Design System
+      </a>
+    </h1>
+
+    <nav class="global-nav" role="navigation">
       <ul class="global-nav_list">
         <li class="nav-list-item">
             <a class="" href="/design-system/getting-started">
@@ -71,7 +75,7 @@
   </div> <!-- /.wrapper -->
 </header>
 
-    <main class="content content__1-3 content__bleedbar-expandable" id="main" role="main">
+  <main class="content content__1-3 content__bleedbar-expandable" id="main" role="main">
   <div class="content_bar"></div>
   <div class="content_wrapper">
     <aside class="content_sidebar
@@ -228,10 +232,6 @@
                 
             
                 
-            
-                
-            
-                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/notifications">Notifications</a>
                 </li>
@@ -255,6 +255,8 @@
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/sample-component-page">Sample component page</a>
                 </li>
+                
+            
                 
             
                 
@@ -339,13 +341,9 @@
                 
             
                 
-            
-                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/column-dividers">Column dividers</a>
                 </li>
-                
-            
                 
             
                 
@@ -421,8 +419,6 @@
                 
             
                 
-            
-                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/media-queries">Media queries</a>
                 </li>
@@ -455,7 +451,9 @@
                 
             
                 
-            
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/components/main-content-and-sidebars">Main content and sidebars</a>
+                </li>
                 
             
                 
@@ -464,6 +462,16 @@
             
                 
             
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/components/variables">Variables</a>
+                </li>
                 
             
                 
@@ -580,10 +588,6 @@
                 
             
                 
-            
-                
-            
-                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/line-charts">Line Charts</a>
                 </li>
@@ -595,10 +599,6 @@
             
                 
             
-                
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/maps">Maps</a>
-                </li>
                 
             
                 
@@ -617,6 +617,8 @@
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/pie-charts">Pie Charts</a>
                 </li>
+                
+            
                 
             
                 
@@ -700,10 +702,6 @@
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/checkboxes">Checkboxes</a>
                 </li>
-                
-            
-                
-            
                 
             
                 
@@ -835,6 +833,8 @@
                 
             
                 
+            
+                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/text-inputs">Text Inputs</a>
                 </li>
@@ -906,14 +906,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/contact-information">Contact Information</a>
-                </li>
-                
-            
-                
-            
-                
             
                 
             
@@ -946,10 +938,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/full-width-text">Full Width Text</a>
-                </li>
-                
             
                 
             
@@ -974,10 +962,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/info-unit-groups-image-and-text">Info Unit Groups: Image and text</a>
-                </li>
-                
             
                 
                 <li class="m-list_item">
@@ -989,10 +973,14 @@
             
                 
                 <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/introductions">Introductions</a>
+                    <a class="m-list_link" href="/design-system/components/text-introductions">Text introductions</a>
                 </li>
                 
             
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/components/item-introductions">Item introductions</a>
+                </li>
                 
             
                 
@@ -1036,15 +1024,9 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/sidebars-and-prefooters">Sidebars and Prefooters</a>
-                </li>
-                
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/snippet-lists">Snippet Lists</a>
-                </li>
+            
                 
             
                 
@@ -1064,11 +1046,11 @@
                 
             
                 
+            
+                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/wells">Wells</a>
                 </li>
-                
-            
                 
             
         </ul>
@@ -1179,10 +1161,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/left-hand-navigation">Left Hand Navigation</a>
-                </li>
-                
             
                 
             
@@ -1192,14 +1170,6 @@
             
                 
             
-                
-            
-                
-            
-                
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/mega-menu">Mega menu</a>
-                </li>
                 
             
                 
@@ -1208,6 +1178,8 @@
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/pagination">Pagination</a>
                 </li>
+                
+            
                 
             
                 
@@ -1292,14 +1264,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/code-blocks">Code blocks</a>
-                </li>
-                
-            
-                
-            
-                
             
                 
             
@@ -1364,11 +1328,11 @@
                 
             
                 
+            
+                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/labels-and-legends">Labels and legends</a>
                 </li>
-                
-            
                 
             
                 
@@ -1437,6 +1401,8 @@
             
                 
             
+                
+            
         </ul>
     </li>
     
@@ -1447,24 +1413,18 @@
     </aside>
         <section class="content_main">
 
-    <div class="component-header u-mb30">
-        <h1>
-            Link blobs
-        </h1>
-    </div>
+    <h1 class="component-header u-mb30">
+        Link blobs
+    </h1>
 
     
     <ul class="m-list m-list__horizontal u-mb30">
         
         
         <li class="m-list_item">
-            <a class="m-list_link" href="#half-width-link-blob">Half-width link blob</a>
-        </li>
-        
-        
-        
-        <li class="m-list_item">
-            <a class="m-list_link" href="#third-width-link-blob">Third-width link blob</a>
+            <a class="m-list_link" href="#types">
+                Types
+            </a>
         </li>
         
         
@@ -1472,24 +1432,25 @@
     
 
     
-        <section id="description" class="u-mb30">
-            <p>Link blobs are text-only layout modules. They are used on higher-level template pages to provide succinct descriptions and lead users to content deeper within the section. They commonly appear on <a href="https://cfpb.github.io/design-system/templates/landing-pages">landing pages</a>, <a href="https://cfpb.github.io/design-system/templates/sublanding-pages">sublanding pages</a>, and <a href="https://cfpb.github.io/design-system/templates/browse-pages">browse pages</a>.</p>
+    <section id="description" class="u-mb30">
+        <p>Link blobs are text-only layout modules. They provide brief context to lead users from a parent page (<a href="https://cfpb.github.io/design-system/templates/landing-pages">landing pages</a>, <a href="https://cfpb.github.io/design-system/templates/sublanding-pages">sublanding pages</a>, and <a href="https://cfpb.github.io/design-system/templates/browse-pages">browse pages</a>) to a child or sibling page.</p>
 
-<p>Each link blob is comprised of a heading, short descriptive text, and call to action. Link blobs appear in groups of 2 in a row (half-width link blob) or 3 in a row (third-width link blob) at breakpoints above 600 px.</p>
-
-        </section>
+    </section>
     
 
     
     
-    <section class="o-variation_group" id="half-width-link-blob">
+    <section class="o-variation_group" id="types">
+
         
-        <h2 class="o-variation_group_title">Half-width link blob</h2>
+        <h2 class="o-variation_group_title">
+            Types
+        </h2>
         
 
         
         <div class="o-variation_group_description">
-            
+            <p>A link blob is a unit consisting of heading, short descriptive text, and call to action. At breakpoints above 601 px, link blobs are found in rows of two blobs (half-width link blobs) or three blobs (third-width link blobs).</p>
 
         </div>
         
@@ -1497,10 +1458,17 @@
         
         <div class="m-variation">
 
-            <div class="m-variation_name">
-                <h3></h3>
-            </div>
+            
+            
+            
 
+            
+            <div class="m-variation_name">
+                <h3>Half-width link blob</h3>
+            </div>
+            
+
+            
             <div class="m-variation_description">
                 <p><img src="/design-system/images/uploads/halfwidthblob_intro_mockup.png" alt="Info unit group: example of half width link blob" title="Info unit group: example of half width link blob"></p>
 
@@ -1518,38 +1486,38 @@
 </ul>
 
             </div>
+            
 
             <!-- Live code example -->
             
-            <div class="a-live_code">
-                
-            </div>
+
+            
+            
+            
+            
+
+            
+
+            
             
 
             <div class="a-toggle_code">
-                <button href="#-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#details-half-width-link-blob-info-unit-g-1" class="a-btn a-btn__link" data-toggle-details="show">Show details</button>
+                <button href="#details-half-width-link-blob-info-unit-g-1" class="a-btn a-btn__link u-hidden" data-toggle-details="hide">Hide details</button>
             </div>
 
-            
-            
-            
-            
-            
-            
-
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="-code-1">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="details-half-width-link-blob-info-unit-g-1">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#-html-code-snippet-1">
+                        <a class="govuk-tabs__tab" href="#details-half-width-link-blob-info-unit-g-html-code-snippet-1">
                             HTML code snippet
                         </a>
                     </li>
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#-jinja-code-snippet-1">
+                        <a class="govuk-tabs__tab" href="#details-half-width-link-blob-info-unit-g-jinja-code-snippet-1">
                             Jinja code snippet
                         </a>
                     </li>
@@ -1557,7 +1525,7 @@
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#-specs-1">
+                        <a class="govuk-tabs__tab" href="#details-half-width-link-blob-info-unit-g-specs-1">
                             Specs
                         </a>
                     </li>
@@ -1566,7 +1534,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="-html-code-snippet-1">
+                <section class="govuk-tabs__panel" id="details-half-width-link-blob-info-unit-g-html-code-snippet-1">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1578,7 +1546,7 @@
 
                 <!-- Jinja snippet -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-jinja-code-snippet-1">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="details-half-width-link-blob-info-unit-g-jinja-code-snippet-1">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -1595,7 +1563,7 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 
                 <!-- Specs -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-specs-1">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="details-half-width-link-blob-info-unit-g-specs-1">
                     <div>
                         <h4 class="variation-specs-title">Specs</h4>
                         <div style="padding:40px">
@@ -1621,16 +1589,21 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 
         </div>
         
-    </section>
-    
-    <section class="o-variation_group" id="third-width-link-blob">
-        
-        <h2 class="o-variation_group_title">Third-width link blob</h2>
-        
+        <div class="m-variation">
 
-        
-        <div class="o-variation_group_description">
-            <p><img src="/design-system/images/uploads/third_width_link_blob_intro.png" alt="Info unit group: example of third width link blob" title="Info unit group: example of third width link blob"></p>
+            
+            
+            
+
+            
+            <div class="m-variation_name">
+                <h3>Third-width link blob</h3>
+            </div>
+            
+
+            
+            <div class="m-variation_description">
+                <p><img src="/design-system/images/uploads/third_width_link_blob_intro.png" alt="Info unit group: example of third width link blob" title="Info unit group: example of third width link blob"></p>
 
 <h5 id="when-to-use">When to use</h5>
 
@@ -1646,56 +1619,47 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
   <li>When content requires imagery, use the 50/50 image and text or the 25/75 image and text instead.</li>
 </ul>
 
-        </div>
-        
-
-        
-        <div class="m-variation">
-
-            <div class="m-variation_name">
-                <h3></h3>
             </div>
-
-            <div class="m-variation_description">
-                
-
-            </div>
+            
 
             <!-- Live code example -->
             
 
+            
+            
+            
+            
+
+            
+
+            
+            
+
             <div class="a-toggle_code">
-                <button href="#-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#details-third-width-link-blob-info-unit--2" class="a-btn a-btn__link" data-toggle-details="show">Show details</button>
+                <button href="#details-third-width-link-blob-info-unit--2" class="a-btn a-btn__link u-hidden" data-toggle-details="hide">Hide details</button>
             </div>
 
-            
-            
-            
-            
-            
-            
-
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="-code-1">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="details-third-width-link-blob-info-unit--2">
                 <ul class="govuk-tabs__list">
+                    
+                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#details-third-width-link-blob-info-unit--html-code-snippet-2">
+                            HTML code snippet
+                        </a>
+                    </li>
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#-jinja-code-snippet-1">
+                        <a class="govuk-tabs__tab" href="#details-third-width-link-blob-info-unit--jinja-code-snippet-2">
                             Jinja code snippet
                         </a>
                     </li>
                     
                     
-                    <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#-implementation-1">
-                            Implementation
-                        </a>
-                    </li>
-                    
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#-specs-1">
+                        <a class="govuk-tabs__tab" href="#details-third-width-link-blob-info-unit--specs-2">
                             Specs
                         </a>
                     </li>
@@ -1704,10 +1668,19 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 
                 <!-- HTML snippet -->
                 
+                <section class="govuk-tabs__panel" id="details-third-width-link-blob-info-unit--html-code-snippet-2">
+                    <div class="variation-code-snippet">
+                        <h4 class="variation-code-snippet-title">HTML code snippet</h4>
+                        <div class="source-code">
+                            <pre><code class="language-html"></code></pre>
+                        </div>
+                    </div>
+                </section>
+                
 
                 <!-- Jinja snippet -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-jinja-code-snippet-1">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="details-third-width-link-blob-info-unit--jinja-code-snippet-2">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -1721,9 +1694,12 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 
                 <!-- Implementation details -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-implementation-1">
+
+                <!-- Specs -->
+                
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="details-third-width-link-blob-info-unit--specs-2">
                     <div>
-                        <h4 class="variation-implementation-title">Implementation details</h4>
+                        <h4 class="variation-specs-title">Specs</h4>
                         <div style="padding:40px">
                             <ul>
   <li>Headings: Use H3 or H4. Do not use both.
@@ -1735,19 +1711,6 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
 </ul>
 
 <p><img src="/design-system/images/uploads/third_width_link_blob_style.png" alt=""></p>
-
-                        </div>
-                    </div>
-                </section>
-                
-
-                <!-- Specs -->
-                
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="-specs-1">
-                    <div>
-                        <h4 class="variation-specs-title">Specs</h4>
-                        <div style="padding:40px">
-                            
 
                         </div>
                     </div>
@@ -1767,13 +1730,50 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
     
     
         <section class="sticky-header u-mb45">
-            <h2 id="usage">Usage</h2>
-            <div class="content_line__wide content_line content_line u-mb20"></div>
-                
-                    <p>
-                    </p>
-<h3 id="behavior">Behavior</h3>
 
+            
+
+            
+                <h2 id="content-guidelines">Content guidelines</h2>
+                <div class="content_line content_line__wide u-mb20"></div>
+                <p>
+                </p>
+<p>Do not use blobs for multiple paragraphs of copy. Copy should be succinct.</p>
+<ul>
+  <li>Headings
+    <ul>
+      <li>45 characters max. 25 characters max is preferred, which renders as one line at max column width.</li>
+    </ul>
+  </li>
+  <li>Descriptions
+    <ul>
+      <li>Half-width link blobs: 100-250 characters max</li>
+      <li>Third-width link blobs: 90-150 characters max</li>
+    </ul>
+  </li>
+  <li>Call to action
+    <ul>
+      <li>Half-width link blobs: 40 characters max</li>
+      <li>Third-width link blobs: 30 characters max</li>
+      <li>Follow <a href="https://cfpb.github.io/design-system/components/links">link guidelines</a>.</li>
+    </ul>
+  </li>
+  <li>When these components are featured together (which is ideal), the amount of content in each component should be as close to the same number of total lines as possible.
+    <ul>
+      <li>For half-width link blobs, one or two lines different is ok</li>
+      <li>For third-width link blobs, a difference of one line is ok</li>
+    </ul>
+  </li>
+</ul>
+
+                
+            
+
+            
+                <h2 id="behavior">Behavior</h2>
+                <div class="content_line content_line__wide u-mb20"></div>
+                <p>
+                </p>
 <p>At breakpoints below 601, side-by-side modules stack vertically in Z-order as shown below, and the mobile link style is used for the call to action link(s)</p>
 
 <h4 id="half-width-link-blob">Half-width link blob</h4>
@@ -1810,38 +1810,9 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
   </tbody>
 </table>
 
-<h3 id="content-guidelines">Content guidelines</h3>
-
-<p>Copy should be succinct. Do not use link blobs for multiple paragraphs of copy.</p>
-
-<h4 id="headings">Headings</h4>
-
-<p>45 characters max. 25 characters max is preferred, which renders as one line at max column width.</p>
-
-<h4 id="descriptions">Descriptions</h4>
-
-<ul>
-  <li>Half-width link blobs: 100-250 characters max</li>
-  <li>Third-width link blobs: 90-150 characters max</li>
-</ul>
-
-<h4 id="call-to-action">Call to action</h4>
-
-<ul>
-  <li>Half-width link blobs: 40 characters max</li>
-  <li>Third-width link blobs: 30 characters max</li>
-  <li>Follow <a href="https://cfpb.github.io/design-system/components/links">link guidelines</a>.</li>
-</ul>
-
-<p>When these components are featured together (which is ideal), the amount of content in each component should be as close to the same number of total lines as possible.</p>
-
-<ul>
-  <li>For half-width link blobs, one or two lines different is ok</li>
-  <li>For third-width link blobs, a difference of one line is ok</li>
-</ul>
-
-                    
                 
+            
+
             
         </section>
     
@@ -1867,15 +1838,13 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
             </div>
         </div>
         
-
-        
     </div>
 <!-- .content-l -->
 
 </section><!-- .content_main -->
 
         <div class="o-editor_link" id="edit-page">
-            <a class="a-btn" href="/design-system/admin/#/collections/components/entries/info-unit-groups-link-blobs" title="Edit this page in Netlify CMS">
+            <a class="a-btn" href="/design-system/getting-started/updating-this-documentation?page=Link+blobs" title="Edit this page in Netlify CMS">
                 <span class="a-btn_text">Edit this page</span>
                 <span class="a-btn_icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 833.4 1200" class="cf-icon-svg"><path d="M233 203.1c-27.2-27.2-71.8-27.2-99 0L20.4 316.7c-27.2 27.2-27.2 71.8 0 99l89.7 89.7 212.7-212.7-89.8-89.6zM832.6 992.7l-48.6-216c-3.4-15.3-14.9-36.5-26-48.6l-1.8-1.8-121.8-121.9-110.6-110.6-165.7-165.7-54.8 54.8 400 400 21.4-21.4c5.3 6.4 11.9 18.9 13.5 25.6l21.4 95.2-60 60-95.2-21.4c-6.7-1.5-19.2-8.2-25.6-13.5l89.2-89.2-400-400-122.6 122.6 165.7 165.7 110.6 110.6 121.8 121.8 1.8 1.8c12.1 11.1 33.3 22.6 48.6 26l215.9 48.6c2.2.5 4.3.7 6.2.7 12.6.1 19.8-9.4 16.6-23.3z"></path></svg></span>
             </a>
@@ -1889,24 +1858,41 @@ https://github.com/cfpb/cfgov-refresh/blob/e67d1ad321551c221c01eaa62589dfdd1177d
   </div>
 </main>
 
-    <footer class="footer" role="contentinfo">
-    <div class="wrapper">
+  <footer class="footer" role="contentinfo">
 
-        <hr>
+    <hr>
 
-        <div class="block block__sub">
+    
+    <div class="block block__sub">
+        <p>
+            <small>
+                <strong>Help improve this page:</strong>
+                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content%2C+help+wanted&amp;template=component-needs-content-edits.md&amp;title=Suggestions+for%3A+%22Link%20blobs%22">
+                    File an issue on GitHub.
+                </a>
+            </small>
+        </p>
+
+        <p>
             <small>
                 <strong>Page last edited:</strong>
-                <time datetime="2020-05-21 16:37:50 +0000">
-                     4:37:50 PM May 21, 2020
-                </time>
+                
+                
+                <a href="https://github.com/cfpb/design-system/commits/master/docs/components/info-unit-groups-link-blobs.md">
+                    <time datetime="2020-06-17 14:46:54 -0400">
+                         2:46:54 PM Jun 17, 2020
+                    </time>
+                </a>
             </small>
-        </div>
-
+        </p>
     </div>
+    
+
 </footer>
 
-  </div>
-  <script src="/design-system/dist/js/design-system.js" charset="utf-8"></script>
+  <script src="/design-system/dist/js/main.js" charset="utf-8"></script>
+
+  
+
 </body>
 </html>

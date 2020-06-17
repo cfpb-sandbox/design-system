@@ -7,13 +7,9 @@
 // 40.0625em; 641px
 // if we change them in this CSS we also have to fork and release our own JS with updated breakpoints
 
-.govuk-tabs {
-    
-}
-
 @media (min-width: 40.0625em) {
     .govuk-tabs {
-        margin: 0 -2rem 2rem;
+        margin: 0 -1rem;
     }
 }
 
@@ -75,7 +71,7 @@
 }
 @media (min-width: 40.0625em) {
     .govuk-tabs__panel {
-        border-top: 1px solid @gray-40;
+        border-top: 1px solid @gray;
         border-bottom: 1px solid @gray-40;
         margin: -3px 0 50px;
     }
@@ -107,6 +103,7 @@
                     padding-left: 2rem;
                 }
             }
+
         }
 
         .govuk-tabs__list-item::before {
@@ -157,9 +154,9 @@
 .variation-jinja-code-snippet-title,
 .variation-implementation-title,
 .variation-specs-title {
-    .respond-to-min(641px, {
+    .respond-to-min( 641px, {
         .u-visually-hidden();
-    });
+    } );
     background-color: @white;
     border-bottom: 1px solid @gray;
     margin: 0;

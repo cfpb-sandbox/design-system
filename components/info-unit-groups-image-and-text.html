@@ -24,27 +24,31 @@
         Skip to main content
     </a>
   </div>
-  <div class="m-global-eyebrow
-            m-global-eyebrow__horizontal">
-    <div class="wrapper
-                wrapper__match-content">
-        <div class="a-tagline">
-            An official website of the United States government
-        </div>
+  <header role="banner" class="site-header-wrapper">
+
+  <div class="m-global-eyebrow">
+    <div class="a-tagline">
+        An official website of the United States government
     </div>
 </div>
 
-  <div class="body-wrapper">
-    <header role="banner" class="site-header">
-  <div class="wrapper">
-    <div class="title content-l_col content-l_col-1-3">
-      <h1 class="title_heading">
-        <a class="title-link" href="/design-system/">
-          <span class="demi">CFPB</span> Design System
-        </a>
-      </h1>
-    </div>
-    <nav class="global-nav content-l_col content-l_col-2-3" role="navigation">
+
+  <div class="site-header">
+
+    <form id="search-form" action="/design-system/search" method="get">
+    <label class="u-visually-hidden" for="search-box">Search:</label>
+    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="enter your query">
+    <button class="a-btn" type="submit">Search!</button>
+</form>
+
+
+    <h1 class="title">
+      <a class="title-link" href="/design-system/">
+        <span class="demi">CFPB</span> Design System
+      </a>
+    </h1>
+
+    <nav class="global-nav" role="navigation">
       <ul class="global-nav_list">
         <li class="nav-list-item">
             <a class="" href="/design-system/getting-started">
@@ -71,7 +75,7 @@
   </div> <!-- /.wrapper -->
 </header>
 
-    <main class="content content__1-3 content__bleedbar-expandable" id="main" role="main">
+  <main class="content content__1-3 content__bleedbar-expandable" id="main" role="main">
   <div class="content_bar"></div>
   <div class="content_wrapper">
     <aside class="content_sidebar
@@ -228,10 +232,6 @@
                 
             
                 
-            
-                
-            
-                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/notifications">Notifications</a>
                 </li>
@@ -255,6 +255,8 @@
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/sample-component-page">Sample component page</a>
                 </li>
+                
+            
                 
             
                 
@@ -339,13 +341,9 @@
                 
             
                 
-            
-                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/column-dividers">Column dividers</a>
                 </li>
-                
-            
                 
             
                 
@@ -421,8 +419,6 @@
                 
             
                 
-            
-                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/media-queries">Media queries</a>
                 </li>
@@ -455,7 +451,9 @@
                 
             
                 
-            
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/components/main-content-and-sidebars">Main content and sidebars</a>
+                </li>
                 
             
                 
@@ -464,6 +462,16 @@
             
                 
             
+                
+            
+                
+            
+                
+            
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/components/variables">Variables</a>
+                </li>
                 
             
                 
@@ -580,10 +588,6 @@
                 
             
                 
-            
-                
-            
-                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/line-charts">Line Charts</a>
                 </li>
@@ -595,10 +599,6 @@
             
                 
             
-                
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/maps">Maps</a>
-                </li>
                 
             
                 
@@ -617,6 +617,8 @@
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/pie-charts">Pie Charts</a>
                 </li>
+                
+            
                 
             
                 
@@ -700,10 +702,6 @@
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/checkboxes">Checkboxes</a>
                 </li>
-                
-            
-                
-            
                 
             
                 
@@ -835,6 +833,8 @@
                 
             
                 
+            
+                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/text-inputs">Text Inputs</a>
                 </li>
@@ -906,14 +906,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/contact-information">Contact Information</a>
-                </li>
-                
-            
-                
-            
-                
             
                 
             
@@ -946,10 +938,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/full-width-text">Full Width Text</a>
-                </li>
-                
             
                 
             
@@ -974,10 +962,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/info-unit-groups-image-and-text">Info Unit Groups: Image and text</a>
-                </li>
-                
             
                 
                 <li class="m-list_item">
@@ -989,10 +973,14 @@
             
                 
                 <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/introductions">Introductions</a>
+                    <a class="m-list_link" href="/design-system/components/text-introductions">Text introductions</a>
                 </li>
                 
             
+                
+                <li class="m-list_item">
+                    <a class="m-list_link" href="/design-system/components/item-introductions">Item introductions</a>
+                </li>
                 
             
                 
@@ -1036,15 +1024,9 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/sidebars-and-prefooters">Sidebars and Prefooters</a>
-                </li>
-                
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/snippet-lists">Snippet Lists</a>
-                </li>
+            
                 
             
                 
@@ -1064,11 +1046,11 @@
                 
             
                 
+            
+                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/wells">Wells</a>
                 </li>
-                
-            
                 
             
         </ul>
@@ -1179,10 +1161,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/left-hand-navigation">Left Hand Navigation</a>
-                </li>
-                
             
                 
             
@@ -1192,14 +1170,6 @@
             
                 
             
-                
-            
-                
-            
-                
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/mega-menu">Mega menu</a>
-                </li>
                 
             
                 
@@ -1208,6 +1178,8 @@
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/pagination">Pagination</a>
                 </li>
+                
+            
                 
             
                 
@@ -1292,14 +1264,6 @@
                 
             
                 
-                <li class="m-list_item">
-                    <a class="m-list_link" href="/design-system/components/code-blocks">Code blocks</a>
-                </li>
-                
-            
-                
-            
-                
             
                 
             
@@ -1364,11 +1328,11 @@
                 
             
                 
+            
+                
                 <li class="m-list_item">
                     <a class="m-list_link" href="/design-system/components/labels-and-legends">Labels and legends</a>
                 </li>
-                
-            
                 
             
                 
@@ -1437,6 +1401,8 @@
             
                 
             
+                
+            
         </ul>
     </li>
     
@@ -1447,11 +1413,9 @@
     </aside>
         <section class="content_main">
 
-    <div class="component-header u-mb30">
-        <h1>
-            Info Unit Groups: Image and text
-        </h1>
-    </div>
+    <h1 class="component-header u-mb30">
+        Info Unit Groups: Image and text
+    </h1>
 
     
     <ul class="m-list m-list__horizontal u-mb30">
@@ -1462,8 +1426,8 @@
     
 
     
-        <section id="description" class="u-mb30">
-            <p>In general, info unit groups provide context and lead users to additional content off the page. The versions called image and text components are used to call attention to specific linked content.</p>
+    <section id="description" class="u-mb30">
+        <p>In general, info unit groups provide context and lead users to additional content off the page. The versions called image and text components are used to call attention to specific linked content.</p>
 
 <p><img src="/design-system/images/uploads/50_50_intro_mockup.png" alt="Info unit group: example of 50/50 image and text component" title="Info unit group: example of 50/50 image and text component"></p>
 
@@ -1476,12 +1440,16 @@
   <li><a href="https://github.com/cfpb/cfgov-refresh/search?q=info-unit-group">https://github.com/cfpb/cfgov-refresh/search?q=info-unit-group</a></li>
 </ul>
 
-        </section>
+    </section>
     
 
     
     
     <section class="o-variation_group" id="">
+
+        
+        
+        <div class="u-mb15"></div>
         
 
         
@@ -1489,10 +1457,17 @@
         
         <div class="m-variation">
 
+            
+            
+            
+
+            
             <div class="m-variation_name">
                 <h3>25/75 Image and text component</h3>
             </div>
+            
 
+            
             <div class="m-variation_description">
                 <p><img src="/design-system/images/uploads/2575example_desktop.jpg" alt="25/75 Image and text component example" title="25/75 Image and text component example"></p>
 
@@ -1540,6 +1515,7 @@
 </ul>
 
             </div>
+            
 
             <!-- Live code example -->
             
@@ -1548,30 +1524,33 @@
             </div>
             
 
+            
+            
+            
+            
+
+            
+
+            
+            
+
             <div class="a-toggle_code">
-                <button href="#25-75-image-and-text-component-code-1" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#25-75-image-and-text-component-code-1" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#details-25-75-image-and-text-component-2-1" class="a-btn a-btn__link" data-toggle-details="show">Show details</button>
+                <button href="#details-25-75-image-and-text-component-2-1" class="a-btn a-btn__link u-hidden" data-toggle-details="hide">Hide details</button>
             </div>
 
-            
-            
-            
-            
-            
-            
-
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="25-75-image-and-text-component-code-1">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="details-25-75-image-and-text-component-2-1">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#25-75-image-and-text-component-html-code-snippet-1">
+                        <a class="govuk-tabs__tab" href="#details-25-75-image-and-text-component-2-html-code-snippet-1">
                             HTML code snippet
                         </a>
                     </li>
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#25-75-image-and-text-component-jinja-code-snippet-1">
+                        <a class="govuk-tabs__tab" href="#details-25-75-image-and-text-component-2-jinja-code-snippet-1">
                             Jinja code snippet
                         </a>
                     </li>
@@ -1582,7 +1561,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="25-75-image-and-text-component-html-code-snippet-1">
+                <section class="govuk-tabs__panel" id="details-25-75-image-and-text-component-2-html-code-snippet-1">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1594,7 +1573,7 @@
 
                 <!-- Jinja snippet -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="25-75-image-and-text-component-jinja-code-snippet-1">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="details-25-75-image-and-text-component-2-jinja-code-snippet-1">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -1618,10 +1597,17 @@
         
         <div class="m-variation">
 
+            
+            
+            
+
+            
             <div class="m-variation_name">
                 <h3>50/50 image and text component</h3>
             </div>
+            
 
+            
             <div class="m-variation_description">
                 <p><img src="/design-system/images/uploads/50_50_intro_mockup.png" alt="50/50 image and text component" title="50/50 image and text component"></p>
 
@@ -1671,6 +1657,7 @@
 </ul>
 
             </div>
+            
 
             <!-- Live code example -->
             
@@ -1679,30 +1666,33 @@
             </div>
             
 
+            
+            
+            
+            
+
+            
+
+            
+            
+
             <div class="a-toggle_code">
-                <button href="#50-50-image-and-text-component-code-2" class="a-btn a-btn__link" data-toggle-code="show">Show source</button>
-                <button href="#50-50-image-and-text-component-code-2" class="a-btn a-btn__link u-hidden" data-toggle-code="hide">Hide source</button>
+                <button href="#details-50-50-image-and-text-component-5-2" class="a-btn a-btn__link" data-toggle-details="show">Show details</button>
+                <button href="#details-50-50-image-and-text-component-5-2" class="a-btn a-btn__link u-hidden" data-toggle-details="hide">Hide details</button>
             </div>
 
-            
-            
-            
-            
-            
-            
-
-            <div class="govuk-tabs u-hidden" data-module="tabs" id="50-50-image-and-text-component-code-2">
+            <div class="govuk-tabs u-hidden" data-module="tabs" id="details-50-50-image-and-text-component-5-2">
                 <ul class="govuk-tabs__list">
                     
                     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                        <a class="govuk-tabs__tab" href="#50-50-image-and-text-component-html-code-snippet-2">
+                        <a class="govuk-tabs__tab" href="#details-50-50-image-and-text-component-5-html-code-snippet-2">
                             HTML code snippet
                         </a>
                     </li>
                     
                     
                     <li class="govuk-tabs__list-item">
-                        <a class="govuk-tabs__tab" href="#50-50-image-and-text-component-jinja-code-snippet-2">
+                        <a class="govuk-tabs__tab" href="#details-50-50-image-and-text-component-5-jinja-code-snippet-2">
                             Jinja code snippet
                         </a>
                     </li>
@@ -1713,7 +1703,7 @@
 
                 <!-- HTML snippet -->
                 
-                <section class="govuk-tabs__panel" id="50-50-image-and-text-component-html-code-snippet-2">
+                <section class="govuk-tabs__panel" id="details-50-50-image-and-text-component-5-html-code-snippet-2">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
@@ -1725,7 +1715,7 @@
 
                 <!-- Jinja snippet -->
                 
-                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="50-50-image-and-text-component-jinja-code-snippet-2">
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="details-50-50-image-and-text-component-5-jinja-code-snippet-2">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -1756,21 +1746,26 @@
     
     
         <section class="sticky-header u-mb45">
-            <h2 id="usage">Usage</h2>
-            <div class="content_line__wide content_line content_line u-mb20"></div>
-                
-                    <p>
-                    </p>
-<p><strong>When to use</strong></p>
 
+            
+
+            
+                <h2 id="content-guidelines">Content guidelines</h2>
+                <div class="content_line content_line__wide u-mb20"></div>
+                <p>
+                </p>
+<p><strong>When to use</strong></p>
 <ul>
   <li>When a call-to-action, leading users to a deeper page in the section, needs a visual highlight on the page.</li>
   <li>When an image or illustration helps users better understand the purpose of content.</li>
   <li>Can be used for an even or odd number of items and may imply a hierarchy of information given the list style format.</li>
 </ul>
 
-                    
                 
+            
+
+            
+
             
         </section>
     
@@ -1794,36 +1789,13 @@
             </div>
         </div>
         
-
-        
-        <div class="content-l_col content-l_col-1-2">
-            <div>
-                <section>
-                    <h2 id="help-us">Help us make improvements</h2>
-                    <div class="content_line__wide content_line content_line u-mb20"></div>
-                    <p>See <a href="https://gist.github.com/contolini/91d498357fd362d6272f22e001300cae">25-75 sample HTML</a> and <a href="https://gist.github.com/contolini/ad1513232fe07d8a70683669ba48f9d2">50-50 sample HTML</a>, CSS for both need to be migrated from cfgov-refresh.</p>
-
-<p>Information about Info Unit Groups can be found at:</p>
-
-<ul>
-  <li><a href="http://cfpb.github.io/design-manual/page-components/25-75.html">25-75</a></li>
-  <li><a href="http://cfpb.github.io/design-manual/page-components/50-50.html">50-50</a></li>
-  <li><a href="http://cfpb.github.io/design-manual/page-components/half-width-link-blob.html">half-width-link-blob</a></li>
-  <li><a href="http://cfpb.github.io/design-manual/page-components/third-width-link-blob.html">third-width-link-blob</a></li>
-  <li><a href="https://cfpb.github.io/capital-framework/components/cf-layout/#custom-content-layouts">cf-layout</a></li>
-</ul>
-
-                </section>
-            </div>
-        </div>
-        
     </div>
 <!-- .content-l -->
 
 </section><!-- .content_main -->
 
         <div class="o-editor_link" id="edit-page">
-            <a class="a-btn" href="/design-system/admin/#/collections/components/entries/info-unit-groups-image-text" title="Edit this page in Netlify CMS">
+            <a class="a-btn" href="/design-system/getting-started/updating-this-documentation?page=Info+Unit+Groups%3A+Image+and+text" title="Edit this page in Netlify CMS">
                 <span class="a-btn_text">Edit this page</span>
                 <span class="a-btn_icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 833.4 1200" class="cf-icon-svg"><path d="M233 203.1c-27.2-27.2-71.8-27.2-99 0L20.4 316.7c-27.2 27.2-27.2 71.8 0 99l89.7 89.7 212.7-212.7-89.8-89.6zM832.6 992.7l-48.6-216c-3.4-15.3-14.9-36.5-26-48.6l-1.8-1.8-121.8-121.9-110.6-110.6-165.7-165.7-54.8 54.8 400 400 21.4-21.4c5.3 6.4 11.9 18.9 13.5 25.6l21.4 95.2-60 60-95.2-21.4c-6.7-1.5-19.2-8.2-25.6-13.5l89.2-89.2-400-400-122.6 122.6 165.7 165.7 110.6 110.6 121.8 121.8 1.8 1.8c12.1 11.1 33.3 22.6 48.6 26l215.9 48.6c2.2.5 4.3.7 6.2.7 12.6.1 19.8-9.4 16.6-23.3z"></path></svg></span>
             </a>
@@ -1837,24 +1809,41 @@
   </div>
 </main>
 
-    <footer class="footer" role="contentinfo">
-    <div class="wrapper">
+  <footer class="footer" role="contentinfo">
 
-        <hr>
+    <hr>
 
-        <div class="block block__sub">
+    
+    <div class="block block__sub">
+        <p>
+            <small>
+                <strong>Help improve this page:</strong>
+                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content%2C+help+wanted&amp;template=component-needs-content-edits.md&amp;title=Suggestions+for%3A+%22Info%20Unit%20Groups:%20Image%20and%20text%22">
+                    File an issue on GitHub.
+                </a>
+            </small>
+        </p>
+
+        <p>
             <small>
                 <strong>Page last edited:</strong>
-                <time datetime="2020-04-22 16:55:40 +0000">
-                     4:55:40 PM Apr 22, 2020
-                </time>
+                
+                
+                <a href="https://github.com/cfpb/design-system/commits/master/docs/components/info-unit-groups-image-text.md">
+                    <time datetime="2020-06-17 14:46:54 -0400">
+                         2:46:54 PM Jun 17, 2020
+                    </time>
+                </a>
             </small>
-        </div>
-
+        </p>
     </div>
+    
+
 </footer>
 
-  </div>
-  <script src="/design-system/dist/js/design-system.js" charset="utf-8"></script>
+  <script src="/design-system/dist/js/main.js" charset="utf-8"></script>
+
+  
+
 </body>
 </html>

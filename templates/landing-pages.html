@@ -24,27 +24,31 @@
         Skip to main content
     </a>
   </div>
-  <div class="m-global-eyebrow
-            m-global-eyebrow__horizontal">
-    <div class="wrapper
-                wrapper__match-content">
-        <div class="a-tagline">
-            An official website of the United States government
-        </div>
+  <header role="banner" class="site-header-wrapper">
+
+  <div class="m-global-eyebrow">
+    <div class="a-tagline">
+        An official website of the United States government
     </div>
 </div>
 
-  <div class="body-wrapper">
-    <header role="banner" class="site-header">
-  <div class="wrapper">
-    <div class="title content-l_col content-l_col-1-3">
-      <h1 class="title_heading">
-        <a class="title-link" href="/design-system/">
-          <span class="demi">CFPB</span> Design System
-        </a>
-      </h1>
-    </div>
-    <nav class="global-nav content-l_col content-l_col-2-3" role="navigation">
+
+  <div class="site-header">
+
+    <form id="search-form" action="/design-system/search" method="get">
+    <label class="u-visually-hidden" for="search-box">Search:</label>
+    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="enter your query">
+    <button class="a-btn" type="submit">Search!</button>
+</form>
+
+
+    <h1 class="title">
+      <a class="title-link" href="/design-system/">
+        <span class="demi">CFPB</span> Design System
+      </a>
+    </h1>
+
+    <nav class="global-nav" role="navigation">
       <ul class="global-nav_list">
         <li class="nav-list-item">
             <a class="" href="/design-system/getting-started">
@@ -71,7 +75,7 @@
   </div> <!-- /.wrapper -->
 </header>
 
-    <main class="content content__1-3 content__bleedbar-expandable" id="main" role="main">
+  <main class="content content__1-3 content__bleedbar-expandable" id="main" role="main">
   <div class="content_bar"></div>
   <div class="content_wrapper">
     <aside class="content_sidebar
@@ -289,8 +293,6 @@
             
                 
             
-                
-            
         </ul>
     </li>
     
@@ -301,33 +303,77 @@
     </aside>
         <section class="content_main">
 
-    <div class="component-header u-mb30">
-        <h1>
-            Landing pages
-        </h1>
-    </div>
+    <h1 class="component-header u-mb30">
+        Landing pages
+    </h1>
 
+    
+    <ul class="m-list m-list__horizontal u-mb30">
+        
+        
+        <li class="m-list_item">
+            <a class="m-list_link" href="#types">
+                Types
+            </a>
+        </li>
+        
+        
+    </ul>
     
 
     
-        <section id="description" class="u-mb30">
-            <p>Landing page types provide an overview of a main navigation section and helps users situate themselves within the site and the subject matter. Their main function is to preview the different sub-pages within that section and help users quickly skim section topics and select the category that interests them.</p>
+    <section id="description" class="u-mb30">
+        <p>Landing page types provide an overview of a main navigation section and helps users situate themselves within the site and the subject matter. Their main function is to preview the different sub-pages within that section and help users quickly skim section topics and select the category that interests them.</p>
 
-        </section>
+    </section>
     
 
+    
+    
+    <section class="o-variation_group" id="types">
+
+        
+        <h2 class="o-variation_group_title">
+            Types
+        </h2>
+        
+
+        
+        <div class="o-variation_group_description">
+            <p>There are two landing page templates. One uses a hero at the top of the page, and the other uses a text introduction.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Landing page with hero</th>
+      <th>Landing page with introduction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/design-system/images/uploads/landing_top_examplea_2x.jpg" alt="Landing page with hero"></td>
+      <td><img src="/design-system/images/uploads/landing_top_exampleb_2x.jpg" alt="Landing page with text introduction"></td>
+    </tr>
+  </tbody>
+</table>
+
+        </div>
+        
+
+        
+    </section>
+    
     
 
     
     
         <section class="sticky-header u-mb45">
-            <h2 id="usage">Usage</h2>
-            <div class="content_line__wide content_line content_line u-mb20"></div>
-                
-                    <p>
-                    </p>
-<h4 id="use-cases">Use cases</h4>
 
+            
+                <h2 id="use-cases">Use cases</h2>
+                <div class="content_line content_line__wide u-mb20"></div>
+                <p>
+                </p>
 <h5 id="when-to-use">When to use</h5>
 
 <ul>
@@ -342,8 +388,14 @@
   <li>When page content includes paragraph copy or more detailed definitions or explanations.</li>
 </ul>
 
-<h4 id="content-guidelines">Content guidelines</h4>
+                
+            
 
+            
+                <h2 id="content-guidelines">Content guidelines</h2>
+                <div class="content_line content_line__wide u-mb20"></div>
+                <p>
+                </p>
 <ul>
   <li>Generally, content components should work together to provide an overview of the information organized below this page or about the campaign. Give users clear next steps and calls to actions so they can quickly decide what content is relevant to them and where they should go next.</li>
   <li>This page should be written and organized in a way that aids the user in skimming and quickly navigating to lower-level pages.</li>
@@ -372,20 +424,35 @@
   <li>If using both static and dynamic content, preference for dynamic content to appear above static content.</li>
 </ul>
 
-<h4 id="behavior">Behavior</h4>
 
-<p>Below the 901 pixel breakpoint, the sidebar stacks below the main content area.</p>
-
-<h5 id="breakpoints-901-pixels-or-more">Breakpoints 901 pixels or more</h5>
-
-<p><img src="/design-system/images/uploads/landing_behavior_desktop_2x.jpg" alt="Breakpoints 901+"></p>
-
-<h5 id="breakpoints-900-pixels-or-less">Breakpoints 900 pixels or less</h5>
-
-<p><img src="/design-system/images/uploads/landing_behavior_mobile_2x.jpg" alt="Breakpoints 900 and less"></p>
-
-                    
                 
+            
+
+            
+                <h2 id="behavior">Behavior</h2>
+                <div class="content_line content_line__wide u-mb20"></div>
+                <p>
+                </p>
+<p>Below the 901 pixel breakpoint, the entire sidebar stacks below the main content area, appearing near the bottom of the page for mobile and tablet users.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Above 900 px</th>
+      <th>Below 901 px</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/design-system/images/uploads/landing_behavior_desktop_2x.jpg" alt="Breakpoints 901+"></td>
+      <td><img src="/design-system/images/uploads/landing_behavior_mobile_2x.jpg" alt="Breakpoints 900 and less"></td>
+    </tr>
+  </tbody>
+</table>
+
+                
+            
+
             
         </section>
     
@@ -415,15 +482,13 @@
             </div>
         </div>
         
-
-        
     </div>
 <!-- .content-l -->
 
 </section><!-- .content_main -->
 
         <div class="o-editor_link" id="edit-page">
-            <a class="a-btn" href="/design-system/admin/#/collections/templates/entries/1-landing-pages" title="Edit this page in Netlify CMS">
+            <a class="a-btn" href="/design-system/getting-started/updating-this-documentation?page=Landing+pages" title="Edit this page in Netlify CMS">
                 <span class="a-btn_text">Edit this page</span>
                 <span class="a-btn_icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 833.4 1200" class="cf-icon-svg"><path d="M233 203.1c-27.2-27.2-71.8-27.2-99 0L20.4 316.7c-27.2 27.2-27.2 71.8 0 99l89.7 89.7 212.7-212.7-89.8-89.6zM832.6 992.7l-48.6-216c-3.4-15.3-14.9-36.5-26-48.6l-1.8-1.8-121.8-121.9-110.6-110.6-165.7-165.7-54.8 54.8 400 400 21.4-21.4c5.3 6.4 11.9 18.9 13.5 25.6l21.4 95.2-60 60-95.2-21.4c-6.7-1.5-19.2-8.2-25.6-13.5l89.2-89.2-400-400-122.6 122.6 165.7 165.7 110.6 110.6 121.8 121.8 1.8 1.8c12.1 11.1 33.3 22.6 48.6 26l215.9 48.6c2.2.5 4.3.7 6.2.7 12.6.1 19.8-9.4 16.6-23.3z"></path></svg></span>
             </a>
@@ -437,24 +502,41 @@
   </div>
 </main>
 
-    <footer class="footer" role="contentinfo">
-    <div class="wrapper">
+  <footer class="footer" role="contentinfo">
 
-        <hr>
+    <hr>
 
-        <div class="block block__sub">
+    
+    <div class="block block__sub">
+        <p>
+            <small>
+                <strong>Help improve this page:</strong>
+                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content%2C+help+wanted&amp;template=component-needs-content-edits.md&amp;title=Suggestions+for%3A+%22Landing%20pages%22">
+                    File an issue on GitHub.
+                </a>
+            </small>
+        </p>
+
+        <p>
             <small>
                 <strong>Page last edited:</strong>
-                <time datetime="2020-01-13 23:24:35 +0000">
-                    11:24:35 PM Jan 13, 2020
-                </time>
+                
+                
+                <a href="https://github.com/cfpb/design-system/commits/master/docs/templates/1-landing-pages.md">
+                    <time datetime="2020-06-17 14:46:54 -0400">
+                         2:46:54 PM Jun 17, 2020
+                    </time>
+                </a>
             </small>
-        </div>
-
+        </p>
     </div>
+    
+
 </footer>
 
-  </div>
-  <script src="/design-system/dist/js/design-system.js" charset="utf-8"></script>
+  <script src="/design-system/dist/js/main.js" charset="utf-8"></script>
+
+  
+
 </body>
 </html>
